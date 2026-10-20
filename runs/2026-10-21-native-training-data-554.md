@@ -10,13 +10,15 @@ The separately frozen pending-LLM supplement 550 has been integrated into a new 
 | --- | --- |
 | Total image/label pairs | 625 |
 | TRAIN / VAL / TEST | 524 / 54 / 47 |
-| Total / TRAIN LLM boxes | 971 / 795 |
+| Total / TRAIN annotated boxes | 971 / 795 |
 | TRAIN negative images | 109 |
 | Added native TRAIN images / boxes | 10 / 20 |
 | Original pairs retained byte-exact | 615 |
 | Preserved VAL/TEST image and label files | 202 |
 
 The single build ended with native terminal `dfc401` exit 0. Independent verification `433f4b` exit 0 checked all 625 RGB images, found zero new exact-pixel collisions, and round-tripped all 20 added YOLO boxes to their frozen native references within 0.000001 pixel numerical tolerance. Native dimensions, frame indices, PTS/time bases, source URLs and media/image/pixel hashes were retained. Existing split assignments, source entries and session roles were preserved.
+
+A post-build provenance-field audit found 15 retained TRAIN frames/30 boxes using the legacy label source `YOLO11s_proposals_plus_Codex_visual_review_not_human_truth`; their `human_confirmed` flags remain false. The other 610 rows carry `source=llm`. Aggregate box totals above count annotations and do not assert independently produced source-only LLM provenance for every historical label. Earlier aggregate shorthand “LLM boxes” includes this legacy subset and should be read with that limitation. Original legacy records and all VAL/TEST data remain unchanged.
 
 The added data remain **source=llm, human_confirmed=false, review_status=pending**. The eight previously rejected frames were not admitted or treated as empty negatives. There are zero new videos/camera groups/independent final groups in this dataset addition.
 
