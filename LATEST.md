@@ -1,6 +1,6 @@
 # 訓練與評估索引
 
-目前更新至第 178 輪；仍未取得合格晉升版本。169 內部預測通過，但完整追蹤研究回放 36/136 比較退步，拒絕晉升並已清除不合格 checkpoint。160–169 共十次實際訓練、6,720 optimizer updates、零晉升。143 原程序失敗，恢復評估另記。142–169 沒有已通過全套驗收的 API 晉升。
+目前更新至第 179 輪；仍未取得合格晉升版本。169 內部預測通過，但完整追蹤研究回放 36/136 比較退步，拒絕晉升並已清除不合格 checkpoint。160–169 共十次實際訓練、6,720 optimizer updates、零晉升。143 原程序失敗，恢復評估另記。142–169 沒有已通過全套驗收的 API 晉升。
 
 [第 142 輪](runs/run-142.md)（原程序失敗後另行稽核及比較）。
 
@@ -63,3 +63,9 @@
 第177輪後：[原生配對／ReID原因診斷](evaluations/round-177-native-cause-diagnosis.md)完成932次盲回放更新，逐欄位重現基準；71個有強sensor的Kalman漏點中44個被所有可用軌跡的Mahalanobis gate拒絕，137個observed-uncertain點另有原生appearance/ReID證據失敗。零optimizer，沒有放寬gate或重判177。
 
 第178輪：[TRAIN預測位置壓力測試完整報告](runs/run-178.md)完成30epochs／2,610 optimizer updates；165,450 base-pair訪次中74,971次為明確標示的合成輸入，VAL215保持原樣。pair TP／FP／FN／TN＝152／0／4／59，recall97.44%僅代表已知配對。完整追蹤32/136項退步，Kalman TP708不變、Byte545→547，零來源群同時通過兩profile，拒絕晉升、權重已清理。[學習曲線](runs/run-178-learning-curve.json)。170–179視窗目前9次實際訓練／11,567 updates／零合格與零API晉升。
+
+第178輪後：[整組有證據替換preflight](evaluations/round-178-certified-replacement-preflight.md)完成16項行為／float32門檻控制，FIT1,700與完整3,728次停用／中性更新逐欄位一致；這些為機制與相容控制，零optimizer，非品質改善。
+
+第179輪：[相同分類器重現＋採用規則完整報告](runs/run-179.md)完成30epochs／2,610實際更新，每epoch loss／VAL與178精確一致，非獨立新表示。完整32/136項仍退步，但studio-fast-rail的Kalman certain18→24、橘色最長certain缺口6→2；全體Kalman certain531→537，尚無來源群通過兩profile門檻，拒絕晉升。失敗權重已清理，21054筆scalar scores保留；71個強sensor Kalman漏點中62個被評分卻全低於.95、9個無可用pair。[學習曲線](runs/run-179-learning-curve.json)。
+
+[第170–179輪十次訓練總檢討](evaluations/round-170-179-window-review.md)：14,177實際optimizer updates，零合格與零API晉升，不以失敗變體補足五個名額。九個既有API權重完整，穩定高速／模糊軌跡改善目標持續。
