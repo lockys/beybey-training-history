@@ -51,3 +51,7 @@
 第173輪後：[因果配對提案對照](evaluations/round-173-assignment-proposal-controls.md)完成24項行為檢查、FIT 1,360與完整固定集3,728次tracker updates的中性／隔離驗證；零修正逐欄位一致。零新訓練、零新權重與零API晉升，尚未證明品質改善。
 
 第174輪：[因果mean-only配對提案完整報告](runs/run-174.md)已完成1,020 updates；primary Kalman／Byte TP為739／578（基準708／545），但完整追蹤48/136項退步、僅1個來源群通過改善門檻（至少需2），拒絕晉升，權重已清理。170–179視窗目前5次實際訓練／5,100 updates／零合格與零API晉升。
+
+第174輪後：[共同命中分解與偵測定位preflight](evaluations/round-174-composition-and-detector-localization-preflight.md)完成；Kalman原708TP量測不變，Byte實際流失14TP，原拒絕維持。新定位分支機制與TRAIN-only backward通過，零optimizer updates。
+
+第175輪：[標準YOLO bbox末層定位續訓](runs/run-175.md)已進入實際TRAIN batches，計畫30epochs／5,220batches；optimizer總數、準確度與完整軌跡評估待完成，尚無API晉升。
