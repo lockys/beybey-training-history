@@ -1,6 +1,6 @@
 {
   "run_id": 169,
-  "status": "pending_full_native_acceptance",
+  "status": "not_qualified",
   "optimizer_updates": 1020,
   "API_promoted": false,
   "stable_trajectory_improvement_proven": false,
@@ -104,12 +104,31 @@
       "rejected": false,
       "predictive_gate_passed": true,
       "actual_native_trajectory_comparison_completed": false
+    },
+    "retention-resolution.json": {
+      "accepted": false,
+      "API_eligible": false,
+      "selected_checkpoint_retained": false,
+      "formal_product_acceptance": false,
+      "logical_bytes_freed": 40672
+    },
+    "execution-v1/scoring-completion.json": {
+      "completed": true,
+      "comparisons_per_mode": 136,
+      "unchanged_detector_comparisons_from_sealed_baseline": 68,
+      "trained_research_rebuilt_gate_passed": false,
+      "trained_failures": 36,
+      "untrained_failures": 0,
+      "optimizer_updates_during_evaluation": 0
     }
   },
   "derived_detection_reference_rates": [],
   "source_sha256": {
     "completion.json": "19a16f4f46633a9d6949f3793b3fa5bf8634109da157e2ff8a2c06806740f4c1",
     "progress.json": "9ec3b906ab800197856ca9e0ac86b9c73a80b6ecae66062b7747f448fb2611a1",
-    "predictive-comparison.json": "f1ac0952ceca3d7e0f18ae8ad4808d81e4be64fd0f8e0a70a885f762498175c7"
-  }
+    "predictive-comparison.json": "f1ac0952ceca3d7e0f18ae8ad4808d81e4be64fd0f8e0a70a885f762498175c7",
+    "retention-resolution.json": "04a9ab76f3c4e897189b44c044ce2ac797b77572f0a2582b17162cbcd94ea810",
+    "execution-v1/scoring-completion.json": "244af557b005057a6c6ac80ccc45a025f9e5b6d47d0c97ad2dfd3bd6b0df8853"
+  },
+  "decision_reason": "36 of 136 frozen tracking comparisons regressed; zero of two required source groups improved"
 }
