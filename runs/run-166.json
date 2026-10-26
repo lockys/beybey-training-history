@@ -1,0 +1,143 @@
+{
+  "run_id": 166,
+  "status": "not_qualified",
+  "optimizer_updates": 300,
+  "API_promoted": false,
+  "stable_trajectory_improvement_proven": false,
+  "independent_human_reference_accuracy": null,
+  "metrics": {
+    "completion.json": {
+      "completed": true,
+      "optimizer_run_completed": true,
+      "optimizer_updates": 300,
+      "completed_epochs": 30,
+      "best_epoch": 4,
+      "validation": {
+        "all": {
+          "samples": 173,
+          "predictive_NLL": -1.5149099826812744,
+          "mean_error_px": 29.43256378173828,
+          "p90_error_px": 64.69292449951172
+        },
+        "kalman": {
+          "samples": 80,
+          "predictive_NLL": -3.2059035301208496,
+          "mean_error_px": 10.87312126159668,
+          "p90_error_px": 25.93345069885254
+        },
+        "bytetrack": {
+          "samples": 93,
+          "predictive_NLL": -0.06029226630926132,
+          "mean_error_px": 45.397674560546875,
+          "p90_error_px": 191.1379852294922
+        }
+      },
+      "baseline": {
+        "all": {
+          "samples": 173,
+          "predictive_NLL": 4.049001693725586,
+          "mean_error_px": 45.835811614990234,
+          "p90_error_px": 101.2279281616211
+        },
+        "kalman": {
+          "samples": 80,
+          "predictive_NLL": -2.1924221515655518,
+          "mean_error_px": 18.325931549072266,
+          "p90_error_px": 32.596900939941406
+        },
+        "bytetrack": {
+          "samples": 93,
+          "predictive_NLL": 9.417967796325684,
+          "mean_error_px": 69.50023651123047,
+          "p90_error_px": 304.839599609375
+        }
+      },
+      "predictive_gate_passed": true,
+      "API_eligible": false,
+      "actual_native_trajectory_comparison_completed": false
+    },
+    "progress.json": {
+      "optimizer_updates": 300,
+      "validation": {
+        "all": {
+          "samples": 173,
+          "predictive_NLL": 2.105865955352783,
+          "mean_error_px": 32.29734420776367,
+          "p90_error_px": 68.55976104736328
+        },
+        "kalman": {
+          "samples": 80,
+          "predictive_NLL": -2.366116523742676,
+          "mean_error_px": 12.10773754119873,
+          "p90_error_px": 28.399559020996094
+        },
+        "bytetrack": {
+          "samples": 93,
+          "predictive_NLL": 5.952732563018799,
+          "mean_error_px": 49.66474914550781,
+          "p90_error_px": 232.6385498046875
+        }
+      }
+    },
+    "predictive-comparison.json": {
+      "validation": {
+        "all": {
+          "samples": 173,
+          "predictive_NLL": -1.5149099826812744,
+          "mean_error_px": 29.43256378173828,
+          "p90_error_px": 64.69292449951172
+        },
+        "kalman": {
+          "samples": 80,
+          "predictive_NLL": -3.2059035301208496,
+          "mean_error_px": 10.87312126159668,
+          "p90_error_px": 25.93345069885254
+        },
+        "bytetrack": {
+          "samples": 93,
+          "predictive_NLL": -0.06029226630926132,
+          "mean_error_px": 45.397674560546875,
+          "p90_error_px": 191.1379852294922
+        }
+      },
+      "baseline": {
+        "all": {
+          "samples": 173,
+          "predictive_NLL": 4.049001693725586,
+          "mean_error_px": 45.835811614990234,
+          "p90_error_px": 101.2279281616211
+        },
+        "kalman": {
+          "samples": 80,
+          "predictive_NLL": -2.1924221515655518,
+          "mean_error_px": 18.325931549072266,
+          "p90_error_px": 32.596900939941406
+        },
+        "bytetrack": {
+          "samples": 93,
+          "predictive_NLL": 9.417967796325684,
+          "mean_error_px": 69.50023651123047,
+          "p90_error_px": 304.839599609375
+        }
+      },
+      "accepted": false,
+      "rejected": false,
+      "predictive_gate_passed": true,
+      "actual_native_trajectory_comparison_completed": false
+    },
+    "retention-resolution.json": {
+      "accepted": false,
+      "API_eligible": false,
+      "selected_checkpoint_retained": false,
+      "logical_bytes_freed": 40672
+    }
+  },
+  "derived_detection_reference_rates": [],
+  "source_sha256": {
+    "completion.json": "0759bb92e9d23301da0a91ab33c07fe8a5ef0f8372dd710672a724c28e4a5bde",
+    "progress.json": "96eb880cdfbc8a7540b55ae61c735748bf9ce18c3c946a6275abfe2d465cf50c",
+    "predictive-comparison.json": "ab7e8190f13ac144703bbc6177a89a9c9b4810622ed90f4bfd449f98db15fccc",
+    "retention-resolution.json": "43896d71c25ef4c1b4005d78058968b9eb3eae6f4840464e3a67ec3842bb8a40"
+  },
+  "decision_reason": "64 of 136 frozen tracking comparisons regressed; only one of two required source groups improved"
+}

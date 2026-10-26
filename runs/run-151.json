@@ -1,0 +1,215 @@
+{
+  "run_id": 151,
+  "status": "not_qualified",
+  "optimizer_updates": 310,
+  "API_promoted": false,
+  "stable_trajectory_improvement_proven": false,
+  "independent_human_reference_accuracy": null,
+  "metrics": {
+    "completion.json": {
+      "completed": true,
+      "optimizer_run_completed": true,
+      "optimizer_updates": 310,
+      "completed_epochs": 30
+    },
+    "progress.json": {
+      "optimizer_updates": 310,
+      "completed_epochs": 30
+    },
+    "comparison.json": {
+      "models": {
+        "ares-v1.3.33": {
+          "VAL": {
+            "TP": 82,
+            "FP": 1,
+            "FN": 3,
+            "empty_frames": 4,
+            "empty_FP": 0
+          },
+          "development": {
+            "targets": 46,
+            "TP": 45,
+            "FN": 1,
+            "certain_observed": 45,
+            "mean_matched_error_px": 2.134750813657198,
+            "mean_capped_error_px": 2.6100823177081285,
+            "FP_proxy": 0,
+            "detached_or_held_matches": 0,
+            "unmatched_on_unobservable_frames": 0,
+            "predicted_only_rows": 0,
+            "identity_transfers": 0,
+            "identity_transfer_points": 0,
+            "longest_incomplete_frame_gap": 1,
+            "unobservable_objects": 0,
+            "ambiguous_state_objects": 0,
+            "identity_ineligible_targets": 0,
+            "unknown_occlusion_frames": 0,
+            "unlocalized_distractor_descriptions": 0,
+            "visibility": {
+              "visible": {
+                "targets": 46,
+                "TP": 45,
+                "FN": 1,
+                "certain_observed": 45,
+                "mean_matched_error_px": 2.134750813657198,
+                "mean_capped_error_px": 2.6100823177081285
+              }
+            },
+            "identities": {
+              "blue": {
+                "targets": 23,
+                "TP": 22,
+                "FN": 1,
+                "certain_observed": 22,
+                "longest_measured_gap": 1,
+                "longest_certain_gap": 1,
+                "longest_estimated_gap": 23,
+                "measured_fragmentations": 1,
+                "certain_fragmentations": 1,
+                "track_id_changes": 0,
+                "certain_native_segments": [],
+                "mean_matched_error_px": 1.5534160226516136,
+                "mean_capped_error_px": 2.529354456449369,
+                "certain_native_fragmentations": 0
+              },
+              "white": {
+                "targets": 23,
+                "TP": 23,
+                "FN": 0,
+                "certain_observed": 23,
+                "longest_measured_gap": 0,
+                "longest_certain_gap": 0,
+                "longest_estimated_gap": 23,
+                "measured_fragmentations": 0,
+                "certain_fragmentations": 0,
+                "track_id_changes": 0,
+                "certain_native_segments": [],
+                "mean_matched_error_px": 2.690810178966888,
+                "mean_capped_error_px": 2.690810178966888,
+                "certain_native_fragmentations": 0
+              }
+            }
+          },
+          "accelerated_hits": {
+            "blue": 5,
+            "white": 5
+          }
+        },
+        "research-run151": {
+          "VAL": {
+            "TP": 81,
+            "FP": 6,
+            "FN": 4,
+            "empty_frames": 4,
+            "empty_FP": 0
+          },
+          "development": {
+            "targets": 46,
+            "TP": 46,
+            "FN": 0,
+            "certain_observed": 46,
+            "mean_matched_error_px": 2.106128837136567,
+            "mean_capped_error_px": 2.106128837136567,
+            "FP_proxy": 0,
+            "detached_or_held_matches": 0,
+            "unmatched_on_unobservable_frames": 0,
+            "predicted_only_rows": 0,
+            "identity_transfers": 0,
+            "identity_transfer_points": 0,
+            "longest_incomplete_frame_gap": 0,
+            "unobservable_objects": 0,
+            "ambiguous_state_objects": 0,
+            "identity_ineligible_targets": 0,
+            "unknown_occlusion_frames": 0,
+            "unlocalized_distractor_descriptions": 0,
+            "visibility": {
+              "visible": {
+                "targets": 46,
+                "TP": 46,
+                "FN": 0,
+                "certain_observed": 46,
+                "mean_matched_error_px": 2.106128837136567,
+                "mean_capped_error_px": 2.106128837136567
+              }
+            },
+            "identities": {
+              "blue": {
+                "targets": 23,
+                "TP": 23,
+                "FN": 0,
+                "certain_observed": 23,
+                "longest_measured_gap": 0,
+                "longest_certain_gap": 0,
+                "longest_estimated_gap": 23,
+                "measured_fragmentations": 0,
+                "certain_fragmentations": 0,
+                "track_id_changes": 0,
+                "certain_native_segments": [],
+                "mean_matched_error_px": 1.615653494544919,
+                "mean_capped_error_px": 1.615653494544919,
+                "certain_native_fragmentations": 0
+              },
+              "white": {
+                "targets": 23,
+                "TP": 23,
+                "FN": 0,
+                "certain_observed": 23,
+                "longest_measured_gap": 0,
+                "longest_certain_gap": 0,
+                "longest_estimated_gap": 23,
+                "measured_fragmentations": 0,
+                "certain_fragmentations": 0,
+                "track_id_changes": 0,
+                "certain_native_segments": [],
+                "mean_matched_error_px": 2.596604179728214,
+                "mean_capped_error_px": 2.596604179728214,
+                "certain_native_fragmentations": 0
+              }
+            }
+          },
+          "accelerated_hits": {
+            "blue": 5,
+            "white": 5
+          }
+        }
+      },
+      "accepted": false,
+      "early_gate_passed": false,
+      "model_calls": 154,
+      "TEST_inference": false
+    },
+    "retention-resolution.json": {
+      "accepted": false,
+      "candidate_checkpoint_deleted": true,
+      "full_native_gate_run": false,
+      "logical_bytes_freed": 38350388
+    }
+  },
+  "derived_detection_reference_rates": [
+    {
+      "cohort": "/comparison.json/models/ares-v1.3.33/VAL",
+      "TP": 82,
+      "FP": 1,
+      "FN": 3,
+      "precision": 0.9879518072289156,
+      "recall": 0.9647058823529412,
+      "F1": 0.9761904761904762
+    },
+    {
+      "cohort": "/comparison.json/models/research-run151/VAL",
+      "TP": 81,
+      "FP": 6,
+      "FN": 4,
+      "precision": 0.9310344827586207,
+      "recall": 0.9529411764705882,
+      "F1": 0.9418604651162791
+    }
+  ],
+  "source_sha256": {
+    "completion.json": "ceaa8e96999a9d7a5d44c895f0dc499dc806cf2da2e3f497c7c9266690bd581b",
+    "progress.json": "f9f77eb29c097e04e60101b4f07c50c3e910df73f35ba4f49ce51020fa0f294f",
+    "comparison.json": "d1892b9a7c734cefa4c86abbe49933c56584a4bcd7075e231f7a24dc9af90aec",
+    "retention-resolution.json": "5b240017bc5d2ef3a4dcafde332914c01d8a4aff520a67e3b2af0043c17c17ba"
+  },
+  "decision_reason": "Fixed VAL TP82/FP1/FN3 to81/6/4; development recovered one blue observation but predeclared blue unpaired matched mean also failed. Paired gains cannot override fixed gates."
+}

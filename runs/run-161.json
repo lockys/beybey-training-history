@@ -1,0 +1,105 @@
+{
+  "run_id": 161,
+  "status": "not_qualified",
+  "optimizer_updates": 300,
+  "API_promoted": false,
+  "stable_trajectory_improvement_proven": false,
+  "independent_human_reference_accuracy": null,
+  "metrics": {
+    "completion.json": {
+      "completed": true,
+      "optimizer_run_completed": true,
+      "optimizer_updates": 300,
+      "completed_epochs": 30,
+      "best_epoch": 29,
+      "metrics": {
+        "fit": {
+          "same_pairs": 605,
+          "different_pairs": 565,
+          "same_TP": 599,
+          "same_FN": 6,
+          "different_FP": 0,
+          "mean_same_distance": 0.052053458988666534,
+          "mean_different_distance": 0.8203833699226379,
+          "balanced_loss": 0.0004809880629181862
+        },
+        "validation": {
+          "same_pairs": 326,
+          "different_pairs": 368,
+          "same_TP": 313,
+          "same_FN": 13,
+          "different_FP": 20,
+          "mean_same_distance": 0.06338946521282196,
+          "mean_different_distance": 0.5721478462219238,
+          "balanced_loss": 0.03043188899755478
+        }
+      },
+      "internal_pair_gate_passed": false,
+      "API_eligible": false
+    },
+    "progress.json": {
+      "optimizer_updates": 300,
+      "metrics": {
+        "fit": {
+          "same_pairs": 605,
+          "different_pairs": 565,
+          "same_TP": 599,
+          "same_FN": 6,
+          "different_FP": 0,
+          "mean_same_distance": 0.052009712904691696,
+          "mean_different_distance": 0.8213643431663513,
+          "balanced_loss": 0.0004412640701048076
+        },
+        "validation": {
+          "same_pairs": 326,
+          "different_pairs": 368,
+          "same_TP": 313,
+          "same_FN": 13,
+          "different_FP": 20,
+          "mean_same_distance": 0.06316767632961273,
+          "mean_different_distance": 0.5718387961387634,
+          "balanced_loss": 0.030510839074850082
+        }
+      }
+    },
+    "pair-comparison.json": {
+      "original_HSV": {
+        "same_pairs": 326,
+        "different_pairs": 368,
+        "same_TP": 270,
+        "same_FN": 56,
+        "different_FP": 0,
+        "mean_same_distance": 0.17587387561798096,
+        "mean_different_distance": 0.6055526733398438,
+        "balanced_loss": 0.00958823412656784
+      },
+      "learned": {
+        "same_pairs": 326,
+        "different_pairs": 368,
+        "same_TP": 313,
+        "same_FN": 13,
+        "different_FP": 20,
+        "mean_same_distance": 0.06338946521282196,
+        "mean_different_distance": 0.5721478462219238,
+        "balanced_loss": 0.03043188899755478
+      },
+      "accepted": false,
+      "rejected": true,
+      "internal_pair_gate_passed": false,
+      "actual_trajectory_comparison_run": false
+    },
+    "retention-resolution.json": {
+      "accepted": false,
+      "API_added": false,
+      "candidate_checkpoint_deleted": true,
+      "logical_bytes_freed": 137598.0
+    }
+  },
+  "derived_detection_reference_rates": [],
+  "source_sha256": {
+    "completion.json": "2649573d2e74337499b51de2d12ba86c6109044ae4db6243d13fe321f49b998d",
+    "progress.json": "e292d3b4eb632e2407e415afeee027ea22657ad7285fe9eac5a3664cb8683d49",
+    "pair-comparison.json": "fb1810c1d0cebce174b7b66d9c0a08aefe9c61d2e461e1ddb1085e07647b8339",
+    "retention-resolution.json": "c4e40e932fe1494d8bb84533beb64738942ffe07ceaf9e95ed5abe86fa6a2b1e"
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "run_id": 167,
+  "status": "not_qualified",
+  "optimizer_updates": 1020,
+  "API_promoted": false,
+  "stable_trajectory_improvement_proven": false,
+  "independent_human_reference_accuracy": null,
+  "metrics": {
+    "completion.json": {
+      "completed": true,
+      "optimizer_run_completed": true,
+      "optimizer_updates": 1020,
+      "completed_epochs": 30,
+      "best_epoch": 2,
+      "validation": {
+        "all": {
+          "samples": 173,
+          "predictive_NLL": -1.113349199295044,
+          "mean_error_px": 29.718969345092773,
+          "p90_error_px": 63.707275390625
+        },
+        "kalman": {
+          "samples": 80,
+          "predictive_NLL": -3.2045624256134033,
+          "mean_error_px": 10.76264476776123,
+          "p90_error_px": 23.574462890625
+        },
+        "bytetrack": {
+          "samples": 93,
+          "predictive_NLL": 0.6855435371398926,
+          "mean_error_px": 46.025489807128906,
+          "p90_error_px": 197.61024475097656
+        }
+      },
+      "baseline": {
+        "all": {
+          "samples": 173,
+          "predictive_NLL": 4.049001693725586,
+          "mean_error_px": 45.835811614990234,
+          "p90_error_px": 101.2279281616211
+        },
+        "kalman": {
+          "samples": 80,
+          "predictive_NLL": -2.1924221515655518,
+          "mean_error_px": 18.325931549072266,
+          "p90_error_px": 32.596900939941406
+        },
+        "bytetrack": {
+          "samples": 93,
+          "predictive_NLL": 9.417967796325684,
+          "mean_error_px": 69.50023651123047,
+          "p90_error_px": 304.839599609375
+        }
+      },
+      "predictive_gate_passed": true,
+      "API_eligible": false,
+      "actual_native_trajectory_comparison_completed": false
+    },
+    "progress.json": {
+      "optimizer_updates": 1020
+    },
+    "predictive-comparison.json": {
+      "validation": {
+        "all": {
+          "samples": 173,
+          "predictive_NLL": -1.113349199295044,
+          "mean_error_px": 29.718969345092773,
+          "p90_error_px": 63.707275390625
+        },
+        "kalman": {
+          "samples": 80,
+          "predictive_NLL": -3.2045624256134033,
+          "mean_error_px": 10.76264476776123,
+          "p90_error_px": 23.574462890625
+        },
+        "bytetrack": {
+          "samples": 93,
+          "predictive_NLL": 0.6855435371398926,
+          "mean_error_px": 46.025489807128906,
+          "p90_error_px": 197.61024475097656
+        }
+      },
+      "baseline": {
+        "all": {
+          "samples": 173,
+          "predictive_NLL": 4.049001693725586,
+          "mean_error_px": 45.835811614990234,
+          "p90_error_px": 101.2279281616211
+        },
+        "kalman": {
+          "samples": 80,
+          "predictive_NLL": -2.1924221515655518,
+          "mean_error_px": 18.325931549072266,
+          "p90_error_px": 32.596900939941406
+        },
+        "bytetrack": {
+          "samples": 93,
+          "predictive_NLL": 9.417967796325684,
+          "mean_error_px": 69.50023651123047,
+          "p90_error_px": 304.839599609375
+        }
+      },
+      "accepted": false,
+      "rejected": false,
+      "predictive_gate_passed": true,
+      "actual_native_trajectory_comparison_completed": false
+    },
+    "retention-resolution.json": {
+      "accepted": false,
+      "API_eligible": false,
+      "selected_checkpoint_retained": false,
+      "formal_product_acceptance": false,
+      "logical_bytes_freed": 40672
+    },
+    "execution-v1/scoring-completion.json": {
+      "completed": true,
+      "comparisons_per_mode": 136,
+      "unchanged_detector_comparisons_from_sealed_baseline": 68,
+      "trained_research_rebuilt_gate_passed": false,
+      "trained_failures": 48,
+      "untrained_failures": 0,
+      "optimizer_updates_during_evaluation": 0
+    }
+  },
+  "derived_detection_reference_rates": [],
+  "source_sha256": {
+    "completion.json": "78bcdc85b45f5674d48cbf8f1deb89df2540c17f8f0a7ddb818df6885d17f10d",
+    "progress.json": "53abd277de423aebb7231cb501f511f2c5ce5f2313d9d1c47a9a62c9238bf368",
+    "predictive-comparison.json": "68fed962d90ba5e9da6b81d4d40f1ebba57d9ed98661371dd18d9bdffcdaa96d",
+    "retention-resolution.json": "d31ed663c3af51fa0f49751e3b8574205e98216b701d97babe502a11390f9fbb",
+    "execution-v1/scoring-completion.json": "945f1b9a25999107a8d2e0ff5cb79dc021012b4c0d0f9d7e368ed4872bf3b97c"
+  },
+  "decision_reason": "48 of 136 comparisons regressed and only one of two required source groups improved"
+}

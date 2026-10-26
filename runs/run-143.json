@@ -1,0 +1,99 @@
+{
+  "run_id": 143,
+  "status": "worker_failed_then_recovered_evaluation_rejected",
+  "optimizer_updates": 282,
+  "API_promoted": false,
+  "stable_trajectory_improvement_proven": false,
+  "independent_human_reference_accuracy": null,
+  "metrics": {
+    "progress.json": {
+      "optimizer_updates": 282,
+      "completed_epochs": 30
+    },
+    "comparison.json": {
+      "models": {
+        "ares-v1.3.33": {
+          "tp": 82,
+          "fp": 1,
+          "fn": 3,
+          "empty_frames": 4,
+          "empty_frame_fp": 0
+        },
+        "research-run143": {
+          "tp": 81,
+          "fp": 4,
+          "fn": 4,
+          "empty_frames": 4,
+          "empty_frame_fp": 0,
+          "provisional_development": {
+            "hits": {
+              "blue": 23,
+              "white": 23
+            },
+            "total_per_identity": 23,
+            "fast_hits": {
+              "blue": 5,
+              "white": 5
+            },
+            "fast_total_per_identity": 5,
+            "unmatched_roi_predictions": 0,
+            "max_detection_gaps": {
+              "blue": 0,
+              "white": 0
+            },
+            "mean_matched_errors": {
+              "blue": 1.3578162112770864,
+              "white": 2.84462470209378
+            }
+          }
+        }
+      },
+      "baseline_development": {
+        "blue": {
+          "matched": 22,
+          "total": 23,
+          "longest_detection_gap_frames": 1,
+          "mean_matched_center_error_px": 1.5534160226516136,
+          "accelerated_matched": 5,
+          "accelerated_total": 5
+        },
+        "white": {
+          "matched": 23,
+          "total": 23,
+          "longest_detection_gap_frames": 0,
+          "mean_matched_center_error_px": 2.690810178966888,
+          "accelerated_matched": 5,
+          "accelerated_total": 5
+        }
+      },
+      "accepted": false,
+      "model_calls": 131
+    }
+  },
+  "derived_detection_reference_rates": [
+    {
+      "cohort": "/comparison.json/models/ares-v1.3.33",
+      "TP": 82,
+      "FP": 1,
+      "FN": 3,
+      "precision": 0.9879518072289156,
+      "recall": 0.9647058823529412,
+      "F1": 0.9761904761904762
+    },
+    {
+      "cohort": "/comparison.json/models/research-run143",
+      "TP": 81,
+      "FP": 4,
+      "FN": 4,
+      "precision": 0.9529411764705882,
+      "recall": 0.9529411764705882,
+      "F1": 0.9529411764705882
+    }
+  ],
+  "source_sha256": {
+    "progress.json": "f75ac3b9605371eaaf594eae82f14bdc87607c1b8d6d4d8f21c2b2b3928ceb92",
+    "comparison.json": "631fff92912e53096e730a85b64b8ed10a7893b83fc2a2c33423e7a709780ca4"
+  },
+  "worker_exit_code": 1,
+  "optimizer_completion_success_claimed": false
+}

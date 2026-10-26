@@ -1,0 +1,215 @@
+{
+  "run_id": 165,
+  "status": "not_qualified",
+  "optimizer_updates": 930,
+  "API_promoted": false,
+  "stable_trajectory_improvement_proven": false,
+  "independent_human_reference_accuracy": null,
+  "metrics": {
+    "completion.json": {
+      "completed": true,
+      "optimizer_run_completed": true,
+      "optimizer_updates": 930,
+      "completed_epochs": 30,
+      "best_epoch": 30,
+      "metrics": {
+        "fit": {
+          "positive_pairs": 2054,
+          "negative_pairs": 1890,
+          "TP": 2049,
+          "FN": 5,
+          "FP": 14,
+          "TN": 1876,
+          "unconfirmed_TP": 2045,
+          "unconfirmed_FP": 3,
+          "weighted_BCE": 0.014264339581131935
+        },
+        "validation": {
+          "positive_pairs": 1268,
+          "negative_pairs": 1268,
+          "TP": 1268,
+          "FN": 0,
+          "FP": 0,
+          "TN": 1268,
+          "unconfirmed_TP": 1268,
+          "unconfirmed_FP": 0,
+          "weighted_BCE": 0.0002674676652532071
+        }
+      },
+      "internal_pair_gate_passed": true,
+      "API_eligible": false
+    },
+    "progress.json": {
+      "optimizer_updates": 930,
+      "metrics": {
+        "fit": {
+          "positive_pairs": 2054,
+          "negative_pairs": 1890,
+          "TP": 2049,
+          "FN": 5,
+          "FP": 14,
+          "TN": 1876,
+          "unconfirmed_TP": 2045,
+          "unconfirmed_FP": 3,
+          "weighted_BCE": 0.01426434051245451
+        },
+        "validation": {
+          "positive_pairs": 1268,
+          "negative_pairs": 1268,
+          "TP": 1268,
+          "FN": 0,
+          "FP": 0,
+          "TN": 1268,
+          "unconfirmed_TP": 1268,
+          "unconfirmed_FP": 0,
+          "weighted_BCE": 0.00026746769435703754
+        }
+      }
+    },
+    "pair-comparison.json": {
+      "metrics": {
+        "fit": {
+          "positive_pairs": 2054,
+          "negative_pairs": 1890,
+          "TP": 2049,
+          "FN": 5,
+          "FP": 14,
+          "TN": 1876,
+          "unconfirmed_TP": 2045,
+          "unconfirmed_FP": 3,
+          "weighted_BCE": 0.014264339581131935
+        },
+        "validation": {
+          "positive_pairs": 1268,
+          "negative_pairs": 1268,
+          "TP": 1268,
+          "FN": 0,
+          "FP": 0,
+          "TN": 1268,
+          "unconfirmed_TP": 1268,
+          "unconfirmed_FP": 0,
+          "weighted_BCE": 0.0002674676652532071
+        }
+      },
+      "feature_IoU_baselines": {
+        "last_box_iou": {
+          "TP": 1014,
+          "FN": 254,
+          "FP": 0,
+          "TN": 1268
+        },
+        "causal_CV_iou": {
+          "TP": 1108,
+          "FN": 160,
+          "FP": 0,
+          "TN": 1268
+        }
+      },
+      "accepted": false,
+      "rejected": false,
+      "internal_pair_gate_passed": true,
+      "actual_trajectory_comparison_run": false
+    },
+    "retention-resolution.json": {
+      "accepted": false,
+      "API_eligible": false,
+      "API_promoted": false,
+      "candidate_checkpoint_deleted": true,
+      "failed_comparisons": 36,
+      "comparisons_per_mode": 136,
+      "distinct_source_groups_passing": 0,
+      "research_rebuilt_gate_passed": false,
+      "formal_product_acceptance": false
+    },
+    "execution-v1/scoring-completion.json": {
+      "completed": true,
+      "comparisons_per_mode": 136,
+      "unchanged_detector_comparisons_from_sealed_baseline": 68,
+      "trained_research_rebuilt_gate_passed": false,
+      "trained_failures": 36,
+      "untrained_failures": 0,
+      "optimizer_updates_during_evaluation": 0
+    }
+  },
+  "derived_detection_reference_rates": [
+    {
+      "cohort": "/completion.json/metrics/fit",
+      "TP": 2049,
+      "FP": 14,
+      "FN": 5,
+      "precision": 0.9932137663596704,
+      "recall": 0.9975657254138267,
+      "F1": 0.995384989069711
+    },
+    {
+      "cohort": "/completion.json/metrics/validation",
+      "TP": 1268,
+      "FP": 0,
+      "FN": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "F1": 1.0
+    },
+    {
+      "cohort": "/progress.json/metrics/fit",
+      "TP": 2049,
+      "FP": 14,
+      "FN": 5,
+      "precision": 0.9932137663596704,
+      "recall": 0.9975657254138267,
+      "F1": 0.995384989069711
+    },
+    {
+      "cohort": "/progress.json/metrics/validation",
+      "TP": 1268,
+      "FP": 0,
+      "FN": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "F1": 1.0
+    },
+    {
+      "cohort": "/pair-comparison.json/metrics/fit",
+      "TP": 2049,
+      "FP": 14,
+      "FN": 5,
+      "precision": 0.9932137663596704,
+      "recall": 0.9975657254138267,
+      "F1": 0.995384989069711
+    },
+    {
+      "cohort": "/pair-comparison.json/metrics/validation",
+      "TP": 1268,
+      "FP": 0,
+      "FN": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "F1": 1.0
+    },
+    {
+      "cohort": "/pair-comparison.json/feature_IoU_baselines/last_box_iou",
+      "TP": 1014,
+      "FP": 0,
+      "FN": 254,
+      "precision": 1.0,
+      "recall": 0.7996845425867508,
+      "F1": 0.8886941279579317
+    },
+    {
+      "cohort": "/pair-comparison.json/feature_IoU_baselines/causal_CV_iou",
+      "TP": 1108,
+      "FP": 0,
+      "FN": 160,
+      "precision": 1.0,
+      "recall": 0.8738170347003155,
+      "F1": 0.9326599326599326
+    }
+  ],
+  "source_sha256": {
+    "completion.json": "afa4c50f6919827cba696c9bb17406dcba3d1f7be16a28cf0bfdde2d88bfb350",
+    "progress.json": "3ebdcab3973913a2877d12d3c8aef2e64cb205297d61a54415e53d600207ef49",
+    "pair-comparison.json": "11108e604d05ac7fcd4e9563e2e5b213018e58b5f034c04bf43f9e3e9456c200",
+    "retention-resolution.json": "24ba0008f62d8491db541f1f1b36a281af4876e1c7aea3bc8c797b8f30ea48f3",
+    "execution-v1/scoring-completion.json": "8e0951747a7d9ae38e5e9a25e754731b89a8e358b3b1f91f33ae2e8db0e80f24"
+  }
+}
