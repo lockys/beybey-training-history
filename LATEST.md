@@ -1,6 +1,6 @@
 # 訓練與評估索引
 
-目前更新至第 176 輪；仍未取得合格晉升版本。169 內部預測通過，但完整追蹤研究回放 36/136 比較退步，拒絕晉升並已清除不合格 checkpoint。160–169 共十次實際訓練、6,720 optimizer updates、零晉升。143 原程序失敗，恢復評估另記。142–169 沒有已通過全套驗收的 API 晉升。
+目前更新至第 177 輪；仍未取得合格晉升版本。169 內部預測通過，但完整追蹤研究回放 36/136 比較退步，拒絕晉升並已清除不合格 checkpoint。160–169 共十次實際訓練、6,720 optimizer updates、零晉升。143 原程序失敗，恢復評估另記。142–169 沒有已通過全套驗收的 API 晉升。
 
 [第 142 輪](runs/run-142.md)（原程序失敗後另行稽核及比較）。
 
@@ -57,3 +57,5 @@
 第175輪：[標準YOLO bbox末層完整報告](runs/run-175.md)已完成30epochs／5,220batches／實測347 optimizer updates；54張VAL precision98.80%／recall96.47%維持基準，early gate通過，但完整1,864次新推論的204比較有144項退步、零來源群通過改善門檻，拒絕晉升，權重已清理。170–179視窗目前6次實際訓練／5,447 updates／零合格與零API晉升。
 
 第176輪：[current-pair association 完整報告](runs/run-176.md)已完成30epochs／900 optimizer updates；215個來源隔離已知pair的TP／FP／FN／TN＝153／0／3／59（非整段軌跡準確率）。完整追蹤32/136項退步；Byte單profile三來源改善，但Kalman沒有改善，零來源群通過兩profile要求，拒絕晉升、權重已清理。170–179視窗目前7次實際訓練／6,347 updates／零合格與零API晉升。
+
+第177輪：[TRAIN 跳幀配對完整報告](runs/run-177.md)完成30epochs／2,610 optimizer updates；新增3,656 TRAIN配對，VAL215保持不變。pair precision100%／recall96.79%僅代表已知配對，低於176輪recall98.08%。完整追蹤28/136項退步；Kalman仍無改善，Byte primary TP545→541，零來源群通過兩profile改善，拒絕晉升，權重已清理。[學習曲線](runs/run-177-learning-curve.json)、[TRAIN採用與跳幀診斷](evaluations/round-176-TRAIN-adoption-and-cadence.json)。170–179視窗目前8次實際訓練／8,957 updates／零合格與零API晉升。
