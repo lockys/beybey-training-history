@@ -1,6 +1,6 @@
 # 訓練與評估索引
 
-目前更新至第 175 輪；仍未取得合格晉升版本。169 內部預測通過，但完整追蹤研究回放 36/136 比較退步，拒絕晉升並已清除不合格 checkpoint。160–169 共十次實際訓練、6,720 optimizer updates、零晉升。143 原程序失敗，恢復評估另記。142–169 沒有已通過全套驗收的 API 晉升。
+目前更新至第 176 輪；仍未取得合格晉升版本。169 內部預測通過，但完整追蹤研究回放 36/136 比較退步，拒絕晉升並已清除不合格 checkpoint。160–169 共十次實際訓練、6,720 optimizer updates、零晉升。143 原程序失敗，恢復評估另記。142–169 沒有已通過全套驗收的 API 晉升。
 
 [第 142 輪](runs/run-142.md)（原程序失敗後另行稽核及比較）。
 
@@ -55,3 +55,5 @@
 第174輪後：[共同命中分解與偵測定位preflight](evaluations/round-174-composition-and-detector-localization-preflight.md)完成；Kalman原708TP量測不變，Byte實際流失14TP，原拒絕維持。新定位分支機制與TRAIN-only backward通過，零optimizer updates。
 
 第175輪：[標準YOLO bbox末層完整報告](runs/run-175.md)已完成30epochs／5,220batches／實測347 optimizer updates；54張VAL precision98.80%／recall96.47%維持基準，early gate通過，但完整1,864次新推論的204比較有144項退步、零來源群通過改善門檻，拒絕晉升，權重已清理。170–179視窗目前6次實際訓練／5,447 updates／零合格與零API晉升。
+
+第176輪：[current-pair association 完整報告](runs/run-176.md)已完成30epochs／900 optimizer updates；215個來源隔離已知pair的TP／FP／FN／TN＝153／0／3／59（非整段軌跡準確率）。完整追蹤32/136項退步；Byte單profile三來源改善，但Kalman沒有改善，零來源群通過兩profile要求，拒絕晉升、權重已清理。170–179視窗目前7次實際訓練／6,347 updates／零合格與零API晉升。
