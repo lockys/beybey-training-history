@@ -35,3 +35,6 @@
 | [169](runs/run-169.md) | 1020 | not_qualified | 否 |
 
 原有 141 以前紀錄留在各歷史目錄。公開報告不包含權重、原始影格、標註或 API 設定。
+
+
+第 170 輪已啟動：[單一 loss 正規化實驗](runs/run-170.md)（訓練中；尚無最終評估或 API 晉升）。[原生配對診斷](evaluations/round-169-native-association-diagnosis.md)。
