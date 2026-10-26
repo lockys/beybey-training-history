@@ -38,3 +38,6 @@
 
 
 第 170 輪已完成：[完整報告與評估](runs/run-170.md)（1,020 updates；完整追蹤32/136項退步，零來源群通過改善門檻，拒絕晉升；不合格權重已清理）。[原生配對診斷](evaluations/round-169-native-association-diagnosis.md)。
+
+
+第 171 輪：[原生 TRAIN 配對監督](runs/run-171.md)已啟動；最終評估與 API 晉升待驗收。
