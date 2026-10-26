@@ -1,6 +1,6 @@
 # 訓練與評估索引
 
-目前更新至第 177 輪；仍未取得合格晉升版本。169 內部預測通過，但完整追蹤研究回放 36/136 比較退步，拒絕晉升並已清除不合格 checkpoint。160–169 共十次實際訓練、6,720 optimizer updates、零晉升。143 原程序失敗，恢復評估另記。142–169 沒有已通過全套驗收的 API 晉升。
+目前更新至第 178 輪；仍未取得合格晉升版本。169 內部預測通過，但完整追蹤研究回放 36/136 比較退步，拒絕晉升並已清除不合格 checkpoint。160–169 共十次實際訓練、6,720 optimizer updates、零晉升。143 原程序失敗，恢復評估另記。142–169 沒有已通過全套驗收的 API 晉升。
 
 [第 142 輪](runs/run-142.md)（原程序失敗後另行稽核及比較）。
 
@@ -59,3 +59,7 @@
 第176輪：[current-pair association 完整報告](runs/run-176.md)已完成30epochs／900 optimizer updates；215個來源隔離已知pair的TP／FP／FN／TN＝153／0／3／59（非整段軌跡準確率）。完整追蹤32/136項退步；Byte單profile三來源改善，但Kalman沒有改善，零來源群通過兩profile要求，拒絕晉升、權重已清理。170–179視窗目前7次實際訓練／6,347 updates／零合格與零API晉升。
 
 第177輪：[TRAIN 跳幀配對完整報告](runs/run-177.md)完成30epochs／2,610 optimizer updates；新增3,656 TRAIN配對，VAL215保持不變。pair precision100%／recall96.79%僅代表已知配對，低於176輪recall98.08%。完整追蹤28/136項退步；Kalman仍無改善，Byte primary TP545→541，零來源群通過兩profile改善，拒絕晉升，權重已清理。[學習曲線](runs/run-177-learning-curve.json)、[TRAIN採用與跳幀診斷](evaluations/round-176-TRAIN-adoption-and-cadence.json)。170–179視窗目前8次實際訓練／8,957 updates／零合格與零API晉升。
+
+第177輪後：[原生配對／ReID原因診斷](evaluations/round-177-native-cause-diagnosis.md)完成932次盲回放更新，逐欄位重現基準；71個有強sensor的Kalman漏點中44個被所有可用軌跡的Mahalanobis gate拒絕，137個observed-uncertain點另有原生appearance/ReID證據失敗。零optimizer，沒有放寬gate或重判177。
+
+第178輪：[TRAIN預測位置壓力測試完整報告](runs/run-178.md)完成30epochs／2,610 optimizer updates；165,450 base-pair訪次中74,971次為明確標示的合成輸入，VAL215保持原樣。pair TP／FP／FN／TN＝152／0／4／59，recall97.44%僅代表已知配對。完整追蹤32/136項退步，Kalman TP708不變、Byte545→547，零來源群同時通過兩profile，拒絕晉升、權重已清理。[學習曲線](runs/run-178-learning-curve.json)。170–179視窗目前9次實際訓練／11,567 updates／零合格與零API晉升。
