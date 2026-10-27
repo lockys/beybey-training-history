@@ -1,0 +1,62 @@
+{
+  "completed": true,
+  "TRAIN_only": true,
+  "new_training_round": false,
+  "optimizer_updates": 0,
+  "NN_calls_already_sealed": 146,
+  "new_NN_calls_in_join": 0,
+  "post_seal_label_join": true,
+  "counts": {
+    "GT": 259,
+    "TP": 255,
+    "FN": 4,
+    "FP_relative_to_curated_labels": 15,
+    "empty_frames": 8,
+    "empty_FP": 0,
+    "low_confidence_at_current_aligned_boxes": 4,
+    "miss_low_grid_center_confidence": 4
+  },
+  "per_source": {
+    "state-supplement-x-2111470788977258950": {
+      "GT": 72,
+      "TP": 68,
+      "FN": 4,
+      "FP_relative_to_curated_labels": 15,
+      "empty_frames": 8,
+      "empty_FP": 0,
+      "low_confidence_at_current_aligned_boxes": 4,
+      "miss_low_grid_center_confidence": 4
+    },
+    "x-native-white-v2-2111464724810564093": {
+      "GT": 84,
+      "TP": 84,
+      "FN": 0,
+      "FP_relative_to_curated_labels": 0,
+      "empty_frames": 0,
+      "empty_FP": 0
+    },
+    "youtube-native-white-v3-F-LmtDWWbEw": {
+      "GT": 82,
+      "TP": 82,
+      "FN": 0,
+      "FP_relative_to_curated_labels": 0,
+      "empty_frames": 0,
+      "empty_FP": 0
+    },
+    "youtube-native-gray-v4-pmlFEOYD1Hw": {
+      "GT": 21,
+      "TP": 21,
+      "FN": 0,
+      "FP_relative_to_curated_labels": 0,
+      "empty_frames": 0,
+      "empty_FP": 0
+    }
+  },
+  "limitations": [
+    "146curated TRAIN frames under640square letterbox; not every runtime rectangular setting",
+    "Assistant-reviewed body/assembly box labels; not independent human truth",
+    "Current geometry and confidence association does not prove a sole cause",
+    "NMS-or-assignment category includes competing assignments",
+    "No new labels, thresholds, model selection or API changes"
+  ]
+}

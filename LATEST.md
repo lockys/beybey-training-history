@@ -1,6 +1,6 @@
 # 訓練與評估索引
 
-最新完成第186輪，仍未取得合格晉升版本。186完成30epochs／實測347updates，實際20850TRAIN訪次僅來自146張複核原生資料，549個舊列的新optimizer訪次0。固定54VAL precision98.80%／recall96.47%維持基準；23frame development相同45個命中點平均誤差2.134751→2.061984px，但blue略退步0.006714px、2個scalar門檻失敗，early拒絕，完整204比較未啟動。權重已清理、九個API權重不變；180–189目前7次完成／13744updates／零合格與零API晉升。
+最新完成第186輪，仍未取得合格晉升版本。第187輪標準YOLO bbox特徵與六個分類輸出共同學習中；2026-10-27T05:49:07.143891+00:00快照完成10/30epochs、130次實測更新，尚無最終精準度或軌跡驗收。TRAIN-only診斷支持檢驗分類學習，但不當作驗證準確率；原門檻不變。180–189目前7次完成／13744updates／零合格，187是第8次進行中的訓練，API九個權重不變。
 
 [第 142 輪](runs/run-142.md)（原程序失敗後另行稽核及比較）。
 
@@ -106,3 +106,8 @@
 第185輪後：[定位監督來源稽核與複核原生資料前置驗證](evaluations/round-185-curated-native-supervision-preflight.md) · [數量與來源稽核](evaluations/round-185-curated-native-cohort-audit.json)：原695TRAIN中146張可逐批直接連到後續視覺複核准入，549個較舊列只從新optimizer訪次排除，原檔保留；不宣稱舊標註都錯，亦不抹除pretraining。資料隔離／抽樣RED/GREEN與原生loader/backward通過，前置控制零optimizer。
 
 第186輪：[複核原生監督最終報告](runs/run-186.md) · [精準度、配對定位與實際曝光稽核](runs/run-186-metrics.json) · [30epoch vendor曲線](runs/run-186-learning-curve.json)。整體development誤差下降，但blue微退步、early gate拒絕；完整204比較未執行，不能稱為穩定高速模糊軌跡改善或來源群驗收通過。候選已清理，API不變。
+
+
+第186輪後：[TRAIN分類訊號診斷與前置驗證](evaluations/round-186-TRAIN-classification-signal-preflight.md) · [TRAIN診斷計數](evaluations/round-186-TRAIN-classification-signal.json)：先封存146raw推論再合併既有259框，4個FN皆有現有IoU框但低class/grid分數，另15未配對；是TRAIN診斷，非獨立驗證。新增6既有分類輸出tensors的梯度／固定state控制通過，前置零optimizer。
+
+第187輪：[bbox特徵與分類輸出共同學習中](runs/run-187.md) · [具時間戳快照](runs/run-187-metrics.json)。合計30tensors／640323參數，469states固定；資料／訓練預算／既有154early與204full門檻不變，最終精準度待實測，未提前發布API。
