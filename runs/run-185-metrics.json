@@ -1,18 +1,288 @@
 {
   "run_id": 185,
-  "status": "training_in_progress",
-  "snapshot_utc": "2026-10-27T04:27:12.200557+00:00",
-  "planned_epochs": 30,
-  "completed_epochs": 5,
-  "actual_optimizer_updates": 75,
-  "train_batches": 870,
-  "train_samples_seen": 3475,
-  "bn_buffer_checks": 870,
-  "frozen_state_epoch_checks": 5,
-  "selected_parameter_tensors": 24,
-  "selected_parameter_elements": 639936,
-  "formal_accuracy_evaluation_completed": false,
+  "status": "rejected_early_detector_gate",
+  "updated_utc": "2026-10-27T04:43:35.572111+00:00",
+  "model_type": "standard_YOLO_bbox_feature_branches",
+  "trainable_tensors": 24,
+  "trainable_parameters": 639936,
+  "frozen_states_verified": 475,
+  "completed_epochs": 30,
+  "TRAIN_batches": 5220,
+  "TRAIN_visits": 20850,
+  "actual_optimizer_updates": 347,
+  "selected_sha256": "6a6b47d7188c257e556f5e9c95204e9fdf5653c0e4d27cbc159afd3c5924c28d",
+  "selection": "vendor_VAL_fitness_only",
+  "selected_epoch": null,
+  "selected_epoch_note": "Stripped checkpoint epoch=-1; final_eval replaces best train_results with full30epoch curve. No selected epoch inferred.",
+  "detector_VAL": {
+    "frames": 54,
+    "GT_boxes": 85,
+    "confidence": 0.35,
+    "NMS_IoU": 0.5,
+    "GT_matching_IoU": 0.5,
+    "independent_human_truth": false,
+    "models": {
+      "ares-v1.3.33": {
+        "VAL": {
+          "TP": 82,
+          "FP": 1,
+          "FN": 3,
+          "empty_frames": 4,
+          "empty_FP": 0,
+          "precision": 0.9879518072289156,
+          "recall": 0.9647058823529412
+        },
+        "development": {
+          "targets": 46,
+          "TP": 45,
+          "FN": 1,
+          "certain_observed": 45,
+          "mean_matched_error_px": 2.134750813657198,
+          "mean_capped_error_px": 2.6100823177081285,
+          "FP_proxy": 0,
+          "detached_or_held_matches": 0,
+          "unmatched_on_unobservable_frames": 0,
+          "predicted_only_rows": 0,
+          "identity_transfers": 0,
+          "identity_transfer_points": 0,
+          "longest_incomplete_frame_gap": 1,
+          "unobservable_objects": 0,
+          "ambiguous_state_objects": 0,
+          "identity_ineligible_targets": 0,
+          "unknown_occlusion_frames": 0,
+          "unlocalized_distractor_descriptions": 0,
+          "visibility": {
+            "visible": {
+              "targets": 46,
+              "TP": 45,
+              "FN": 1,
+              "certain_observed": 45,
+              "mean_matched_error_px": 2.134750813657198,
+              "mean_capped_error_px": 2.6100823177081285
+            }
+          },
+          "identities": {
+            "blue": {
+              "targets": 23,
+              "TP": 22,
+              "FN": 1,
+              "certain_observed": 22,
+              "longest_measured_gap": 1,
+              "longest_certain_gap": 1,
+              "longest_estimated_gap": 23,
+              "measured_fragmentations": 1,
+              "certain_fragmentations": 1,
+              "track_id_changes": 0,
+              "certain_native_segments": [],
+              "mean_matched_error_px": 1.5534160226516136,
+              "mean_capped_error_px": 2.529354456449369,
+              "certain_native_fragmentations": 0
+            },
+            "white": {
+              "targets": 23,
+              "TP": 23,
+              "FN": 0,
+              "certain_observed": 23,
+              "longest_measured_gap": 0,
+              "longest_certain_gap": 0,
+              "longest_estimated_gap": 23,
+              "measured_fragmentations": 0,
+              "certain_fragmentations": 0,
+              "track_id_changes": 0,
+              "certain_native_segments": [],
+              "mean_matched_error_px": 2.690810178966888,
+              "mean_capped_error_px": 2.690810178966888,
+              "certain_native_fragmentations": 0
+            }
+          }
+        },
+        "accelerated_hits": {
+          "blue": 5,
+          "white": 5
+        }
+      },
+      "research-run185": {
+        "VAL": {
+          "TP": 82,
+          "FP": 1,
+          "FN": 3,
+          "empty_frames": 4,
+          "empty_FP": 0,
+          "precision": 0.9879518072289156,
+          "recall": 0.9647058823529412
+        },
+        "development": {
+          "targets": 46,
+          "TP": 45,
+          "FN": 1,
+          "certain_observed": 45,
+          "mean_matched_error_px": 2.1539681282561185,
+          "mean_capped_error_px": 2.6288818645983767,
+          "FP_proxy": 0,
+          "detached_or_held_matches": 0,
+          "unmatched_on_unobservable_frames": 0,
+          "predicted_only_rows": 0,
+          "identity_transfers": 0,
+          "identity_transfer_points": 0,
+          "longest_incomplete_frame_gap": 1,
+          "unobservable_objects": 0,
+          "ambiguous_state_objects": 0,
+          "identity_ineligible_targets": 0,
+          "unknown_occlusion_frames": 0,
+          "unlocalized_distractor_descriptions": 0,
+          "visibility": {
+            "visible": {
+              "targets": 46,
+              "TP": 45,
+              "FN": 1,
+              "certain_observed": 45,
+              "mean_matched_error_px": 2.1539681282561185,
+              "mean_capped_error_px": 2.6288818645983767
+            }
+          },
+          "identities": {
+            "blue": {
+              "targets": 23,
+              "TP": 22,
+              "FN": 1,
+              "certain_observed": 22,
+              "longest_measured_gap": 1,
+              "longest_certain_gap": 1,
+              "longest_estimated_gap": 23,
+              "measured_fragmentations": 1,
+              "certain_fragmentations": 1,
+              "track_id_changes": 0,
+              "certain_native_segments": [],
+              "mean_matched_error_px": 1.6225888265758128,
+              "mean_capped_error_px": 2.595519747159473,
+              "certain_native_fragmentations": 0
+            },
+            "white": {
+              "targets": 23,
+              "TP": 23,
+              "FN": 0,
+              "certain_observed": 23,
+              "longest_measured_gap": 0,
+              "longest_certain_gap": 0,
+              "longest_estimated_gap": 23,
+              "measured_fragmentations": 0,
+              "certain_fragmentations": 0,
+              "track_id_changes": 0,
+              "certain_native_segments": [],
+              "mean_matched_error_px": 2.6622439820372805,
+              "mean_capped_error_px": 2.6622439820372805,
+              "certain_native_fragmentations": 0
+            }
+          }
+        },
+        "accelerated_hits": {
+          "blue": 5,
+          "white": 5
+        }
+      }
+    }
+  },
+  "early_fresh_predict_calls": 154,
+  "early_gate_passed": false,
+  "early_failures": [
+    {
+      "gate": "development",
+      "metric": "mean_matched_error_px",
+      "baseline": 2.134750813657198,
+      "candidate": 2.1539681282561185
+    },
+    {
+      "gate": "development",
+      "metric": "mean_capped_error_px",
+      "baseline": 2.6100823177081285,
+      "candidate": 2.6288818645983767
+    },
+    {
+      "gate": "development",
+      "metric": "visibility.visible.mean_matched_error_px",
+      "baseline": 2.134750813657198,
+      "candidate": 2.1539681282561185
+    },
+    {
+      "gate": "development",
+      "metric": "visibility.visible.mean_capped_error_px",
+      "baseline": 2.6100823177081285,
+      "candidate": 2.6288818645983767
+    },
+    {
+      "gate": "development",
+      "metric": "identities.blue.mean_matched_error_px",
+      "baseline": 1.5534160226516136,
+      "candidate": 1.6225888265758128
+    },
+    {
+      "gate": "development",
+      "metric": "identities.blue.mean_capped_error_px",
+      "baseline": 2.529354456449369,
+      "candidate": 2.595519747159473
+    }
+  ],
+  "full_acceptance": {
+    "performed": false,
+    "reason": "early nonregression prerequisite failed",
+    "passed": false
+  },
+  "standard_checkpoint_audit": {
+    "completed": true,
+    "run_id": 185,
+    "completed_epochs": 30,
+    "TRAIN_batches": 5220,
+    "TRAIN_visits": 20850,
+    "optimizer_updates": 347,
+    "frozen_states_verified": 475,
+    "selected_parameter_tensors": 24,
+    "selected_parameter_elements": 639936,
+    "changed_bbox_feature_conv_tensors": 6,
+    "standard_YOLO_checkpoint": true,
+    "selected_checkpoint_raw_and_decoded_class_scores_exact": true,
+    "selected_checkpoint_boxes_changed": true,
+    "synthetic_forward_calls": 2,
+    "optimizer_updates_in_audit": 0,
+    "accepted": false,
+    "API_eligible": false,
+    "selected_sha256": "6a6b47d7188c257e556f5e9c95204e9fdf5653c0e4d27cbc159afd3c5924c28d"
+  },
+  "accepted": false,
   "API_promoted": false,
-  "stable_improvement_proven": false,
-  "external_scouted_images_admitted": 0
+  "stable_trajectory_improvement_proven": false,
+  "retention": {
+    "run_id": 185,
+    "created_utc": "2026-10-27T04:43:35.572111+00:00",
+    "accepted": false,
+    "rejected": true,
+    "API_eligible": false,
+    "candidate_checkpoint_deleted": true,
+    "selected_checkpoint_retained": false,
+    "selected_sha256": "6a6b47d7188c257e556f5e9c95204e9fdf5653c0e4d27cbc159afd3c5924c28d",
+    "retained_API_versions": 9,
+    "API_changed": false,
+    "logical_bytes_freed": 38350516,
+    "failures": 0,
+    "source_and_reference_deleted": false,
+    "may_resume_from_run185_checkpoint": false
+  },
+  "window_progress": {
+    "window": [
+      180,
+      189
+    ],
+    "actual_completed_training_runs": 6,
+    "optimizer_updates": 13397,
+    "qualified_versions": 0,
+    "API_promotions": 0,
+    "goal_achieved": false
+  },
+  "limitations": [
+    "Fixed54frame detector precision/recall is not full trajectory accuracy",
+    "Provisional assistant-reviewed references; no independent human truth",
+    "110existing spatial blur rows are synthetic; historical pretraining exclusion unproven",
+    "No new external footage admitted",
+    "Six failing scalar checks overlap; not six independent physical failures",
+    "Vendor curve metrics use their own validation definitions; not interchangeable with fixed conf0.35 audited counts"
+  ]
 }

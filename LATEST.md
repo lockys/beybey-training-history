@@ -1,6 +1,6 @@
 # 訓練與評估索引
 
-最新完成第184輪，仍未取得合格晉升版本。第185輪標準YOLO bbox特徵分支訓練中；2026-10-27T04:27:12.200557+00:00快照已完成5/30epochs、75次實測optimizer updates，尚無最終精準度或驗收結果。184的pair前置門檻失敗、候選已清理；180–189目前5次完成／13,050updates／零合格，185是第6次進行中的訓練。九個API權重不變。
+最新完成第185輪，仍未取得合格晉升版本。185完成30epochs／5,220batches／實測347optimizer updates，24tensors／639936參數bbox特徵分支確實更新，固定475states與分類分數核對一致。54VAL precision98.80%／recall96.47%維持基準，但development平均誤差2.134751→2.153968px、6個重疊scalar檢查退步，early gate拒絕，完整204比較未啟動。候選已清理、九個API權重不變；180–189目前6次完成／13,397updates／零合格與零API晉升。
 
 [第 142 輪](runs/run-142.md)（原程序失敗後另行稽核及比較）。
 
@@ -100,4 +100,4 @@
 
 第184輪後：[TRAIN監督缺口與bbox特徵學習前置驗證](evaluations/round-184-TRAIN-supervision-and-bbox-features-preflight.md)：epoch10／20的已知負配對無高分誤判、已知混合歷史0，未知資料未補成負例。新標準YOLO bbox分支24tensors／639936參數通過特徵梯度／分類隔離RED/GREEN與4TRAIN／10GT原生backward；前置控制零optimizer，非改善證據。新外部素材全部未准入。
 
-第185輪：[bbox特徵學習訓練中](runs/run-185.md) · [具時間戳的訓練快照](runs/run-185-metrics.json)。最終精準度、完整204比較與晉升結果待訓練完成後實測；沒有提前發布API或為模型命名。
+第185輪：[bbox特徵學習最終報告](runs/run-185.md) · [固定精準度、所有退步欄位與清理](runs/run-185-metrics.json) · [30epoch vendor學習曲線](runs/run-185-learning-curve.json)。訓練完成但early gate拒絕，完整204比較未執行；API不變。
