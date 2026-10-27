@@ -1,6 +1,6 @@
 # 訓練與評估索引
 
-第189輪訓練中，快照4/30epochs／65實測optimizer updates／696/5220batches；尚無精準度或驗收結果。第188輪紀錄程式錯誤中止已另列，189以新目錄與Ares33重新開始；修正精確來源清單插入並經實際hook RED/GREEN，真實epoch抽樣稽核已通過。此前180–187八次完整訓練／14091updates／零合格；188更新數未知，不加入實測合計。九個API權重不變，穩定高速模糊軌跡目標持續。
+第189輪完成30epochs／347實測updates，仍未產生合格晉升版本。原selected固定54VAL為82TP／1FP／3FN（P98.80%、R96.47%），blue定位2項退步，完整204比較未執行。TRAIN selected258TP／1FN、最後epoch259TP／0FN／零未配對，但最後epoch固定VAL誤報1→15、development誤差2.135→2.976px，診斷仍15項退步；未事後改選。權重已清理、九個API權重不變。此批次180–187加189共9次完整訓練／14438實測updates／零合格、零API晉升；188中止與未知更新數另列，距十次完整訓練還有一次。
 
 [第 142 輪](runs/run-142.md)（原程序失敗後另行稽核及比較）。
 
@@ -114,4 +114,6 @@
 
 第188輪：[紀錄程式錯誤中止報告](runs/run-188.md) · [已知數量、未知更新次數與根因](runs/run-188-metrics.json)。首epoch稽核攔截六個多餘來源路徑；無可驗收權重，未跑精準度或完整軌跡驗收，不算完整訓練，API不變。
 
-第189輪：[分類特徵學習進行中](runs/run-189.md) · [實際進度與前置驗證](runs/run-189-metrics.json)。全套產品測試重新通過；原始驗收、推論門檻與API不變，尚無效果結論。
+第189輪：[分類特徵學習最終報告](runs/run-189.md) · [精準度、全部退步、TRAIN與末期對照](runs/run-189-metrics.json) · [30epoch曲線](runs/run-189-learning-curve.json)。TRAIN改善但固定blue退步；最後epoch亦未泛化，原選擇及拒絕不變。候選清理完畢，API不變。
+
+第189輪後：[四個TRAIN漏檢的原生指派與logit梯度診斷](evaluations/round-189-TRAIN-assignment-diagnostic.md) · [數值證據](evaluations/round-189-TRAIN-assignment-diagnostic.json)。四個目標各10個正向指派／40個向上logit梯度；522單一teacher最佳IoUanchor未被指派，不代表整個目標無正向監督。4CPUforward、0optimizer，非驗證準確率或泛化證據。

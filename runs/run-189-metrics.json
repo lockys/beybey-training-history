@@ -1,80 +1,662 @@
 {
   "run_id": 189,
-  "status": "training_in_progress_not_accepted",
-  "snapshot_utc": "2026-10-27T07:27:25.400893+00:00",
-  "completed_epochs": 4,
-  "train_batches": 696,
-  "TRAIN_visits": 2780,
-  "optimizer_updates": 65,
-  "maximum_epochs": 30,
-  "maximum_batches": 5220,
-  "expected_TRAIN_visits": 20850,
-  "initial_version": "protected Ares33",
-  "initial_sha256": "5b593f85ad1e69a72029322bcbac09e4778a48bc38511205ab54d2044e8709d2",
-  "selected_parameter_tensors": 66,
-  "selected_parameter_elements": 819779,
-  "fixed_state_entries": 433,
-  "all_BN_running_statistics_fixed": true,
-  "TRAIN_images": 146,
-  "TRAIN_body_boxes": 259,
-  "TRAIN_empty_frames": 8,
-  "VAL_images": 54,
-  "TEST_images": 47,
-  "draws_per_epoch": 695,
-  "seed": 47,
-  "batch": 4,
-  "imgsz": 640,
-  "AdamW_lr0": 5e-05,
-  "nbs": 64,
+  "status": "rejected_early_detector_gate",
+  "updated_utc": "2026-10-27T07:47:04.023468+00:00",
+  "model_type": "standard_YOLO_bbox_and_classification_features",
+  "trainable_tensors": 66,
+  "trainable_parameters": 819779,
+  "frozen_states_verified": 433,
+  "completed_epochs": 30,
+  "TRAIN_batches": 5220,
+  "TRAIN_visits": 20850,
+  "actual_optimizer_updates": 347,
+  "selected_sha256": "88b6c3cef86e7e79a8cbcc03e4fe7ee4b133ae59a66279db389c3d7d6710767c",
   "selection": "vendor_VAL_fitness_only",
-  "new_labels": 0,
-  "new_external_media": 0,
-  "precision": null,
-  "recall": null,
-  "early_gate": null,
-  "full_gate": null,
-  "API_promotions": 0,
-  "accepted": false,
-  "stable_trajectory_improvement_proven": false,
-  "completed_prior_trainings": [
-    180,
-    181,
-    182,
-    183,
-    184,
-    185,
-    186,
-    187
-  ],
-  "aborted_attempts": [
-    188
-  ],
-  "prior_completed_optimizer_updates": 14091,
-  "aborted188_optimizer_updates": null,
-  "bookkeeping_control": {
-    "old188_reproduced_exit1": true,
-    "actual_expanded_setup_epoch_hooks_executed": true,
-    "empty_observed_lists": true,
-    "exact_695_observations_accepted": true,
-    "extra_and_replaced_observations_rejected": true,
-    "new_NN_calls": 0,
-    "optimizer_updates": 0
+  "selected_epoch": null,
+  "selected_epoch_note": "Stripped checkpoint epoch=-1; do not infer selected epoch from full30epoch train_results",
+  "detector_VAL": {
+    "frames": 54,
+    "GT_boxes": 85,
+    "confidence": 0.35,
+    "NMS_IoU": 0.5,
+    "GT_matching_IoU": 0.5,
+    "independent_human_truth": false,
+    "models": {
+      "ares-v1.3.33": {
+        "VAL": {
+          "TP": 82,
+          "FP": 1,
+          "FN": 3,
+          "empty_frames": 4,
+          "empty_FP": 0,
+          "precision": 0.9879518072289156,
+          "recall": 0.9647058823529412
+        },
+        "development": {
+          "targets": 46,
+          "TP": 45,
+          "FN": 1,
+          "certain_observed": 45,
+          "mean_matched_error_px": 2.134750813657198,
+          "mean_capped_error_px": 2.6100823177081285,
+          "FP_proxy": 0,
+          "detached_or_held_matches": 0,
+          "unmatched_on_unobservable_frames": 0,
+          "predicted_only_rows": 0,
+          "identity_transfers": 0,
+          "identity_transfer_points": 0,
+          "longest_incomplete_frame_gap": 1,
+          "unobservable_objects": 0,
+          "ambiguous_state_objects": 0,
+          "identity_ineligible_targets": 0,
+          "unknown_occlusion_frames": 0,
+          "unlocalized_distractor_descriptions": 0,
+          "visibility": {
+            "visible": {
+              "targets": 46,
+              "TP": 45,
+              "FN": 1,
+              "certain_observed": 45,
+              "mean_matched_error_px": 2.134750813657198,
+              "mean_capped_error_px": 2.6100823177081285
+            }
+          },
+          "identities": {
+            "blue": {
+              "targets": 23,
+              "TP": 22,
+              "FN": 1,
+              "certain_observed": 22,
+              "longest_measured_gap": 1,
+              "longest_certain_gap": 1,
+              "longest_estimated_gap": 23,
+              "measured_fragmentations": 1,
+              "certain_fragmentations": 1,
+              "track_id_changes": 0,
+              "certain_native_segments": [],
+              "mean_matched_error_px": 1.5534160226516136,
+              "mean_capped_error_px": 2.529354456449369,
+              "certain_native_fragmentations": 0
+            },
+            "white": {
+              "targets": 23,
+              "TP": 23,
+              "FN": 0,
+              "certain_observed": 23,
+              "longest_measured_gap": 0,
+              "longest_certain_gap": 0,
+              "longest_estimated_gap": 23,
+              "measured_fragmentations": 0,
+              "certain_fragmentations": 0,
+              "track_id_changes": 0,
+              "certain_native_segments": [],
+              "mean_matched_error_px": 2.690810178966888,
+              "mean_capped_error_px": 2.690810178966888,
+              "certain_native_fragmentations": 0
+            }
+          }
+        },
+        "accelerated_hits": {
+          "blue": 5,
+          "white": 5
+        }
+      },
+      "research-run189": {
+        "VAL": {
+          "TP": 82,
+          "FP": 1,
+          "FN": 3,
+          "empty_frames": 4,
+          "empty_FP": 0,
+          "precision": 0.9879518072289156,
+          "recall": 0.9647058823529412
+        },
+        "development": {
+          "targets": 46,
+          "TP": 45,
+          "FN": 1,
+          "certain_observed": 45,
+          "mean_matched_error_px": 2.1315214278061276,
+          "mean_capped_error_px": 2.606923135897299,
+          "FP_proxy": 0,
+          "detached_or_held_matches": 0,
+          "unmatched_on_unobservable_frames": 0,
+          "predicted_only_rows": 0,
+          "identity_transfers": 0,
+          "identity_transfer_points": 0,
+          "longest_incomplete_frame_gap": 1,
+          "unobservable_objects": 0,
+          "ambiguous_state_objects": 0,
+          "identity_ineligible_targets": 0,
+          "unknown_occlusion_frames": 0,
+          "unlocalized_distractor_descriptions": 0,
+          "visibility": {
+            "visible": {
+              "targets": 46,
+              "TP": 45,
+              "FN": 1,
+              "certain_observed": 45,
+              "mean_matched_error_px": 2.1315214278061276,
+              "mean_capped_error_px": 2.606923135897299
+            }
+          },
+          "identities": {
+            "blue": {
+              "targets": 23,
+              "TP": 22,
+              "FN": 1,
+              "certain_observed": 22,
+              "longest_measured_gap": 1,
+              "longest_certain_gap": 1,
+              "longest_estimated_gap": 23,
+              "measured_fragmentations": 1,
+              "certain_fragmentations": 1,
+              "track_id_changes": 0,
+              "certain_native_segments": [],
+              "mean_matched_error_px": 1.6488825899518915,
+              "mean_capped_error_px": 2.6206703034322443,
+              "certain_native_fragmentations": 0
+            },
+            "white": {
+              "targets": 23,
+              "TP": 23,
+              "FN": 0,
+              "certain_observed": 23,
+              "longest_measured_gap": 0,
+              "longest_certain_gap": 0,
+              "longest_estimated_gap": 23,
+              "measured_fragmentations": 0,
+              "certain_fragmentations": 0,
+              "track_id_changes": 0,
+              "certain_native_segments": [],
+              "mean_matched_error_px": 2.593175968362355,
+              "mean_capped_error_px": 2.593175968362355,
+              "certain_native_fragmentations": 0
+            }
+          }
+        },
+        "accelerated_hits": {
+          "blue": 5,
+          "white": 5
+        }
+      }
+    }
   },
-  "product_checks": {
-    "backend_passed": 398,
-    "backend_skipped": 8,
-    "annotator_passed": 163,
-    "annotator_coverage_percent": 94.29,
-    "UI_passed": 42,
-    "e2e_passed": 39,
-    "Android": "BUILD SUCCESSFUL; unit cached, catalogue executed",
-    "all_freshly_rerun_for189": true
+  "early_fresh_predict_calls": 154,
+  "early_gate_passed": false,
+  "early_failures": [
+    {
+      "gate": "development",
+      "metric": "identities.blue.mean_matched_error_px",
+      "baseline": 1.5534160226516136,
+      "candidate": 1.6488825899518915
+    },
+    {
+      "gate": "development",
+      "metric": "identities.blue.mean_capped_error_px",
+      "baseline": 2.529354456449369,
+      "candidate": 2.6206703034322443
+    }
+  ],
+  "full_acceptance": {
+    "performed": false,
+    "passed": false,
+    "reason": "early nonregression prerequisite failed"
+  },
+  "TRAIN_signal_comparison": {
+    "role": "TRAIN_diagnostic_not_validation",
+    "teacher": {
+      "GT": 259,
+      "TP": 255,
+      "FN": 4,
+      "FP_relative_to_curated_labels": 15,
+      "empty_frames": 8,
+      "empty_FP": 0,
+      "low_confidence_at_current_aligned_boxes": 4,
+      "miss_low_grid_center_confidence": 4
+    },
+    "selected": {
+      "GT": 259,
+      "TP": 258,
+      "FN": 1,
+      "FP_relative_to_curated_labels": 14,
+      "empty_frames": 8,
+      "empty_FP": 0,
+      "low_confidence_at_current_aligned_boxes": 1,
+      "miss_low_grid_center_confidence": 1
+    },
+    "final_epoch": {
+      "GT": 259,
+      "TP": 259,
+      "FN": 0,
+      "FP_relative_to_curated_labels": 0,
+      "empty_frames": 8,
+      "empty_FP": 0
+    },
+    "teacher_original_misses": 4,
+    "original_misses_still_missing": [
+      1,
+      0
+    ],
+    "fresh_TRAIN_forward_calls": 292,
+    "optimizer_updates": 0,
+    "checkpoint_reselected": false
+  },
+  "final_epoch_control": {
+    "completed": true,
+    "role": "diagnostic_control_not_candidate",
+    "NN_calls": 154,
+    "synthetic_forward_calls": 0,
+    "optimizer_updates": 0,
+    "new_checkpoint_files": 0,
+    "control_early_numerical_gate_passed": false,
+    "control_regressions": 15,
+    "original_candidate_early_gate_passed": false,
+    "original_decision_unchanged": true,
+    "original_selected_checkpoint_unchanged": true,
+    "final_checkpoint_sha256": "96a6a379e4e1a93a848f6b1e659cd725109a7492d3be003fc60a5da1ec1e790d",
+    "fixed_states_verified": 433,
+    "API_eligible": false,
+    "network_attempts": 0,
+    "comparison_sha256": "109adc043bde6a602d7296947e472a0204bc09db1dc77cfbfbd38959b0e5dbf3",
+    "models": {
+      "ares-v1.3.33": {
+        "VAL": {
+          "TP": 82,
+          "FP": 1,
+          "FN": 3,
+          "empty_frames": 4,
+          "empty_FP": 0
+        },
+        "development": {
+          "targets": 46,
+          "TP": 45,
+          "FN": 1,
+          "certain_observed": 45,
+          "mean_matched_error_px": 2.134750813657198,
+          "mean_capped_error_px": 2.6100823177081285,
+          "FP_proxy": 0,
+          "detached_or_held_matches": 0,
+          "unmatched_on_unobservable_frames": 0,
+          "predicted_only_rows": 0,
+          "identity_transfers": 0,
+          "identity_transfer_points": 0,
+          "longest_incomplete_frame_gap": 1,
+          "unobservable_objects": 0,
+          "ambiguous_state_objects": 0,
+          "identity_ineligible_targets": 0,
+          "unknown_occlusion_frames": 0,
+          "unlocalized_distractor_descriptions": 0,
+          "visibility": {
+            "visible": {
+              "targets": 46,
+              "TP": 45,
+              "FN": 1,
+              "certain_observed": 45,
+              "mean_matched_error_px": 2.134750813657198,
+              "mean_capped_error_px": 2.6100823177081285
+            }
+          },
+          "identities": {
+            "blue": {
+              "targets": 23,
+              "TP": 22,
+              "FN": 1,
+              "certain_observed": 22,
+              "longest_measured_gap": 1,
+              "longest_certain_gap": 1,
+              "longest_estimated_gap": 23,
+              "measured_fragmentations": 1,
+              "certain_fragmentations": 1,
+              "track_id_changes": 0,
+              "certain_native_segments": [],
+              "mean_matched_error_px": 1.5534160226516136,
+              "mean_capped_error_px": 2.529354456449369,
+              "certain_native_fragmentations": 0
+            },
+            "white": {
+              "targets": 23,
+              "TP": 23,
+              "FN": 0,
+              "certain_observed": 23,
+              "longest_measured_gap": 0,
+              "longest_certain_gap": 0,
+              "longest_estimated_gap": 23,
+              "measured_fragmentations": 0,
+              "certain_fragmentations": 0,
+              "track_id_changes": 0,
+              "certain_native_segments": [],
+              "mean_matched_error_px": 2.690810178966888,
+              "mean_capped_error_px": 2.690810178966888,
+              "certain_native_fragmentations": 0
+            }
+          }
+        },
+        "accelerated_hits": {
+          "blue": 5,
+          "white": 5
+        }
+      },
+      "last-epoch-control189": {
+        "VAL": {
+          "TP": 82,
+          "FP": 15,
+          "FN": 3,
+          "empty_frames": 4,
+          "empty_FP": 0
+        },
+        "development": {
+          "targets": 46,
+          "TP": 45,
+          "FN": 1,
+          "certain_observed": 45,
+          "mean_matched_error_px": 2.9755092499262332,
+          "mean_capped_error_px": 3.432563396666966,
+          "FP_proxy": 0,
+          "detached_or_held_matches": 0,
+          "unmatched_on_unobservable_frames": 0,
+          "predicted_only_rows": 0,
+          "identity_transfers": 0,
+          "identity_transfer_points": 0,
+          "longest_incomplete_frame_gap": 1,
+          "unobservable_objects": 0,
+          "ambiguous_state_objects": 0,
+          "identity_ineligible_targets": 0,
+          "unknown_occlusion_frames": 0,
+          "unlocalized_distractor_descriptions": 0,
+          "visibility": {
+            "visible": {
+              "targets": 46,
+              "TP": 45,
+              "FN": 1,
+              "certain_observed": 45,
+              "mean_matched_error_px": 2.9755092499262332,
+              "mean_capped_error_px": 3.432563396666966
+            }
+          },
+          "identities": {
+            "blue": {
+              "targets": 23,
+              "TP": 23,
+              "FN": 0,
+              "certain_observed": 23,
+              "longest_measured_gap": 0,
+              "longest_certain_gap": 0,
+              "longest_estimated_gap": 23,
+              "measured_fragmentations": 0,
+              "certain_fragmentations": 0,
+              "track_id_changes": 0,
+              "certain_native_segments": [],
+              "mean_matched_error_px": 2.4801628936113507,
+              "mean_capped_error_px": 2.4801628936113507,
+              "certain_native_fragmentations": 0
+            },
+            "white": {
+              "targets": 23,
+              "TP": 22,
+              "FN": 1,
+              "certain_observed": 22,
+              "longest_measured_gap": 1,
+              "longest_certain_gap": 1,
+              "longest_estimated_gap": 23,
+              "measured_fragmentations": 1,
+              "certain_fragmentations": 1,
+              "track_id_changes": 0,
+              "certain_native_segments": [],
+              "mean_matched_error_px": 3.493371349709974,
+              "mean_capped_error_px": 4.384963899722585,
+              "certain_native_fragmentations": 0
+            }
+          }
+        },
+        "accelerated_hits": {
+          "blue": 5,
+          "white": 5
+        }
+      }
+    },
+    "failures": [
+      {
+        "gate": "VAL",
+        "metric": "FP",
+        "baseline": 1,
+        "candidate": 15
+      },
+      {
+        "gate": "development",
+        "metric": "mean_matched_error_px",
+        "baseline": 2.134750813657198,
+        "candidate": 2.9755092499262332
+      },
+      {
+        "gate": "development",
+        "metric": "mean_capped_error_px",
+        "baseline": 2.6100823177081285,
+        "candidate": 3.432563396666966
+      },
+      {
+        "gate": "development",
+        "metric": "visibility.visible.mean_matched_error_px",
+        "baseline": 2.134750813657198,
+        "candidate": 2.9755092499262332
+      },
+      {
+        "gate": "development",
+        "metric": "visibility.visible.mean_capped_error_px",
+        "baseline": 2.6100823177081285,
+        "candidate": 3.432563396666966
+      },
+      {
+        "gate": "development",
+        "metric": "identities.blue.mean_matched_error_px",
+        "baseline": 1.5534160226516136,
+        "candidate": 2.4801628936113507
+      },
+      {
+        "gate": "development",
+        "metric": "identities.white.TP",
+        "baseline": 23,
+        "candidate": 22
+      },
+      {
+        "gate": "development",
+        "metric": "identities.white.FN",
+        "baseline": 0,
+        "candidate": 1
+      },
+      {
+        "gate": "development",
+        "metric": "identities.white.certain_observed",
+        "baseline": 23,
+        "candidate": 22
+      },
+      {
+        "gate": "development",
+        "metric": "identities.white.longest_measured_gap",
+        "baseline": 0,
+        "candidate": 1
+      },
+      {
+        "gate": "development",
+        "metric": "identities.white.longest_certain_gap",
+        "baseline": 0,
+        "candidate": 1
+      },
+      {
+        "gate": "development",
+        "metric": "identities.white.measured_fragmentations",
+        "baseline": 0,
+        "candidate": 1
+      },
+      {
+        "gate": "development",
+        "metric": "identities.white.certain_fragmentations",
+        "baseline": 0,
+        "candidate": 1
+      },
+      {
+        "gate": "development",
+        "metric": "identities.white.mean_matched_error_px",
+        "baseline": 2.690810178966888,
+        "candidate": 3.493371349709974
+      },
+      {
+        "gate": "development",
+        "metric": "identities.white.mean_capped_error_px",
+        "baseline": 2.690810178966888,
+        "candidate": 4.384963899722585
+      }
+    ]
+  },
+  "cohort_exposure_audit": {
+    "completed": true,
+    "run_id": 189,
+    "new_optimizer_updates": 0,
+    "new_inference_calls": 0,
+    "actual_training_epochs_verified": 30,
+    "actual_TRAIN_visits": 20850,
+    "actual_distinct_TRAIN_images_visited": 146,
+    "excluded_parent_TRAIN_images": 549,
+    "excluded_parent_new_optimizer_visits": 0,
+    "cohort_current_optimizer_only": true,
+    "does_not_erase_inherited_pretraining": true,
+    "actual_stratum_visits": {
+      "hard": 5170,
+      "empty": 4167,
+      "white": 4192,
+      "gray": 1021,
+      "easy": 6300
+    },
+    "minimum_visits_per_visited_image": 43,
+    "maximum_visits_per_visited_image": 910,
+    "actual_sampler_plans_replayed_exact": true,
+    "worker_epoch_hook_verified_actual_paths_equal_plan": true,
+    "network_attempts": 0
+  },
+  "paired_development_audit": {
+    "completed": true,
+    "run_id": 189,
+    "optimizer_updates": 0,
+    "new_inference_calls": 0,
+    "baseline_hits": 45,
+    "candidate_hits": 45,
+    "common_hits": 45,
+    "baseline_hits_lost": 0,
+    "new_hits_added": 0,
+    "same_reference_hit_set": true,
+    "common_point_baseline_mean_error_px": 2.1347508136571984,
+    "common_point_candidate_mean_error_px": 2.131521427806128,
+    "common_point_mean_delta_px": -0.0032293858510703322,
+    "common_points_lower_error": 24,
+    "common_points_higher_error": 21,
+    "common_points_unchanged": 0,
+    "per_identity": {
+      "blue": {
+        "common_hits": 22,
+        "baseline_mean_error_px": 1.5534160226516136,
+        "candidate_mean_error_px": 1.6488825899518913,
+        "mean_delta_px": 0.0954665673002777
+      },
+      "white": {
+        "common_hits": 23,
+        "baseline_mean_error_px": 2.6908101789668883,
+        "candidate_mean_error_px": 2.5931759683623548,
+        "mean_delta_px": -0.09763421060453359
+      }
+    },
+    "early_gate_still_passed": false,
+    "full_evaluation_performed": false,
+    "limitations": [
+      "23frame provisional detector-center development cohort only",
+      "Not independent human truth or full trajectory improvement",
+      "No reference, threshold, selection or prediction changes"
+    ]
+  },
+  "standard_checkpoint_audit": {
+    "completed": true,
+    "run_id": 189,
+    "completed_epochs": 30,
+    "TRAIN_batches": 5220,
+    "TRAIN_visits": 20850,
+    "optimizer_updates": 347,
+    "frozen_states_verified": 433,
+    "selected_parameter_tensors": 66,
+    "selected_parameter_elements": 819779,
+    "changed_bbox_feature_conv_tensors": 4,
+    "standard_YOLO_checkpoint": true,
+    "selected_checkpoint_class_scores_changed": true,
+    "changed_classification_feature_and_output_tensors": 36,
+    "selected_checkpoint_boxes_changed": true,
+    "synthetic_forward_calls": 2,
+    "optimizer_updates_in_audit": 0,
+    "accepted": false,
+    "API_eligible": false,
+    "selected_sha256": "88b6c3cef86e7e79a8cbcc03e4fe7ee4b133ae59a66279db389c3d7d6710767c"
+  },
+  "bookkeeping_control": {
+    "completed": true,
+    "actual_expanded_setup_executed": true,
+    "actual_expanded_epoch_hooks_executed": true,
+    "loader_and_epoch_lists_empty": true,
+    "exact_695_observations_accepted": true,
+    "extra_or_replaced_observation_rejected": 2,
+    "old188_native_exit_code": 1,
+    "old188_error_reproduced": true,
+    "new_NN_calls": 0,
+    "optimizer_updates": 0,
+    "sampler_policy_changed": false
+  },
+  "accepted": false,
+  "API_promoted": false,
+  "stable_trajectory_improvement_proven": false,
+  "retention": {
+    "run_id": 189,
+    "created_utc": "2026-10-27T07:47:04.023468+00:00",
+    "accepted": false,
+    "rejected": true,
+    "API_eligible": false,
+    "candidate_checkpoint_deleted": true,
+    "selected_checkpoint_retained": false,
+    "selected_sha256": "88b6c3cef86e7e79a8cbcc03e4fe7ee4b133ae59a66279db389c3d7d6710767c",
+    "retained_API_versions": 9,
+    "API_changed": false,
+    "logical_bytes_freed": 38350516,
+    "failures": 0,
+    "source_and_reference_deleted": false,
+    "may_resume_from_run189_checkpoint": false
+  },
+  "window_progress": {
+    "batch_completed_training_ids": [
+      180,
+      181,
+      182,
+      183,
+      184,
+      185,
+      186,
+      187,
+      189
+    ],
+    "actual_completed_training_runs": 9,
+    "completed_training_optimizer_updates": 14438,
+    "aborted_attempts": [
+      {
+        "run_id": 188,
+        "optimizer_updates": null,
+        "reason": "not durably recorded; excluded from measured completed total"
+      }
+    ],
+    "completed_trainings_remaining_to_ten": 1,
+    "qualified_versions": 0,
+    "API_promotions": 0,
+    "goal_achieved": false
   },
   "limitations": [
-    "188aborted attempt recorded separately; its update count is unknown",
-    "Same assistant reviewed labels are not independent human truth",
-    "Historical pretraining lineage exclusion unproven",
-    "Original confidence/NMS/tracker and early/full independent qualification gates unchanged",
-    "No accuracy result until training and fixed evaluation finish"
+    "TRAIN final zero misses/unmatched is not independent validation accuracy or trajectory improvement",
+    "Fixed VAL54frames not full trajectory accuracy",
+    "Same assistant annotations, not independent human truth; pretraining lineage remains unverified",
+    "No new labels/media/thresholds/gates or checkpoint reselection",
+    "Overlapping scalar gate failures are not independent physical failures",
+    "Vendor learning-curve definitions differ from fixed conf.35 audited counts"
   ]
 }
