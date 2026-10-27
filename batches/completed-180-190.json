@@ -1,0 +1,127 @@
+{
+  "completed_training_ids": [
+    180,
+    181,
+    182,
+    183,
+    184,
+    185,
+    186,
+    187,
+    189,
+    190
+  ],
+  "actual_completed_training_runs": 10,
+  "completed_training_optimizer_updates": 14785,
+  "aborted_attempts": [
+    {
+      "run_id": 188,
+      "optimizer_updates": null,
+      "reason": "instrumentation error; count not durably saved; not zero and excluded from measured completed total"
+    }
+  ],
+  "requested_maximum_from_ten": 5,
+  "qualified_versions": 0,
+  "selected_for_API": [],
+  "API_promotions": 0,
+  "API_available_versions_unchanged": 9,
+  "rows": [
+    {
+      "run_id": 180,
+      "completed_epochs": 30,
+      "measured_optimizer_updates": 2610,
+      "qualified": false,
+      "selected_for_API": false,
+      "candidate_weights_deleted": true,
+      "report": "../runs/run-180.md"
+    },
+    {
+      "run_id": 181,
+      "completed_epochs": 30,
+      "measured_optimizer_updates": 2610,
+      "qualified": false,
+      "selected_for_API": false,
+      "candidate_weights_deleted": true,
+      "report": "../runs/run-181.md"
+    },
+    {
+      "run_id": 182,
+      "completed_epochs": 30,
+      "measured_optimizer_updates": 2610,
+      "qualified": false,
+      "selected_for_API": false,
+      "candidate_weights_deleted": true,
+      "report": "../runs/run-182.md"
+    },
+    {
+      "run_id": 183,
+      "completed_epochs": 30,
+      "measured_optimizer_updates": 2610,
+      "qualified": false,
+      "selected_for_API": false,
+      "candidate_weights_deleted": true,
+      "report": "../runs/run-183.md"
+    },
+    {
+      "run_id": 184,
+      "completed_epochs": 30,
+      "measured_optimizer_updates": 2610,
+      "qualified": false,
+      "selected_for_API": false,
+      "candidate_weights_deleted": true,
+      "report": "../runs/run-184.md"
+    },
+    {
+      "run_id": 185,
+      "completed_epochs": 30,
+      "measured_optimizer_updates": 347,
+      "qualified": false,
+      "selected_for_API": false,
+      "candidate_weights_deleted": true,
+      "report": "../runs/run-185.md"
+    },
+    {
+      "run_id": 186,
+      "completed_epochs": 30,
+      "measured_optimizer_updates": 347,
+      "qualified": false,
+      "selected_for_API": false,
+      "candidate_weights_deleted": true,
+      "report": "../runs/run-186.md"
+    },
+    {
+      "run_id": 187,
+      "completed_epochs": 30,
+      "measured_optimizer_updates": 347,
+      "qualified": false,
+      "selected_for_API": false,
+      "candidate_weights_deleted": true,
+      "report": "../runs/run-187.md"
+    },
+    {
+      "run_id": 189,
+      "completed_epochs": 30,
+      "measured_optimizer_updates": 347,
+      "qualified": false,
+      "selected_for_API": false,
+      "candidate_weights_deleted": true,
+      "report": "../runs/run-189.md"
+    },
+    {
+      "run_id": 190,
+      "completed_epochs": 30,
+      "measured_optimizer_updates": 347,
+      "qualified": false,
+      "selected_for_API": false,
+      "candidate_weights_deleted": true,
+      "report": "../runs/run-190.md"
+    }
+  ],
+  "goal_achieved": false,
+  "limitations": [
+    "Different model families and evaluation roles across runs; do not aggregate their accuracy percentages",
+    "No failed or unassessed model retained merely to fill five slots",
+    "188incomplete attempt reported separately",
+    "Independent high-speed/motion-blur trajectory improvement remains unproven"
+  ]
+}

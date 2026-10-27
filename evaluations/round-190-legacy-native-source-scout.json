@@ -1,0 +1,109 @@
+{
+  "source_scout_only": true,
+  "raw_frames_reviewed": 12,
+  "source_identifiers": 6,
+  "new_admissions": 0,
+  "new_TRAIN_images": 0,
+  "labels_read": 0,
+  "model_forward_calls": 0,
+  "optimizer_updates": 0,
+  "known_heldout_source_and_exact_hash_excluded": true,
+  "visual_review": {
+    "completed": true,
+    "reviewer": "same_assistant_not_independent_human",
+    "raw_samples_seen": 12,
+    "labels_read": 0,
+    "model_calls": 0,
+    "new_admissions": 0,
+    "new_TRAIN_images": 0,
+    "observations": [
+      {
+        "sample_ids": [
+          1,
+          2
+        ],
+        "scene": "dark bowl under red and blue lighting, two visible tops",
+        "camera": "near overhead",
+        "battle_bowl_and_rail": "visible in sampled frames",
+        "outer_housing": "cropped at frame edges",
+        "next_step": "verify native source and lineage before detailed body/blur annotation"
+      },
+      {
+        "sample_ids": [
+          3,
+          4
+        ],
+        "scene": "white bowl with green rail",
+        "camera": "oblique downward",
+        "battle_bowl_and_rail": "upper boundary needs native-resolution review",
+        "outer_housing": "cropped",
+        "next_step": "hold for camera/full-boundary review"
+      },
+      {
+        "sample_ids": [
+          5,
+          6
+        ],
+        "scene": "white bowl green rail, red surround; hand near housing in sample6",
+        "camera": "oblique downward",
+        "battle_bowl_and_rail": "visible in sampled frames",
+        "outer_housing": "cropped",
+        "next_step": "hold for camera eligibility, source and foreground-object review"
+      },
+      {
+        "sample_ids": [
+          7,
+          8
+        ],
+        "scene": "dark tournament bowl with pink rail and scoreboard overlay",
+        "camera": "near overhead",
+        "battle_bowl_and_rail": "visible in sampled frames",
+        "outer_housing": "bottom edge cropped",
+        "next_step": "verify source lineage and overlay/native-media provenance before detailed annotation"
+      },
+      {
+        "sample_ids": [
+          9,
+          10
+        ],
+        "scene": "green bowl, two visible motion-blurred tops",
+        "camera": "near overhead",
+        "battle_bowl_and_rail": "visible in sampled frames",
+        "outer_housing": "cropped at bottom",
+        "next_step": "verify source and state/blur details; not admitted"
+      },
+      {
+        "sample_ids": [
+          11,
+          12
+        ],
+        "scene": "white bowl with red rail; people and retail setting around stadium",
+        "camera": "sideward oblique view, differs between sampled frames",
+        "battle_bowl_and_rail": "visible but camera geometry differs from near-overhead target",
+        "outer_housing": "mostly visible",
+        "next_step": "exclude these two samples from current overhead candidate shortlist; no claim about unviewed video frames"
+      }
+    ],
+    "candidate_shortlist_sample_ids": [
+      1,
+      2,
+      7,
+      8,
+      9,
+      10
+    ],
+    "shortlist_is_not_admission": true,
+    "limitations": [
+      "Two frames per source do not prove full-video framing or identity consistency",
+      "Different source identifiers do not prove independent camera families",
+      "Whole outer housing versus complete battle bowl/rail eligibility remains explicitly separate",
+      "No existing labels, training inputs, thresholds or acceptance cases were changed"
+    ]
+  },
+  "limitations": [
+    "Only12raw frames, no claim about entire source camera consistency",
+    "Known identifier/exact hash exclusion cannot prove historical lineage or all near duplicates",
+    "No old labels reviewed or accepted",
+    "Scouting is not dataset admission"
+  ]
+}

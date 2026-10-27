@@ -1,6 +1,6 @@
 # 訓練與評估索引
 
-第190輪訓練中，快照3/30epochs／54實測updates／522/5220batches，尚無精準度或驗收結果。本輪固定bbox分支，只學42分類特徵／affine／輸出tensor（179843參數），其餘457state與BN統計固定；原154early與完整204比較門檻不變。此前180–187加189共9次完整訓練／14438實測updates／零合格、零API晉升，188中止未知更新另列；190只有完成30epochs才是本批第十次完整訓練。API九個權重不變，持續追求穩定高速模糊軌跡改善。
+第190輪完成30epochs／347實測updates，固定bbox但分類／NMS結果仍退步。固定54VAL81TP／1FP／4FN（P98.78%、R95.29%），development45→44TP、23個scalar門檻失敗，完整204比較未啟動。146TRAIN的原始座標逐值等於Ares33，但這不保證偵測與軌跡不退步。權重清理完畢、九個API權重不變。本批十次完整訓練180–187、189、190／14785實測updates／零合格，沒有可晉升的五個版本；188中止未知更新數另列。穩定高速模糊軌跡目標尚未達成，下一步優先補強經複核的訓練素材。
 
 [第 142 輪](runs/run-142.md)（原程序失敗後另行稽核及比較）。
 
@@ -120,4 +120,8 @@
 
 第189輪後：[TRAIN座標／分類分數交換前置對照](evaluations/round-189-TRAIN-coordinate-score-swap-preflight.md) · [封存重播數據](evaluations/round-189-TRAIN-coordinate-score-swap-preflight.json)。固定teacher座標仍保留189分數的258／259TP改善，僅換座標仍255TP；7組1022NMS影格、0NN／optimizer。支持測試分離學習，非模型、泛化或未來訓練保證。
 
-第190輪：[分類學習／固定定位訓練進行中](runs/run-190.md) · [實際進度與前置驗證](runs/run-190-metrics.json)。原生梯度42非零、bbox無梯度、固定座標及457state往返檢查通過，全套產品測試重新通過；尚無效果結論。
+第190輪：[分類學習／固定定位最終報告](runs/run-190.md) · [精準度、所有退步與稽核](runs/run-190-metrics.json) · [30epoch曲線](runs/run-190-learning-curve.json)。正式前置拒絕、未跑完整204比較；TRAIN selected258TP1FN14未配對、末期257TP2FN0未配對，未事後改選。候選已清理，API不變。
+
+本批十次完整訓練：[保留與API選擇決策](batches/completed-180-190.md) · [逐輪實測更新與資格](batches/completed-180-190.json)。10次完整、14785updates、0合格／0API；188中止另外記錄且不把未知更新數當零。
+
+第190輪後：[舊原生TRAIN素材盤點](evaluations/round-190-legacy-native-source-scout.md) · [原圖審閱範圍與限制](evaluations/round-190-legacy-native-source-scout.json)。6來源ID／12原圖、0label／NN／optimizer，近上方3組僅列後續候選；完整外殼、來源與近重複仍待核對，0TRAIN准入，未上傳媒體。
