@@ -69,3 +69,6 @@
 第179輪：[相同分類器重現＋採用規則完整報告](runs/run-179.md)完成30epochs／2,610實際更新，每epoch loss／VAL與178精確一致，非獨立新表示。完整32/136項仍退步，但studio-fast-rail的Kalman certain18→24、橘色最長certain缺口6→2；全體Kalman certain531→537，尚無來源群通過兩profile門檻，拒絕晉升。失敗權重已清理，21054筆scalar scores保留；71個強sensor Kalman漏點中62個被評分卻全低於.95、9個無可用pair。[學習曲線](runs/run-179-learning-curve.json)。
 
 [第170–179輪十次訓練總檢討](evaluations/round-170-179-window-review.md)：14,177實際optimizer updates，零合格與零API晉升，不以失敗變體補足五個名額。九個既有API權重完整，穩定高速／模糊軌跡改善目標持續。
+
+
+第179輪後：[素材來源稽核與外觀特徵前置驗證](evaluations/round-179-source-family-and-appearance-preflight.md)：72影格／144中心點來自既有攝影來源群，零新增獨立來源，均未准入TRAIN；39維外觀純函式通過因果與缺失控制，但尚未整合或訓練。零新增optimizer updates，最新實際訓練仍為179，未產生第180輪或新準確率。
