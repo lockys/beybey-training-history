@@ -1,26 +1,670 @@
 {
   "run_id": 187,
-  "status": "training_in_progress",
-  "snapshot_utc": "2026-10-27T05:49:07.143891+00:00",
-  "planned_epochs": 30,
-  "completed_epochs": 10,
-  "actual_optimizer_updates": 130,
-  "train_batches": 1740,
-  "train_samples_seen": 6950,
-  "unique_TRAIN_images": 146,
-  "TRAIN_body_boxes": 259,
-  "TRAIN_empty_images": 8,
-  "draws_per_epoch": 695,
-  "replacement": true,
+  "status": "rejected_early_detector_gate",
+  "updated_utc": "2026-10-27T06:45:30.064764+00:00",
+  "model_type": "standard_YOLO_bbox_features_and_classification_outputs",
   "trainable_tensors": 30,
   "trainable_parameters": 640323,
-  "classification_output_tensors_added": 6,
-  "classification_output_parameters_added": 387,
-  "frozen_state_entries": 469,
-  "bn_buffer_checks": 1740,
-  "frozen_state_epoch_checks": 10,
-  "final_accuracy": null,
-  "formal_accuracy_evaluation_completed": false,
+  "frozen_states_verified": 469,
+  "completed_epochs": 30,
+  "TRAIN_batches": 5220,
+  "TRAIN_visits": 20850,
+  "actual_optimizer_updates": 347,
+  "selected_sha256": "2766fd5dedefd763bf159ceae3aa1aa5116f679a17066ecae89f17ebffef614a",
+  "selection": "vendor_VAL_fitness_only",
+  "selected_epoch": null,
+  "selected_epoch_note": "Stripped checkpoint epoch=-1; final_eval replaces best train_results with full30epoch curve. No selected epoch inferred.",
+  "detector_VAL": {
+    "frames": 54,
+    "GT_boxes": 85,
+    "confidence": 0.35,
+    "NMS_IoU": 0.5,
+    "GT_matching_IoU": 0.5,
+    "independent_human_truth": false,
+    "models": {
+      "ares-v1.3.33": {
+        "VAL": {
+          "TP": 82,
+          "FP": 1,
+          "FN": 3,
+          "empty_frames": 4,
+          "empty_FP": 0,
+          "precision": 0.9879518072289156,
+          "recall": 0.9647058823529412
+        },
+        "development": {
+          "targets": 46,
+          "TP": 45,
+          "FN": 1,
+          "certain_observed": 45,
+          "mean_matched_error_px": 2.134750813657198,
+          "mean_capped_error_px": 2.6100823177081285,
+          "FP_proxy": 0,
+          "detached_or_held_matches": 0,
+          "unmatched_on_unobservable_frames": 0,
+          "predicted_only_rows": 0,
+          "identity_transfers": 0,
+          "identity_transfer_points": 0,
+          "longest_incomplete_frame_gap": 1,
+          "unobservable_objects": 0,
+          "ambiguous_state_objects": 0,
+          "identity_ineligible_targets": 0,
+          "unknown_occlusion_frames": 0,
+          "unlocalized_distractor_descriptions": 0,
+          "visibility": {
+            "visible": {
+              "targets": 46,
+              "TP": 45,
+              "FN": 1,
+              "certain_observed": 45,
+              "mean_matched_error_px": 2.134750813657198,
+              "mean_capped_error_px": 2.6100823177081285
+            }
+          },
+          "identities": {
+            "blue": {
+              "targets": 23,
+              "TP": 22,
+              "FN": 1,
+              "certain_observed": 22,
+              "longest_measured_gap": 1,
+              "longest_certain_gap": 1,
+              "longest_estimated_gap": 23,
+              "measured_fragmentations": 1,
+              "certain_fragmentations": 1,
+              "track_id_changes": 0,
+              "certain_native_segments": [],
+              "mean_matched_error_px": 1.5534160226516136,
+              "mean_capped_error_px": 2.529354456449369,
+              "certain_native_fragmentations": 0
+            },
+            "white": {
+              "targets": 23,
+              "TP": 23,
+              "FN": 0,
+              "certain_observed": 23,
+              "longest_measured_gap": 0,
+              "longest_certain_gap": 0,
+              "longest_estimated_gap": 23,
+              "measured_fragmentations": 0,
+              "certain_fragmentations": 0,
+              "track_id_changes": 0,
+              "certain_native_segments": [],
+              "mean_matched_error_px": 2.690810178966888,
+              "mean_capped_error_px": 2.690810178966888,
+              "certain_native_fragmentations": 0
+            }
+          }
+        },
+        "accelerated_hits": {
+          "blue": 5,
+          "white": 5
+        }
+      },
+      "research-run187": {
+        "VAL": {
+          "TP": 81,
+          "FP": 1,
+          "FN": 4,
+          "empty_frames": 4,
+          "empty_FP": 0,
+          "precision": 0.9878048780487805,
+          "recall": 0.9529411764705882
+        },
+        "development": {
+          "targets": 46,
+          "TP": 44,
+          "FN": 2,
+          "certain_observed": 44,
+          "mean_matched_error_px": 1.99530007526276,
+          "mean_capped_error_px": 2.9520261589469876,
+          "FP_proxy": 0,
+          "detached_or_held_matches": 0,
+          "unmatched_on_unobservable_frames": 0,
+          "predicted_only_rows": 0,
+          "identity_transfers": 0,
+          "identity_transfer_points": 0,
+          "longest_incomplete_frame_gap": 2,
+          "unobservable_objects": 0,
+          "ambiguous_state_objects": 0,
+          "identity_ineligible_targets": 0,
+          "unknown_occlusion_frames": 0,
+          "unlocalized_distractor_descriptions": 0,
+          "visibility": {
+            "visible": {
+              "targets": 46,
+              "TP": 44,
+              "FN": 2,
+              "certain_observed": 44,
+              "mean_matched_error_px": 1.99530007526276,
+              "mean_capped_error_px": 2.9520261589469876
+            }
+          },
+          "identities": {
+            "blue": {
+              "targets": 23,
+              "TP": 21,
+              "FN": 2,
+              "certain_observed": 21,
+              "longest_measured_gap": 2,
+              "longest_certain_gap": 2,
+              "longest_estimated_gap": 23,
+              "measured_fragmentations": 1,
+              "certain_fragmentations": 1,
+              "track_id_changes": 0,
+              "certain_native_segments": [],
+              "mean_matched_error_px": 1.3938932841569251,
+              "mean_capped_error_px": 3.359641694230236,
+              "certain_native_fragmentations": 0
+            },
+            "white": {
+              "targets": 23,
+              "TP": 23,
+              "FN": 0,
+              "certain_observed": 23,
+              "longest_measured_gap": 0,
+              "longest_certain_gap": 0,
+              "longest_estimated_gap": 23,
+              "measured_fragmentations": 0,
+              "certain_fragmentations": 0,
+              "track_id_changes": 0,
+              "certain_native_segments": [],
+              "mean_matched_error_px": 2.544410623663739,
+              "mean_capped_error_px": 2.544410623663739,
+              "certain_native_fragmentations": 0
+            }
+          }
+        },
+        "accelerated_hits": {
+          "blue": 5,
+          "white": 5
+        }
+      }
+    }
+  },
+  "early_fresh_predict_calls": 154,
+  "early_gate_passed": false,
+  "early_failures": [
+    {
+      "gate": "VAL",
+      "metric": "FN",
+      "baseline": 3,
+      "candidate": 4
+    },
+    {
+      "gate": "VAL",
+      "metric": "TP",
+      "baseline": 82,
+      "candidate": 81
+    },
+    {
+      "gate": "development",
+      "metric": "TP",
+      "baseline": 45,
+      "candidate": 44
+    },
+    {
+      "gate": "development",
+      "metric": "FN",
+      "baseline": 1,
+      "candidate": 2
+    },
+    {
+      "gate": "development",
+      "metric": "certain_observed",
+      "baseline": 45,
+      "candidate": 44
+    },
+    {
+      "gate": "development",
+      "metric": "mean_capped_error_px",
+      "baseline": 2.6100823177081285,
+      "candidate": 2.9520261589469876
+    },
+    {
+      "gate": "development",
+      "metric": "longest_incomplete_frame_gap",
+      "baseline": 1,
+      "candidate": 2
+    },
+    {
+      "gate": "development",
+      "metric": "visibility.visible.TP",
+      "baseline": 45,
+      "candidate": 44
+    },
+    {
+      "gate": "development",
+      "metric": "visibility.visible.FN",
+      "baseline": 1,
+      "candidate": 2
+    },
+    {
+      "gate": "development",
+      "metric": "visibility.visible.certain_observed",
+      "baseline": 45,
+      "candidate": 44
+    },
+    {
+      "gate": "development",
+      "metric": "visibility.visible.mean_capped_error_px",
+      "baseline": 2.6100823177081285,
+      "candidate": 2.9520261589469876
+    },
+    {
+      "gate": "development",
+      "metric": "identities.blue.TP",
+      "baseline": 22,
+      "candidate": 21
+    },
+    {
+      "gate": "development",
+      "metric": "identities.blue.FN",
+      "baseline": 1,
+      "candidate": 2
+    },
+    {
+      "gate": "development",
+      "metric": "identities.blue.certain_observed",
+      "baseline": 22,
+      "candidate": 21
+    },
+    {
+      "gate": "development",
+      "metric": "identities.blue.longest_measured_gap",
+      "baseline": 1,
+      "candidate": 2
+    },
+    {
+      "gate": "development",
+      "metric": "identities.blue.longest_certain_gap",
+      "baseline": 1,
+      "candidate": 2
+    },
+    {
+      "gate": "development",
+      "metric": "identities.blue.mean_capped_error_px",
+      "baseline": 2.529354456449369,
+      "candidate": 3.359641694230236
+    }
+  ],
+  "full_acceptance": {
+    "performed": false,
+    "reason": "early nonregression prerequisite failed",
+    "passed": false
+  },
+  "TRAIN_signal_comparison": {
+    "role": "TRAIN_diagnostic_not_validation",
+    "teacher": {
+      "GT": 259,
+      "TP": 255,
+      "FN": 4,
+      "FP_relative_to_curated_labels": 15,
+      "empty_frames": 8,
+      "empty_FP": 0,
+      "low_confidence_at_current_aligned_boxes": 4,
+      "miss_low_grid_center_confidence": 4
+    },
+    "selected": {
+      "GT": 259,
+      "TP": 254,
+      "FN": 5,
+      "FP_relative_to_curated_labels": 14,
+      "empty_frames": 8,
+      "empty_FP": 0,
+      "low_confidence_at_current_aligned_boxes": 5,
+      "miss_low_grid_center_confidence": 5
+    },
+    "final_epoch": {
+      "GT": 259,
+      "TP": 254,
+      "FN": 5,
+      "FP_relative_to_curated_labels": 13,
+      "empty_frames": 8,
+      "empty_FP": 0,
+      "low_confidence_at_current_aligned_boxes": 5,
+      "miss_low_grid_center_confidence": 5
+    },
+    "teacher_original_misses": 4,
+    "original_misses_still_missing_selected": 4,
+    "original_misses_still_missing_final": 4,
+    "new_NN_calls_selected": 146,
+    "new_NN_calls_final": 146,
+    "teacher146calls_previously_cached": true,
+    "optimizer_updates": 0,
+    "checkpoint_reselected": false
+  },
+  "classifier_restore_control": {
+    "role": "diagnostic_control_not_candidate",
+    "optimizer_updates": 0,
+    "new_checkpoint_files": 0,
+    "fresh_predict_calls": 154,
+    "synthetic_forward_calls": 3,
+    "original187_still_rejected": true,
+    "model_control_proof": {
+      "completed": true,
+      "role": "diagnostic_control_not_candidate",
+      "original_checkpoint_sha256": "2766fd5dedefd763bf159ceae3aa1aa5116f679a17066ecae89f17ebffef614a",
+      "teacher_sha256": "5b593f85ad1e69a72029322bcbac09e4778a48bc38511205ab54d2044e8709d2",
+      "original_state_tensor_sha256": "48e9527560714ad6320a4ac2fbc092ec0a60e87383f270034bd7d3fd6653fd1e",
+      "control_state_tensor_sha256": "d4d00c74990a0c09a6a9727b7a8eb884d37eb453c2183ed9499ba76ba4bb7804",
+      "classification_output_tensors_restored": [
+        "model.23.cv3.0.2.bias",
+        "model.23.cv3.0.2.weight",
+        "model.23.cv3.1.2.bias",
+        "model.23.cv3.1.2.weight",
+        "model.23.cv3.2.2.bias",
+        "model.23.cv3.2.2.weight"
+      ],
+      "state_tensors_actually_changed": [
+        "model.23.cv3.0.2.weight",
+        "model.23.cv3.1.2.weight",
+        "model.23.cv3.2.2.weight"
+      ],
+      "raw_and_decoded_boxes_exact_before_after": true,
+      "restored_class_scores_equal_teacher": true,
+      "synthetic_forward_calls": 3,
+      "optimizer_updates": 0,
+      "new_checkpoint_files": 0,
+      "API_eligible": false
+    },
+    "early_gate_passed": false,
+    "failures": [
+      {
+        "gate": "development",
+        "metric": "identities.blue.mean_matched_error_px",
+        "baseline": 1.5534160226516136,
+        "candidate": 1.555352938899256
+      },
+      {
+        "gate": "development",
+        "metric": "identities.blue.mean_capped_error_px",
+        "baseline": 2.529354456449369,
+        "candidate": 2.5312071589471143
+      }
+    ],
+    "models": {
+      "ares-v1.3.33": {
+        "VAL": {
+          "TP": 82,
+          "FP": 1,
+          "FN": 3,
+          "empty_frames": 4,
+          "empty_FP": 0
+        },
+        "development": {
+          "targets": 46,
+          "TP": 45,
+          "FN": 1,
+          "certain_observed": 45,
+          "mean_matched_error_px": 2.134750813657198,
+          "mean_capped_error_px": 2.6100823177081285,
+          "FP_proxy": 0,
+          "detached_or_held_matches": 0,
+          "unmatched_on_unobservable_frames": 0,
+          "predicted_only_rows": 0,
+          "identity_transfers": 0,
+          "identity_transfer_points": 0,
+          "longest_incomplete_frame_gap": 1,
+          "unobservable_objects": 0,
+          "ambiguous_state_objects": 0,
+          "identity_ineligible_targets": 0,
+          "unknown_occlusion_frames": 0,
+          "unlocalized_distractor_descriptions": 0,
+          "visibility": {
+            "visible": {
+              "targets": 46,
+              "TP": 45,
+              "FN": 1,
+              "certain_observed": 45,
+              "mean_matched_error_px": 2.134750813657198,
+              "mean_capped_error_px": 2.6100823177081285
+            }
+          },
+          "identities": {
+            "blue": {
+              "targets": 23,
+              "TP": 22,
+              "FN": 1,
+              "certain_observed": 22,
+              "longest_measured_gap": 1,
+              "longest_certain_gap": 1,
+              "longest_estimated_gap": 23,
+              "measured_fragmentations": 1,
+              "certain_fragmentations": 1,
+              "track_id_changes": 0,
+              "certain_native_segments": [],
+              "mean_matched_error_px": 1.5534160226516136,
+              "mean_capped_error_px": 2.529354456449369,
+              "certain_native_fragmentations": 0
+            },
+            "white": {
+              "targets": 23,
+              "TP": 23,
+              "FN": 0,
+              "certain_observed": 23,
+              "longest_measured_gap": 0,
+              "longest_certain_gap": 0,
+              "longest_estimated_gap": 23,
+              "measured_fragmentations": 0,
+              "certain_fragmentations": 0,
+              "track_id_changes": 0,
+              "certain_native_segments": [],
+              "mean_matched_error_px": 2.690810178966888,
+              "mean_capped_error_px": 2.690810178966888,
+              "certain_native_fragmentations": 0
+            }
+          }
+        },
+        "accelerated_hits": {
+          "blue": 5,
+          "white": 5
+        }
+      },
+      "classifier-restore-control187": {
+        "VAL": {
+          "TP": 82,
+          "FP": 1,
+          "FN": 3,
+          "empty_frames": 4,
+          "empty_FP": 0
+        },
+        "development": {
+          "targets": 46,
+          "TP": 45,
+          "FN": 1,
+          "certain_observed": 45,
+          "mean_matched_error_px": 2.0608713111122143,
+          "mean_capped_error_px": 2.537808891305427,
+          "FP_proxy": 0,
+          "detached_or_held_matches": 0,
+          "unmatched_on_unobservable_frames": 0,
+          "predicted_only_rows": 0,
+          "identity_transfers": 0,
+          "identity_transfer_points": 0,
+          "longest_incomplete_frame_gap": 1,
+          "unobservable_objects": 0,
+          "ambiguous_state_objects": 0,
+          "identity_ineligible_targets": 0,
+          "unknown_occlusion_frames": 0,
+          "unlocalized_distractor_descriptions": 0,
+          "visibility": {
+            "visible": {
+              "targets": 46,
+              "TP": 45,
+              "FN": 1,
+              "certain_observed": 45,
+              "mean_matched_error_px": 2.0608713111122143,
+              "mean_capped_error_px": 2.537808891305427
+            }
+          },
+          "identities": {
+            "blue": {
+              "targets": 23,
+              "TP": 22,
+              "FN": 1,
+              "certain_observed": 22,
+              "longest_measured_gap": 1,
+              "longest_certain_gap": 1,
+              "longest_estimated_gap": 23,
+              "measured_fragmentations": 1,
+              "certain_fragmentations": 1,
+              "track_id_changes": 0,
+              "certain_native_segments": [],
+              "mean_matched_error_px": 1.555352938899256,
+              "mean_capped_error_px": 2.5312071589471143,
+              "certain_native_fragmentations": 0
+            },
+            "white": {
+              "targets": 23,
+              "TP": 23,
+              "FN": 0,
+              "certain_observed": 23,
+              "longest_measured_gap": 0,
+              "longest_certain_gap": 0,
+              "longest_estimated_gap": 23,
+              "measured_fragmentations": 0,
+              "certain_fragmentations": 0,
+              "track_id_changes": 0,
+              "certain_native_segments": [],
+              "mean_matched_error_px": 2.544410623663739,
+              "mean_capped_error_px": 2.544410623663739,
+              "certain_native_fragmentations": 0
+            }
+          }
+        },
+        "accelerated_hits": {
+          "blue": 5,
+          "white": 5
+        }
+      }
+    },
+    "initial_attempt_failure": {
+      "NN_calls": 0,
+      "reason": "Nested directory BASE error before YOLO import; preserved then corrected in v2"
+    }
+  },
+  "cohort_exposure_audit": {
+    "completed": true,
+    "run_id": 187,
+    "new_optimizer_updates": 0,
+    "new_inference_calls": 0,
+    "actual_training_epochs_verified": 30,
+    "actual_TRAIN_visits": 20850,
+    "actual_distinct_TRAIN_images_visited": 146,
+    "excluded_parent_TRAIN_images": 549,
+    "excluded_parent_new_optimizer_visits": 0,
+    "cohort_current_optimizer_only": true,
+    "does_not_erase_inherited_pretraining": true,
+    "actual_stratum_visits": {
+      "hard": 5170,
+      "empty": 4167,
+      "white": 4192,
+      "gray": 1021,
+      "easy": 6300
+    },
+    "minimum_visits_per_visited_image": 43,
+    "maximum_visits_per_visited_image": 910,
+    "actual_sampler_plans_replayed_exact": true,
+    "worker_epoch_hook_verified_actual_paths_equal_plan": true,
+    "network_attempts": 0
+  },
+  "paired_development_audit": {
+    "completed": true,
+    "run_id": 187,
+    "optimizer_updates": 0,
+    "new_inference_calls": 0,
+    "baseline_hits": 45,
+    "candidate_hits": 44,
+    "common_hits": 44,
+    "baseline_hits_lost": 1,
+    "new_hits_added": 0,
+    "same_reference_hit_set": false,
+    "common_point_baseline_mean_error_px": 2.073608290709377,
+    "common_point_candidate_mean_error_px": 1.9953000752627597,
+    "common_point_mean_delta_px": -0.07830821544661719,
+    "common_points_lower_error": 26,
+    "common_points_higher_error": 18,
+    "common_points_unchanged": 0,
+    "per_identity": {
+      "blue": {
+        "common_hits": 21,
+        "baseline_mean_error_px": 1.3976252702368646,
+        "candidate_mean_error_px": 1.3938932841569251,
+        "mean_delta_px": -0.003731986079939409
+      },
+      "white": {
+        "common_hits": 23,
+        "baseline_mean_error_px": 2.6908101789668883,
+        "candidate_mean_error_px": 2.5444106236637394,
+        "mean_delta_px": -0.14639955530314896
+      }
+    },
+    "early_gate_still_passed": false,
+    "full_evaluation_performed": false,
+    "limitations": [
+      "23frame provisional detector-center development cohort only",
+      "Not independent human truth or full trajectory improvement",
+      "No reference, threshold, selection or prediction changes"
+    ]
+  },
+  "standard_checkpoint_audit": {
+    "completed": true,
+    "run_id": 187,
+    "completed_epochs": 30,
+    "TRAIN_batches": 5220,
+    "TRAIN_visits": 20850,
+    "optimizer_updates": 347,
+    "frozen_states_verified": 469,
+    "selected_parameter_tensors": 30,
+    "selected_parameter_elements": 640323,
+    "changed_bbox_feature_conv_tensors": 4,
+    "standard_YOLO_checkpoint": true,
+    "selected_checkpoint_class_scores_changed": true,
+    "changed_classification_output_tensors": 3,
+    "selected_checkpoint_boxes_changed": true,
+    "synthetic_forward_calls": 2,
+    "optimizer_updates_in_audit": 0,
+    "accepted": false,
+    "API_eligible": false,
+    "selected_sha256": "2766fd5dedefd763bf159ceae3aa1aa5116f679a17066ecae89f17ebffef614a"
+  },
+  "accepted": false,
   "API_promoted": false,
-  "stable_improvement_proven": false
+  "stable_trajectory_improvement_proven": false,
+  "retention": {
+    "run_id": 187,
+    "created_utc": "2026-10-27T06:45:30.064764+00:00",
+    "accepted": false,
+    "rejected": true,
+    "API_eligible": false,
+    "candidate_checkpoint_deleted": true,
+    "selected_checkpoint_retained": false,
+    "selected_sha256": "2766fd5dedefd763bf159ceae3aa1aa5116f679a17066ecae89f17ebffef614a",
+    "retained_API_versions": 9,
+    "API_changed": false,
+    "logical_bytes_freed": 38350516,
+    "failures": 0,
+    "source_and_reference_deleted": false,
+    "may_resume_from_run187_checkpoint": false
+  },
+  "window_progress": {
+    "window": [
+      180,
+      189
+    ],
+    "actual_completed_training_runs": 8,
+    "optimizer_updates": 14091,
+    "qualified_versions": 0,
+    "API_promotions": 0,
+    "goal_achieved": false
+  },
+  "limitations": [
+    "Fixed54frame detector precision/recall is not full trajectory accuracy",
+    "Provisional assistant-reviewed references; no independent human truth",
+    "Current146native-frame optimizer cohort excludes110legacy spatial blur rows; inheritedpretraining exclusion remains unproven",
+    "No new external footage admitted",
+    "Scalar gate checks overlap and are not independent physical failures",
+    "Vendor curve metrics use their own validation definitions; not interchangeable with fixed conf0.35 audited counts"
+  ]
 }

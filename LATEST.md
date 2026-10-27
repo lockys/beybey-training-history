@@ -1,6 +1,6 @@
 # 訓練與評估索引
 
-最新完成第186輪，仍未取得合格晉升版本。第187輪標準YOLO bbox特徵與六個分類輸出共同學習中；2026-10-27T05:49:07.143891+00:00快照完成10/30epochs、130次實測更新，尚無最終精準度或軌跡驗收。TRAIN-only診斷支持檢驗分類學習，但不當作驗證準確率；原門檻不變。180–189目前7次完成／13744updates／零合格，187是第8次進行中的訓練，API九個權重不變。
+最新完成第187輪，仍未取得合格晉升版本。187完成30epochs／實測347updates，分類輸出確實學習，但固定54VAL TP82→81、recall96.47%→95.29%，development TP45→44，17個scalar門檻失敗；完整204比較未啟動。Selected／最終epoch的TRAIN均TP254／FN5，原4漏框仍在。記憶體恢復Ares33分類輸出的對照恢復命中，但blue定位仍2項微退步，不合格且未改選。權重已清理、九個API權重不變；180–189目前8次完成／14091updates／零合格與零API晉升。
 
 [第 142 輪](runs/run-142.md)（原程序失敗後另行稽核及比較）。
 
@@ -110,4 +110,4 @@
 
 第186輪後：[TRAIN分類訊號診斷與前置驗證](evaluations/round-186-TRAIN-classification-signal-preflight.md) · [TRAIN診斷計數](evaluations/round-186-TRAIN-classification-signal.json)：先封存146raw推論再合併既有259框，4個FN皆有現有IoU框但低class/grid分數，另15未配對；是TRAIN診斷，非獨立驗證。新增6既有分類輸出tensors的梯度／固定state控制通過，前置零optimizer。
 
-第187輪：[bbox特徵與分類輸出共同學習中](runs/run-187.md) · [具時間戳快照](runs/run-187-metrics.json)。合計30tensors／640323參數，469states固定；資料／訓練預算／既有154early與204full門檻不變，最終精準度待實測，未提前發布API。
+第187輪：[聯合分類輸出學習最終報告](runs/run-187.md) · [精準度、全部退步與三項對照](runs/run-187-metrics.json) · [30epoch vendor曲線](runs/run-187-learning-curve.json)。Formal early gate拒絕、完整204比較未執行；TRAIN selected／末期及分類還原皆未產生合格版本。候選已清理、API不變。
