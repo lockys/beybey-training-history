@@ -1,0 +1,18 @@
+{
+  "run_id": 185,
+  "status": "training_in_progress",
+  "snapshot_utc": "2026-10-27T04:27:12.200557+00:00",
+  "planned_epochs": 30,
+  "completed_epochs": 5,
+  "actual_optimizer_updates": 75,
+  "train_batches": 870,
+  "train_samples_seen": 3475,
+  "bn_buffer_checks": 870,
+  "frozen_state_epoch_checks": 5,
+  "selected_parameter_tensors": 24,
+  "selected_parameter_elements": 639936,
+  "formal_accuracy_evaluation_completed": false,
+  "API_promoted": false,
+  "stable_improvement_proven": false,
+  "external_scouted_images_admitted": 0
+}
