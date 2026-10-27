@@ -1,6 +1,6 @@
 # 訓練與評估索引
 
-目前更新至第 182 輪；仍未取得合格晉升版本。182完成2,610updates，但VAL選定epoch10、tensor與180完全相同，尚未受learner配對訓練；新資格規則使Byte TP653、原命中流失23、certain526，仍有40/136退步與零來源群通過兩profile。候選已清理，本機API未改。180–189目前3次實際訓練、7,830updates、零合格與零晉升；配對VAL100%不等於高速／模糊軌跡100%。
+目前更新至第 183 輪；仍未取得合格晉升版本。183完成2,610updates，選25epoch已受learner訓練，pair VAL precision／recall100%、BCE0.009072，但Byte TP635／certain520、原命中流失27，差於182的653／526／23。完整40/136仍退步，拒絕晉升並清理權重。同183tensor用舊政策的932更新／68比較完全相同，不能把退步歸因新政策。180–189目前4次實際訓練10,440updates、零合格與零API晉升。
 
 [第 142 輪](runs/run-142.md)（原程序失敗後另行稽核及比較）。
 
@@ -87,3 +87,6 @@
 
 
 第182輪：[有效guard綁定與下游資格完整報告](runs/run-182.md)完成30epochs／2,610updates，實際55,140 learner訪次；最佳epoch10卻在learner混入前、tensor精確同180，故驗收差異歸於policy。Byte TP653／certain526，原命中流失23（180:46、181:32），但40/136仍退步、零來源群通過兩profile，拒絕晉升；本機九個API權重不變。保存14220真NN分數與獨立棄權紀錄。[曲線](runs/run-182-learning-curve.json) · [136比較](runs/run-182-metrics.json) · [learner／TRAIN-only診斷](runs/run-182-learner-admissions.json)。180–189共3次訓練／7,830updates／零合格，下一正動作資格／負證據分離假說尚未實作。
+
+
+第183輪：[正動作資格／負證據分離完整報告](runs/run-183.md)完成30epochs／2,610updates，實際55,140learner訪次，選25epoch（新tensor）。Byte TP635、certain520、原命中流失27，仍40/136退步、零來源群通過兩profile。固定同tensor舊政策診斷與本輪所有輸出／68指標完全相同。既有41個VAL影格的時序study可分出known-detector命中155→160，但certain88不變且不能測完整物理定位／場外FP；下一步先凍結時序DEV而非再只看pair BCE。[曲線](runs/run-183-learning-curve.json) · [136比較](runs/run-183-metrics.json) · [learner／控制／VAL與fold稽核](runs/run-183-diagnostics.json)。候選已清理，本機9個API權重不變；180–189目前4次／10,440updates／零合格。

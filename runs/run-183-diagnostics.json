@@ -1,0 +1,258 @@
+{
+  "training": {
+    "completed": true,
+    "run_id": 183,
+    "optimizer_updates": 2610,
+    "actual_visit_counts": {
+      "pair_visits": 165450,
+      "original_pair_visits": 110310,
+      "learner_pair_visits": 55140,
+      "synthetic_visits": 49903,
+      "native_fallback_visits": 5182,
+      "unchanged_original_visits": 55225
+    },
+    "selected_epoch": 25,
+    "selected_after_actual_learner_fitting": true,
+    "selected_state_tensor_sha256": "487abde7c98a62edfe4b5b21198e6f5bb588f7bbd7c494c165328c8d40dc4f1a",
+    "learner_captures": [
+      {
+        "epoch": 10,
+        "model_state_sha256": "0bf9f741f60e281125acaad82568205d2c4f0fe7f499548dbe85cd5c387d958c",
+        "capture_updates": 1548,
+        "capture_forward_calls": 3839,
+        "changed_frames": 245,
+        "known_pairs": 3715,
+        "novel_pairs": 600,
+        "duplicates_with_original": 3115,
+        "exclusions": {
+          "mixed_or_unknown_identity": 124
+        },
+        "actual_current_trained_snapshot": true,
+        "control_data_admitted": false,
+        "validation_and_acceptance_admitted": false,
+        "TRAIN_only": true,
+        "capture_completion_sha256": "e7f2bea5d4bcf84361069a218a9c5e54ef8e7d070e6beaf6e33167ba142f7da6",
+        "joined_packet_sha256": "1e03d46c5ae7f5ff813e9fb97e5927b139465279718a18308c5e7f72a61bdd13",
+        "pool_data_sha256": "3cff404a20ae9b720035ebececfebdffa7ce1fe943a4d9d27a2cedd09ed0a9a6",
+        "optimizer_unchanged_during_capture": true,
+        "shuffle_generator_unchanged": true,
+        "train_model_and_snapshot_digest_equal": true
+      },
+      {
+        "epoch": 20,
+        "model_state_sha256": "d1a6d6faf1a2a1a7930bf48dd37a2fd28fa4ee60c2aac9d19092291cc8405ad0",
+        "capture_updates": 1548,
+        "capture_forward_calls": 3845,
+        "changed_frames": 253,
+        "known_pairs": 3720,
+        "novel_pairs": 609,
+        "duplicates_with_original": 3111,
+        "exclusions": {
+          "mixed_or_unknown_identity": 125
+        },
+        "actual_current_trained_snapshot": true,
+        "control_data_admitted": false,
+        "validation_and_acceptance_admitted": false,
+        "TRAIN_only": true,
+        "capture_completion_sha256": "0284bbd2c5b4d153a6dd6d0378b8956990f4dc0e83f73e1cac105de0ec6627f4",
+        "joined_packet_sha256": "2ba7b2c5520b71308df754d9ffe57e88cc251c0a403512b166f0b56ae51c633d",
+        "pool_data_sha256": "f365ca42cf86657f746a470601d787a3cbb08181dfc6a33b2b14d4ee5d215eda",
+        "optimizer_unchanged_during_capture": true,
+        "shuffle_generator_unchanged": true,
+        "train_model_and_snapshot_digest_equal": true
+      }
+    ],
+    "training_control_data_admitted": false,
+    "validation_unchanged": true,
+    "API_mutations": 0
+  },
+  "same_tensor_previous_policy": {
+    "completed": true,
+    "diagnostic_only": true,
+    "same_selected_tensor": true,
+    "selected_epoch": 25,
+    "comparisons": 68,
+    "metrics_different": 0,
+    "frames_with_changed_rows": 0,
+    "primary": {
+      "kalman": {
+        "main183": {
+          "TP": 722,
+          "FN": 74,
+          "certain_observed": 594,
+          "FP_proxy": 113
+        },
+        "same_tensor_old_policy": {
+          "TP": 722,
+          "FN": 74,
+          "certain_observed": 594,
+          "FP_proxy": 113
+        }
+      },
+      "bytetrack": {
+        "main183": {
+          "TP": 635,
+          "FN": 161,
+          "certain_observed": 520,
+          "FP_proxy": 104
+        },
+        "same_tensor_old_policy": {
+          "TP": 635,
+          "FN": 161,
+          "certain_observed": 520,
+          "FP_proxy": 104
+        }
+      }
+    },
+    "new_real_CPU_neural_pair_calls": 2365,
+    "optimizer_updates": 0,
+    "new_training_round": false,
+    "original183_rejection_unchanged": true,
+    "API_eligible": false
+  },
+  "VAL_temporal_readiness": {
+    "completed": true,
+    "VAL_only": true,
+    "source_frames": 41,
+    "source_clips": 2,
+    "tracker_updates": 246,
+    "new_real_CPU_pair_calls": 428,
+    "frames_with_changed_rows": 5,
+    "detector_conditioned_metrics": {
+      "native": {
+        "known_detector_observations": 164,
+        "measured_hits": 155,
+        "certain_observed": 88,
+        "missed_known_detector_observations": 9
+      },
+      "neutral": {
+        "known_detector_observations": 164,
+        "measured_hits": 155,
+        "certain_observed": 88,
+        "missed_known_detector_observations": 9
+      },
+      "trained": {
+        "known_detector_observations": 164,
+        "measured_hits": 160,
+        "certain_observed": 88,
+        "missed_known_detector_observations": 4
+      }
+    },
+    "per_clip": [
+      {
+        "clip": "white_A",
+        "profile": "kalman",
+        "metrics": {
+          "native": {
+            "known_detector_observations": 46,
+            "measured_hits": 44,
+            "certain_observed": 22,
+            "missed_known_detector_observations": 2
+          },
+          "neutral": {
+            "known_detector_observations": 46,
+            "measured_hits": 44,
+            "certain_observed": 22,
+            "missed_known_detector_observations": 2
+          },
+          "trained": {
+            "known_detector_observations": 46,
+            "measured_hits": 44,
+            "certain_observed": 22,
+            "missed_known_detector_observations": 2
+          }
+        }
+      },
+      {
+        "clip": "white_A",
+        "profile": "bytetrack",
+        "metrics": {
+          "native": {
+            "known_detector_observations": 46,
+            "measured_hits": 44,
+            "certain_observed": 22,
+            "missed_known_detector_observations": 2
+          },
+          "neutral": {
+            "known_detector_observations": 46,
+            "measured_hits": 44,
+            "certain_observed": 22,
+            "missed_known_detector_observations": 2
+          },
+          "trained": {
+            "known_detector_observations": 46,
+            "measured_hits": 44,
+            "certain_observed": 22,
+            "missed_known_detector_observations": 2
+          }
+        }
+      },
+      {
+        "clip": "white_B",
+        "profile": "kalman",
+        "metrics": {
+          "native": {
+            "known_detector_observations": 36,
+            "measured_hits": 36,
+            "certain_observed": 22
+          },
+          "neutral": {
+            "known_detector_observations": 36,
+            "measured_hits": 36,
+            "certain_observed": 22
+          },
+          "trained": {
+            "known_detector_observations": 36,
+            "measured_hits": 36,
+            "certain_observed": 22
+          }
+        }
+      },
+      {
+        "clip": "white_B",
+        "profile": "bytetrack",
+        "metrics": {
+          "native": {
+            "known_detector_observations": 36,
+            "measured_hits": 31,
+            "certain_observed": 22,
+            "missed_known_detector_observations": 5
+          },
+          "neutral": {
+            "known_detector_observations": 36,
+            "measured_hits": 31,
+            "certain_observed": 22,
+            "missed_known_detector_observations": 5
+          },
+          "trained": {
+            "known_detector_observations": 36,
+            "measured_hits": 36,
+            "certain_observed": 22
+          }
+        }
+      }
+    ],
+    "can_distinguish_current_candidate_quality": true,
+    "optimizer_updates": 0,
+    "API_eligible": false,
+    "original183_rejection_unchanged": true,
+    "caution": "Conditions on already detected known VAL observations; does not measure missing detector targets, arena FP or physical localization. No checkpoint is reselected. New temporal selection protocol or footage must be frozen before future optimizer."
+  },
+  "legacy_fold_resolution": {
+    "completed": true,
+    "current_source_fold_authoritative": true,
+    "current_TRAIN_pairs": 5515,
+    "current_VAL_pairs": 215,
+    "white_family_absent_from_current_TRAIN": true,
+    "legacy_identity_map_split_counts": {
+      "fit": 82
+    },
+    "legacy_tags_not_rewritten": true,
+    "training_membership_unchanged": true,
+    "inference_outputs_reused": true,
+    "new_inference_calls": 0,
+    "original_failed_join_terminal": "d50417"
+  },
+  "optimizer_updates_during_diagnostics": 0,
+  "new_training_rounds_during_diagnostics": 0
+}

@@ -1,0 +1,5059 @@
+{
+  "completed": true,
+  "run_id": 183,
+  "optimizer_updates": 2610,
+  "parameters": 1825,
+  "validation": {
+    "all": {
+      "pairs": 215,
+      "positive": 156,
+      "negative": 59,
+      "BCE": 0.009072400629520416,
+      "threshold": 0.95,
+      "TP": 156,
+      "FP": 0,
+      "FN": 0,
+      "TN": 59,
+      "precision": 1.0,
+      "recall": 1.0
+    },
+    "kalman": {
+      "pairs": 106,
+      "positive": 76,
+      "negative": 30,
+      "BCE": 0.014076583087444305,
+      "threshold": 0.95,
+      "TP": 76,
+      "FP": 0,
+      "FN": 0,
+      "TN": 30,
+      "precision": 1.0,
+      "recall": 1.0
+    },
+    "bytetrack": {
+      "pairs": 109,
+      "positive": 80,
+      "negative": 29,
+      "BCE": 0.004205949138849974,
+      "threshold": 0.95,
+      "TP": 80,
+      "FP": 0,
+      "FN": 0,
+      "TN": 29,
+      "precision": 1.0,
+      "recall": 1.0
+    }
+  },
+  "primary": {
+    "kalman": {
+      "baseline": {
+        "targets": 796,
+        "TP": 708,
+        "FN": 88,
+        "certain_observed": 531,
+        "FP_proxy": 120
+      },
+      "candidate": {
+        "targets": 796,
+        "TP": 722,
+        "FN": 74,
+        "certain_observed": 594,
+        "FP_proxy": 113
+      }
+    },
+    "bytetrack": {
+      "baseline": {
+        "targets": 796,
+        "TP": 545,
+        "FN": 251,
+        "certain_observed": 440,
+        "FP_proxy": 107
+      },
+      "candidate": {
+        "targets": 796,
+        "TP": 635,
+        "FN": 161,
+        "certain_observed": 520,
+        "FP_proxy": 104
+      }
+    }
+  },
+  "trained_regressions": 40,
+  "total_comparisons": 136,
+  "both_profile_source_group_gains": 0,
+  "repeat_differences": 0,
+  "score_records": 17738,
+  "eligibility_events_by_mode": {
+    "untrained": {
+      "bytetrack:core_row": 846
+    },
+    "trained-mean-only": {
+      "bytetrack:core_row": 496,
+      "bytetrack:positive_pair": 152
+    },
+    "trained": {
+      "bytetrack:core_row": 496,
+      "bytetrack:positive_pair": 152
+    }
+  },
+  "proposal_counts": {
+    "trained-mean-only:kalman": {
+      "positive": 1736,
+      "certified_negative_veto": 136,
+      "accepted_positive": 18,
+      "accepted_certified_negative_veto": 6
+    },
+    "trained-mean-only:bytetrack": {
+      "positive": 1446,
+      "certified_negative_veto": 1180,
+      "accepted_positive": 146,
+      "accepted_certified_negative_veto": 72
+    },
+    "trained:kalman": {
+      "positive": 1736,
+      "certified_negative_veto": 136,
+      "accepted_positive": 18,
+      "accepted_certified_negative_veto": 6
+    },
+    "trained:bytetrack": {
+      "positive": 1446,
+      "certified_negative_veto": 1180,
+      "accepted_positive": 146,
+      "accepted_certified_negative_veto": 72
+    }
+  },
+  "all_exports_hashed": true,
+  "source_and_checkpoint_integrity_verified": true,
+  "accepted": false,
+  "API_eligible": false,
+  "selected_epoch": 25,
+  "selected_after_actual_learner_fitting": true,
+  "selected_tensor_exact_with180": false,
+  "comparisons_different_from182": 12,
+  "paired_hit_summary": {
+    "kalman": {
+      "baseline_errors": {
+        "count": 708,
+        "mean": 3.6847082096358035
+      },
+      "candidate_errors": {
+        "count": 722,
+        "mean": 3.750834111777834
+      },
+      "common_baseline_errors": {
+        "count": 708,
+        "mean": 3.6847082096358035
+      },
+      "common_candidate_errors": {
+        "count": 708,
+        "mean": 3.6847082096358035
+      },
+      "paired_common_error_delta": {
+        "count": 708,
+        "mean": 0.0
+      },
+      "common_same_xy": {
+        "count": 708,
+        "mean": 1
+      },
+      "added_errors": {
+        "count": 14,
+        "mean": 7.0949154486747945
+      }
+    },
+    "bytetrack": {
+      "baseline_errors": {
+        "count": 545,
+        "mean": 3.659391570453584
+      },
+      "candidate_errors": {
+        "count": 635,
+        "mean": 3.747595011858306
+      },
+      "common_baseline_errors": {
+        "count": 518,
+        "mean": 3.6773309008240185
+      },
+      "common_candidate_errors": {
+        "count": 518,
+        "mean": 3.6773309008240185
+      },
+      "paired_common_error_delta": {
+        "count": 518,
+        "mean": 0.0
+      },
+      "common_same_xy": {
+        "count": 518,
+        "mean": 1
+      },
+      "added_errors": {
+        "count": 117,
+        "mean": 4.058678853873355
+      },
+      "removed_errors": {
+        "count": 27,
+        "mean": 3.3152221951985874
+      }
+    }
+  },
+  "same_tensor_old_policy_control": {
+    "tracker_updates": 932,
+    "real_CPU_neural_pair_calls": 2365,
+    "changed_output_frames": 0,
+    "changed_metric_comparisons": 0,
+    "metric_comparisons": 68,
+    "diagnostic_only": true
+  },
+  "VAL_temporal_readiness": {
+    "completed": true,
+    "VAL_only": true,
+    "source_frames": 41,
+    "source_clips": 2,
+    "tracker_updates": 246,
+    "new_real_CPU_pair_calls": 428,
+    "frames_with_changed_rows": 5,
+    "detector_conditioned_metrics": {
+      "native": {
+        "known_detector_observations": 164,
+        "measured_hits": 155,
+        "certain_observed": 88,
+        "missed_known_detector_observations": 9
+      },
+      "neutral": {
+        "known_detector_observations": 164,
+        "measured_hits": 155,
+        "certain_observed": 88,
+        "missed_known_detector_observations": 9
+      },
+      "trained": {
+        "known_detector_observations": 164,
+        "measured_hits": 160,
+        "certain_observed": 88,
+        "missed_known_detector_observations": 4
+      }
+    },
+    "can_distinguish_current_candidate_quality": true,
+    "optimizer_updates": 0,
+    "API_eligible": false,
+    "original183_rejection_unchanged": true,
+    "caution": "Conditions on already detected known VAL observations; does not measure missing detector targets, arena FP or physical localization. No checkpoint is reselected. New temporal selection protocol or footage must be frozen before future optimizer."
+  },
+  "VAL_legacy_fold_resolution": {
+    "completed": true,
+    "current_source_fold_authoritative": true,
+    "current_TRAIN_pairs": 5515,
+    "current_VAL_pairs": 215,
+    "white_family_absent_from_current_TRAIN": true,
+    "legacy_identity_map_split_counts": {
+      "fit": 82
+    },
+    "legacy_tags_not_rewritten": true,
+    "training_membership_unchanged": true,
+    "inference_outputs_reused": true,
+    "new_inference_calls": 0,
+    "original_failed_join_terminal": "d50417"
+  },
+  "formal_product_acceptance": false,
+  "independent_human_reference_accuracy": false,
+  "source_group_details": [
+    {
+      "source_id": "Bgk16DMvNkI",
+      "passed": false,
+      "details": [
+        {
+          "profile": "kalman",
+          "scenario": 0,
+          "targets": 174,
+          "baseline_certain": 122,
+          "candidate_certain": 128,
+          "untrained_certain": 122,
+          "gain": 6,
+          "passed": false
+        },
+        {
+          "profile": "bytetrack",
+          "scenario": 0,
+          "targets": 174,
+          "baseline_certain": 72,
+          "candidate_certain": 119,
+          "untrained_certain": 72,
+          "gain": 47,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "source_id": "UPvRhOIRyNE",
+      "passed": false,
+      "details": [
+        {
+          "profile": "kalman",
+          "scenario": 0,
+          "targets": 155,
+          "baseline_certain": 22,
+          "candidate_certain": 77,
+          "untrained_certain": 22,
+          "gain": 55,
+          "passed": true
+        },
+        {
+          "profile": "bytetrack",
+          "scenario": 0,
+          "targets": 155,
+          "baseline_certain": 38,
+          "candidate_certain": 34,
+          "untrained_certain": 38,
+          "gain": -4,
+          "passed": false
+        }
+      ]
+    },
+    {
+      "source_id": "oIq7eZlojOg",
+      "passed": false,
+      "details": [
+        {
+          "profile": "kalman",
+          "scenario": 0,
+          "targets": 57,
+          "baseline_certain": 37,
+          "candidate_certain": 37,
+          "untrained_certain": 37,
+          "gain": 0,
+          "passed": false
+        },
+        {
+          "profile": "kalman",
+          "scenario": 1,
+          "targets": 58,
+          "baseline_certain": 38,
+          "candidate_certain": 38,
+          "untrained_certain": 38,
+          "gain": 0,
+          "passed": false
+        },
+        {
+          "profile": "kalman",
+          "scenario": 2,
+          "targets": 58,
+          "baseline_certain": 37,
+          "candidate_certain": 37,
+          "untrained_certain": 37,
+          "gain": 0,
+          "passed": false
+        },
+        {
+          "profile": "kalman",
+          "scenario": 3,
+          "targets": 59,
+          "baseline_certain": 38,
+          "candidate_certain": 38,
+          "untrained_certain": 38,
+          "gain": 0,
+          "passed": false
+        },
+        {
+          "profile": "bytetrack",
+          "scenario": 0,
+          "targets": 57,
+          "baseline_certain": 28,
+          "candidate_certain": 37,
+          "untrained_certain": 28,
+          "gain": 9,
+          "passed": true
+        },
+        {
+          "profile": "bytetrack",
+          "scenario": 1,
+          "targets": 58,
+          "baseline_certain": 28,
+          "candidate_certain": 38,
+          "untrained_certain": 28,
+          "gain": 10,
+          "passed": true
+        },
+        {
+          "profile": "bytetrack",
+          "scenario": 2,
+          "targets": 58,
+          "baseline_certain": 28,
+          "candidate_certain": 37,
+          "untrained_certain": 28,
+          "gain": 9,
+          "passed": true
+        },
+        {
+          "profile": "bytetrack",
+          "scenario": 3,
+          "targets": 59,
+          "baseline_certain": 28,
+          "candidate_certain": 38,
+          "untrained_certain": 28,
+          "gain": 10,
+          "passed": true
+        }
+      ]
+    }
+  ],
+  "comparison_scope": "two repeats; all frozen scenarios and sensitivities",
+  "comparisons": [
+    {
+      "case_id": "burst-boundary-addendum",
+      "repeat": 0,
+      "profile": "kalman",
+      "scenario": 0,
+      "sensitivity": false,
+      "baseline": {
+        "targets": 30,
+        "TP": 20,
+        "FN": 10,
+        "certain_observed": 18,
+        "FP_proxy": 37,
+        "mean_matched_error_px": 8.662471101181369,
+        "longest_incomplete_frame_gap": 10
+      },
+      "candidate": {
+        "targets": 30,
+        "TP": 28,
+        "FN": 2,
+        "certain_observed": 20,
+        "FP_proxy": 30,
+        "mean_matched_error_px": 9.235095080021035,
+        "longest_incomplete_frame_gap": 1
+      },
+      "regressions": [
+        {
+          "metric": "mean_matched_error_px",
+          "baseline": 8.662471101181369,
+          "candidate": 9.235095080021035
+        },
+        {
+          "metric": "visibility.partial_or_overlay.mean_matched_error_px",
+          "baseline": 6.542340105910956,
+          "candidate": 9.541841866790401
+        },
+        {
+          "metric": "identities.green.measured_fragmentations",
+          "baseline": 0,
+          "candidate": 1
+        },
+        {
+          "metric": "identities.green.mean_matched_error_px",
+          "baseline": 8.662471101181369,
+          "candidate": 9.235095080021035
+        }
+      ]
+    },
+    {
+      "case_id": "burst-boundary-addendum",
+      "repeat": 0,
+      "profile": "kalman",
+      "scenario": 0,
+      "sensitivity": true,
+      "baseline": {
+        "targets": 30,
+        "TP": 20,
+        "FN": 10,
+        "certain_observed": 18,
+        "FP_proxy": 37,
+        "mean_matched_error_px": 8.662471101181369,
+        "longest_incomplete_frame_gap": 10
+      },
+      "candidate": {
+        "targets": 30,
+        "TP": 28,
+        "FN": 2,
+        "certain_observed": 20,
+        "FP_proxy": 30,
+        "mean_matched_error_px": 9.235095080021035,
+        "longest_incomplete_frame_gap": 1
+      },
+      "regressions": [
+        {
+          "metric": "mean_matched_error_px",
+          "baseline": 8.662471101181369,
+          "candidate": 9.235095080021035
+        },
+        {
+          "metric": "visibility.partial_or_overlay.mean_matched_error_px",
+          "baseline": 6.542340105910956,
+          "candidate": 9.541841866790401
+        },
+        {
+          "metric": "identities.green.measured_fragmentations",
+          "baseline": 0,
+          "candidate": 1
+        },
+        {
+          "metric": "identities.green.mean_matched_error_px",
+          "baseline": 8.662471101181369,
+          "candidate": 9.235095080021035
+        }
+      ]
+    },
+    {
+      "case_id": "burst-boundary-addendum",
+      "repeat": 0,
+      "profile": "bytetrack",
+      "scenario": 0,
+      "sensitivity": false,
+      "baseline": {
+        "targets": 30,
+        "TP": 20,
+        "FN": 10,
+        "certain_observed": 18,
+        "FP_proxy": 30,
+        "mean_matched_error_px": 8.662471101181369,
+        "longest_incomplete_frame_gap": 10
+      },
+      "candidate": {
+        "targets": 30,
+        "TP": 20,
+        "FN": 10,
+        "certain_observed": 18,
+        "FP_proxy": 30,
+        "mean_matched_error_px": 8.662471101181369,
+        "longest_incomplete_frame_gap": 10
+      },
+      "regressions": []
+    },
+    {
+      "case_id": "burst-boundary-addendum",
+      "repeat": 0,
+      "profile": "bytetrack",
+      "scenario": 0,
+      "sensitivity": true,
+      "baseline": {
+        "targets": 30,
+        "TP": 20,
+        "FN": 10,
+        "certain_observed": 18,
+        "FP_proxy": 30,
+        "mean_matched_error_px": 8.662471101181369,
+        "longest_incomplete_frame_gap": 10
+      },
+      "candidate": {
+        "targets": 30,
+        "TP": 20,
+        "FN": 10,
+        "certain_observed": 18,
+        "FP_proxy": 30,
+        "mean_matched_error_px": 8.662471101181369,
+        "longest_incomplete_frame_gap": 10
+      },
+      "regressions": []
+    },
+    {
+      "case_id": "burst-boundary-addendum",
+      "repeat": 1,
+      "profile": "kalman",
+      "scenario": 0,
+      "sensitivity": false,
+      "baseline": {
+        "targets": 30,
+        "TP": 20,
+        "FN": 10,
+        "certain_observed": 18,
+        "FP_proxy": 37,
+        "mean_matched_error_px": 8.662471101181369,
+        "longest_incomplete_frame_gap": 10
+      },
+      "candidate": {
+        "targets": 30,
+        "TP": 28,
+        "FN": 2,
+        "certain_observed": 20,
+        "FP_proxy": 30,
+        "mean_matched_error_px": 9.235095080021035,
+        "longest_incomplete_frame_gap": 1
+      },
+      "regressions": [
+        {
+          "metric": "mean_matched_error_px",
+          "baseline": 8.662471101181369,
+          "candidate": 9.235095080021035
+        },
+        {
+          "metric": "visibility.partial_or_overlay.mean_matched_error_px",
+          "baseline": 6.542340105910956,
+          "candidate": 9.541841866790401
+        },
+        {
+          "metric": "identities.green.measured_fragmentations",
+          "baseline": 0,
+          "candidate": 1
+        },
+        {
+          "metric": "identities.green.mean_matched_error_px",
+          "baseline": 8.662471101181369,
+          "candidate": 9.235095080021035
+        }
+      ]
+    },
+    {
+      "case_id": "burst-boundary-addendum",
+      "repeat": 1,
+      "profile": "kalman",
+      "scenario": 0,
+      "sensitivity": true,
+      "baseline": {
+        "targets": 30,
+        "TP": 20,
+        "FN": 10,
+        "certain_observed": 18,
+        "FP_proxy": 37,
+        "mean_matched_error_px": 8.662471101181369,
+        "longest_incomplete_frame_gap": 10
+      },
+      "candidate": {
+        "targets": 30,
+        "TP": 28,
+        "FN": 2,
+        "certain_observed": 20,
+        "FP_proxy": 30,
+        "mean_matched_error_px": 9.235095080021035,
+        "longest_incomplete_frame_gap": 1
+      },
+      "regressions": [
+        {
+          "metric": "mean_matched_error_px",
+          "baseline": 8.662471101181369,
+          "candidate": 9.235095080021035
+        },
+        {
+          "metric": "visibility.partial_or_overlay.mean_matched_error_px",
+          "baseline": 6.542340105910956,
+          "candidate": 9.541841866790401
+        },
+        {
+          "metric": "identities.green.measured_fragmentations",
+          "baseline": 0,
+          "candidate": 1
+        },
+        {
+          "metric": "identities.green.mean_matched_error_px",
+          "baseline": 8.662471101181369,
+          "candidate": 9.235095080021035
+        }
+      ]
+    },
+    {
+      "case_id": "burst-boundary-addendum",
+      "repeat": 1,
+      "profile": "bytetrack",
+      "scenario": 0,
+      "sensitivity": false,
+      "baseline": {
+        "targets": 30,
+        "TP": 20,
+        "FN": 10,
+        "certain_observed": 18,
+        "FP_proxy": 30,
+        "mean_matched_error_px": 8.662471101181369,
+        "longest_incomplete_frame_gap": 10
+      },
+      "candidate": {
+        "targets": 30,
+        "TP": 20,
+        "FN": 10,
+        "certain_observed": 18,
+        "FP_proxy": 30,
+        "mean_matched_error_px": 8.662471101181369,
+        "longest_incomplete_frame_gap": 10
+      },
+      "regressions": []
+    },
+    {
+      "case_id": "burst-boundary-addendum",
+      "repeat": 1,
+      "profile": "bytetrack",
+      "scenario": 0,
+      "sensitivity": true,
+      "baseline": {
+        "targets": 30,
+        "TP": 20,
+        "FN": 10,
+        "certain_observed": 18,
+        "FP_proxy": 30,
+        "mean_matched_error_px": 8.662471101181369,
+        "longest_incomplete_frame_gap": 10
+      },
+      "candidate": {
+        "targets": 30,
+        "TP": 20,
+        "FN": 10,
+        "certain_observed": 18,
+        "FP_proxy": 30,
+        "mean_matched_error_px": 8.662471101181369,
+        "longest_incomplete_frame_gap": 10
+      },
+      "regressions": []
+    },
+    {
+      "case_id": "cohort-empty",
+      "repeat": 0,
+      "profile": "kalman",
+      "scenario": 0,
+      "sensitivity": false,
+      "baseline": {
+        "targets": 0,
+        "TP": 0,
+        "FN": 0,
+        "certain_observed": 0,
+        "FP_proxy": 0,
+        "mean_matched_error_px": null,
+        "longest_incomplete_frame_gap": 0
+      },
+      "candidate": {
+        "targets": 0,
+        "TP": 0,
+        "FN": 0,
+        "certain_observed": 0,
+        "FP_proxy": 0,
+        "mean_matched_error_px": null,
+        "longest_incomplete_frame_gap": 0
+      },
+      "regressions": []
+    },
+    {
+      "case_id": "cohort-empty",
+      "repeat": 0,
+      "profile": "kalman",
+      "scenario": 0,
+      "sensitivity": true,
+      "baseline": {
+        "targets": 0,
+        "TP": 0,
+        "FN": 0,
+        "certain_observed": 0,
+        "FP_proxy": 0,
+        "mean_matched_error_px": null,
+        "longest_incomplete_frame_gap": 0
+      },
+      "candidate": {
+        "targets": 0,
+        "TP": 0,
+        "FN": 0,
+        "certain_observed": 0,
+        "FP_proxy": 0,
+        "mean_matched_error_px": null,
+        "longest_incomplete_frame_gap": 0
+      },
+      "regressions": []
+    },
+    {
+      "case_id": "cohort-empty",
+      "repeat": 0,
+      "profile": "bytetrack",
+      "scenario": 0,
+      "sensitivity": false,
+      "baseline": {
+        "targets": 0,
+        "TP": 0,
+        "FN": 0,
+        "certain_observed": 0,
+        "FP_proxy": 0,
+        "mean_matched_error_px": null,
+        "longest_incomplete_frame_gap": 0
+      },
+      "candidate": {
+        "targets": 0,
+        "TP": 0,
+        "FN": 0,
+        "certain_observed": 0,
+        "FP_proxy": 0,
+        "mean_matched_error_px": null,
+        "longest_incomplete_frame_gap": 0
+      },
+      "regressions": []
+    },
+    {
+      "case_id": "cohort-empty",
+      "repeat": 0,
+      "profile": "bytetrack",
+      "scenario": 0,
+      "sensitivity": true,
+      "baseline": {
+        "targets": 0,
+        "TP": 0,
+        "FN": 0,
+        "certain_observed": 0,
+        "FP_proxy": 0,
+        "mean_matched_error_px": null,
+        "longest_incomplete_frame_gap": 0
+      },
+      "candidate": {
+        "targets": 0,
+        "TP": 0,
+        "FN": 0,
+        "certain_observed": 0,
+        "FP_proxy": 0,
+        "mean_matched_error_px": null,
+        "longest_incomplete_frame_gap": 0
+      },
+      "regressions": []
+    },
+    {
+      "case_id": "cohort-empty",
+      "repeat": 1,
+      "profile": "kalman",
+      "scenario": 0,
+      "sensitivity": false,
+      "baseline": {
+        "targets": 0,
+        "TP": 0,
+        "FN": 0,
+        "certain_observed": 0,
+        "FP_proxy": 0,
+        "mean_matched_error_px": null,
+        "longest_incomplete_frame_gap": 0
+      },
+      "candidate": {
+        "targets": 0,
+        "TP": 0,
+        "FN": 0,
+        "certain_observed": 0,
+        "FP_proxy": 0,
+        "mean_matched_error_px": null,
+        "longest_incomplete_frame_gap": 0
+      },
+      "regressions": []
+    },
+    {
+      "case_id": "cohort-empty",
+      "repeat": 1,
+      "profile": "kalman",
+      "scenario": 0,
+      "sensitivity": true,
+      "baseline": {
+        "targets": 0,
+        "TP": 0,
+        "FN": 0,
+        "certain_observed": 0,
+        "FP_proxy": 0,
+        "mean_matched_error_px": null,
+        "longest_incomplete_frame_gap": 0
+      },
+      "candidate": {
+        "targets": 0,
+        "TP": 0,
+        "FN": 0,
+        "certain_observed": 0,
+        "FP_proxy": 0,
+        "mean_matched_error_px": null,
+        "longest_incomplete_frame_gap": 0
+      },
+      "regressions": []
+    },
+    {
+      "case_id": "cohort-empty",
+      "repeat": 1,
+      "profile": "bytetrack",
+      "scenario": 0,
+      "sensitivity": false,
+      "baseline": {
+        "targets": 0,
+        "TP": 0,
+        "FN": 0,
+        "certain_observed": 0,
+        "FP_proxy": 0,
+        "mean_matched_error_px": null,
+        "longest_incomplete_frame_gap": 0
+      },
+      "candidate": {
+        "targets": 0,
+        "TP": 0,
+        "FN": 0,
+        "certain_observed": 0,
+        "FP_proxy": 0,
+        "mean_matched_error_px": null,
+        "longest_incomplete_frame_gap": 0
+      },
+      "regressions": []
+    },
+    {
+      "case_id": "cohort-empty",
+      "repeat": 1,
+      "profile": "bytetrack",
+      "scenario": 0,
+      "sensitivity": true,
+      "baseline": {
+        "targets": 0,
+        "TP": 0,
+        "FN": 0,
+        "certain_observed": 0,
+        "FP_proxy": 0,
+        "mean_matched_error_px": null,
+        "longest_incomplete_frame_gap": 0
+      },
+      "candidate": {
+        "targets": 0,
+        "TP": 0,
+        "FN": 0,
+        "certain_observed": 0,
+        "FP_proxy": 0,
+        "mean_matched_error_px": null,
+        "longest_incomplete_frame_gap": 0
+      },
+      "regressions": []
+    },
+    {
+      "case_id": "cohort-event",
+      "repeat": 0,
+      "profile": "kalman",
+      "scenario": 0,
+      "sensitivity": false,
+      "baseline": {
+        "targets": 155,
+        "TP": 128,
+        "FN": 27,
+        "certain_observed": 22,
+        "FP_proxy": 0,
+        "mean_matched_error_px": 3.3734112352992414,
+        "longest_incomplete_frame_gap": 13
+      },
+      "candidate": {
+        "targets": 155,
+        "TP": 134,
+        "FN": 21,
+        "certain_observed": 77,
+        "FP_proxy": 0,
+        "mean_matched_error_px": 3.326807568528272,
+        "longest_incomplete_frame_gap": 13
+      },
+      "regressions": []
+    },
+    {
+      "case_id": "cohort-event",
+      "repeat": 0,
+      "profile": "kalman",
+      "scenario": 0,
+      "sensitivity": true,
+      "baseline": {
+        "targets": 155,
+        "TP": 128,
+        "FN": 27,
+        "certain_observed": 22,
+        "FP_proxy": 0,
+        "mean_matched_error_px": 3.3734112352992414,
+        "longest_incomplete_frame_gap": 13
+      },
+      "candidate": {
+        "targets": 155,
+        "TP": 134,
+        "FN": 21,
+        "certain_observed": 77,
+        "FP_proxy": 0,
+        "mean_matched_error_px": 3.326807568528272,
+        "longest_incomplete_frame_gap": 13
+      },
+      "regressions": []
+    },
+    {
+      "case_id": "cohort-event",
+      "repeat": 0,
+      "profile": "bytetrack",
+      "scenario": 0,
+      "sensitivity": false,
+      "baseline": {
+        "targets": 155,
+        "TP": 67,
+        "FN": 88,
+        "certain_observed": 38,
+        "FP_proxy": 0,
+        "mean_matched_error_px": 2.6893730329856944,
+        "longest_incomplete_frame_gap": 42
+      },
+      "candidate": {
+        "targets": 155,
+        "TP": 111,
+        "FN": 44,
+        "certain_observed": 34,
+        "FP_proxy": 0,
+        "mean_matched_error_px": 3.478912614834897,
+        "longest_incomplete_frame_gap": 19
+      },
+      "regressions": [
+        {
+          "metric": "certain_observed",
+          "baseline": 38,
+          "candidate": 34
+        },
+        {
+          "metric": "mean_matched_error_px",
+          "baseline": 2.6893730329856944,
+          "candidate": 3.478912614834897
+        },
+        {
+          "metric": "visibility.visible.certain_observed",
+          "baseline": 25,
+          "candidate": 13
+        },
+        {
+          "metric": "visibility.visible.mean_matched_error_px",
+          "baseline": 2.2221334997469526,
+          "candidate": 2.290269080457611
+        },
+        {
+          "metric": "visibility.partial_or_overlay.mean_matched_error_px",
+          "baseline": 3.4261738354006317,
+          "candidate": 4.929057726775187
+        }
+      ]
+    },
+    {
+      "case_id": "cohort-event",
+      "repeat": 0,
+      "profile": "bytetrack",
+      "scenario": 0,
+      "sensitivity": true,
+      "baseline": {
+        "targets": 155,
+        "TP": 67,
+        "FN": 88,
+        "certain_observed": 38,
+        "FP_proxy": 0,
+        "mean_matched_error_px": 2.6893730329856944,
+        "longest_incomplete_frame_gap": 42
+      },
+      "candidate": {
+        "targets": 155,
+        "TP": 111,
+        "FN": 44,
+        "certain_observed": 34,
+        "FP_proxy": 0,
+        "mean_matched_error_px": 3.478912614834897,
+        "longest_incomplete_frame_gap": 19
+      },
+      "regressions": [
+        {
+          "metric": "certain_observed",
+          "baseline": 38,
+          "candidate": 34
+        },
+        {
+          "metric": "mean_matched_error_px",
+          "baseline": 2.6893730329856944,
+          "candidate": 3.478912614834897
+        },
+        {
+          "metric": "visibility.visible.certain_observed",
+          "baseline": 25,
+          "candidate": 13
+        },
+        {
+          "metric": "visibility.visible.mean_matched_error_px",
+          "baseline": 2.2221334997469526,
+          "candidate": 2.290269080457611
+        },
+        {
+          "metric": "visibility.partial_or_overlay.mean_matched_error_px",
+          "baseline": 3.4261738354006317,
+          "candidate": 4.929057726775187
+        }
+      ]
+    },
+    {
+      "case_id": "cohort-event",
+      "repeat": 1,
+      "profile": "kalman",
+      "scenario": 0,
+      "sensitivity": false,
+      "baseline": {
+        "targets": 155,
+        "TP": 128,
+        "FN": 27,
+        "certain_observed": 22,
+        "FP_proxy": 0,
+        "mean_matched_error_px": 3.3734112352992414,
+        "longest_incomplete_frame_gap": 13
+      },
+      "candidate": {
+        "targets": 155,
+        "TP": 134,
+        "FN": 21,
+        "certain_observed": 77,
+        "FP_proxy": 0,
+        "mean_matched_error_px": 3.326807568528272,
+        "longest_incomplete_frame_gap": 13
+      },
+      "regressions": []
+    },
+    {
+      "case_id": "cohort-event",
+      "repeat": 1,
+      "profile": "kalman",
+      "scenario": 0,
+      "sensitivity": true,
+      "baseline": {
+        "targets": 155,
+        "TP": 128,
+        "FN": 27,
+        "certain_observed": 22,
+        "FP_proxy": 0,
+        "mean_matched_error_px": 3.3734112352992414,
+        "longest_incomplete_frame_gap": 13
+      },
+      "candidate": {
+        "targets": 155,
+        "TP": 134,
+        "FN": 21,
+        "certain_observed": 77,
+        "FP_proxy": 0,
+        "mean_matched_error_px": 3.326807568528272,
+        "longest_incomplete_frame_gap": 13
+      },
+      "regressions": []
+    },
+    {
+      "case_id": "cohort-event",
+      "repeat": 1,
+      "profile": "bytetrack",
+      "scenario": 0,
+      "sensitivity": false,
+      "baseline": {
+        "targets": 155,
+        "TP": 67,
+        "FN": 88,
+        "certain_observed": 38,
+        "FP_proxy": 0,
+        "mean_matched_error_px": 2.6893730329856944,
+        "longest_incomplete_frame_gap": 42
+      },
+      "candidate": {
+        "targets": 155,
+        "TP": 111,
+        "FN": 44,
+        "certain_observed": 34,
+        "FP_proxy": 0,
+        "mean_matched_error_px": 3.478912614834897,
+        "longest_incomplete_frame_gap": 19
+      },
+      "regressions": [
+        {
+          "metric": "certain_observed",
+          "baseline": 38,
+          "candidate": 34
+        },
+        {
+          "metric": "mean_matched_error_px",
+          "baseline": 2.6893730329856944,
+          "candidate": 3.478912614834897
+        },
+        {
+          "metric": "visibility.visible.certain_observed",
+          "baseline": 25,
+          "candidate": 13
+        },
+        {
+          "metric": "visibility.visible.mean_matched_error_px",
+          "baseline": 2.2221334997469526,
+          "candidate": 2.290269080457611
+        },
+        {
+          "metric": "visibility.partial_or_overlay.mean_matched_error_px",
+          "baseline": 3.4261738354006317,
+          "candidate": 4.929057726775187
+        }
+      ]
+    },
+    {
+      "case_id": "cohort-event",
+      "repeat": 1,
+      "profile": "bytetrack",
+      "scenario": 0,
+      "sensitivity": true,
+      "baseline": {
+        "targets": 155,
+        "TP": 67,
+        "FN": 88,
+        "certain_observed": 38,
+        "FP_proxy": 0,
+        "mean_matched_error_px": 2.6893730329856944,
+        "longest_incomplete_frame_gap": 42
+      },
+      "candidate": {
+        "targets": 155,
+        "TP": 111,
+        "FN": 44,
+        "certain_observed": 34,
+        "FP_proxy": 0,
+        "mean_matched_error_px": 3.478912614834897,
+        "longest_incomplete_frame_gap": 19
+      },
+      "regressions": [
+        {
+          "metric": "certain_observed",
+          "baseline": 38,
+          "candidate": 34
+        },
+        {
+          "metric": "mean_matched_error_px",
+          "baseline": 2.6893730329856944,
+          "candidate": 3.478912614834897
+        },
+        {
+          "metric": "visibility.visible.certain_observed",
+          "baseline": 25,
+          "candidate": 13
+        },
+        {
+          "metric": "visibility.visible.mean_matched_error_px",
+          "baseline": 2.2221334997469526,
+          "candidate": 2.290269080457611
+        },
+        {
+          "metric": "visibility.partial_or_overlay.mean_matched_error_px",
+          "baseline": 3.4261738354006317,
+          "candidate": 4.929057726775187
+        }
+      ]
+    },
+    {
+      "case_id": "cohort-held",
+      "repeat": 0,
+      "profile": "kalman",
+      "scenario": 0,
+      "sensitivity": false,
+      "baseline": {
+        "targets": 0,
+        "TP": 0,
+        "FN": 0,
+        "certain_observed": 0,
+        "FP_proxy": 9,
+        "mean_matched_error_px": null,
+        "longest_incomplete_frame_gap": 0
+      },
+      "candidate": {
+        "targets": 0,
+        "TP": 0,
+        "FN": 0,
+        "certain_observed": 0,
+        "FP_proxy": 9,
+        "mean_matched_error_px": null,
+        "longest_incomplete_frame_gap": 0
+      },
+      "regressions": []
+    },
+    {
+      "case_id": "cohort-held",
+      "repeat": 0,
+      "profile": "kalman",
+      "scenario": 0,
+      "sensitivity": true,
+      "baseline": {
+        "targets": 0,
+        "TP": 0,
+        "FN": 0,
+        "certain_observed": 0,
+        "FP_proxy": 9,
+        "mean_matched_error_px": null,
+        "longest_incomplete_frame_gap": 0
+      },
+      "candidate": {
+        "targets": 0,
+        "TP": 0,
+        "FN": 0,
+        "certain_observed": 0,
+        "FP_proxy": 9,
+        "mean_matched_error_px": null,
+        "longest_incomplete_frame_gap": 0
+      },
+      "regressions": []
+    },
+    {
+      "case_id": "cohort-held",
+      "repeat": 0,
+      "profile": "bytetrack",
+      "scenario": 0,
+      "sensitivity": false,
+      "baseline": {
+        "targets": 0,
+        "TP": 0,
+        "FN": 0,
+        "certain_observed": 0,
+        "FP_proxy": 9,
+        "mean_matched_error_px": null,
+        "longest_incomplete_frame_gap": 0
+      },
+      "candidate": {
+        "targets": 0,
+        "TP": 0,
+        "FN": 0,
+        "certain_observed": 0,
+        "FP_proxy": 9,
+        "mean_matched_error_px": null,
+        "longest_incomplete_frame_gap": 0
+      },
+      "regressions": []
+    },
+    {
+      "case_id": "cohort-held",
+      "repeat": 0,
+      "profile": "bytetrack",
+      "scenario": 0,
+      "sensitivity": true,
+      "baseline": {
+        "targets": 0,
+        "TP": 0,
+        "FN": 0,
+        "certain_observed": 0,
+        "FP_proxy": 9,
+        "mean_matched_error_px": null,
+        "longest_incomplete_frame_gap": 0
+      },
+      "candidate": {
+        "targets": 0,
+        "TP": 0,
+        "FN": 0,
+        "certain_observed": 0,
+        "FP_proxy": 9,
+        "mean_matched_error_px": null,
+        "longest_incomplete_frame_gap": 0
+      },
+      "regressions": []
+    },
+    {
+      "case_id": "cohort-held",
+      "repeat": 1,
+      "profile": "kalman",
+      "scenario": 0,
+      "sensitivity": false,
+      "baseline": {
+        "targets": 0,
+        "TP": 0,
+        "FN": 0,
+        "certain_observed": 0,
+        "FP_proxy": 9,
+        "mean_matched_error_px": null,
+        "longest_incomplete_frame_gap": 0
+      },
+      "candidate": {
+        "targets": 0,
+        "TP": 0,
+        "FN": 0,
+        "certain_observed": 0,
+        "FP_proxy": 9,
+        "mean_matched_error_px": null,
+        "longest_incomplete_frame_gap": 0
+      },
+      "regressions": []
+    },
+    {
+      "case_id": "cohort-held",
+      "repeat": 1,
+      "profile": "kalman",
+      "scenario": 0,
+      "sensitivity": true,
+      "baseline": {
+        "targets": 0,
+        "TP": 0,
+        "FN": 0,
+        "certain_observed": 0,
+        "FP_proxy": 9,
+        "mean_matched_error_px": null,
+        "longest_incomplete_frame_gap": 0
+      },
+      "candidate": {
+        "targets": 0,
+        "TP": 0,
+        "FN": 0,
+        "certain_observed": 0,
+        "FP_proxy": 9,
+        "mean_matched_error_px": null,
+        "longest_incomplete_frame_gap": 0
+      },
+      "regressions": []
+    },
+    {
+      "case_id": "cohort-held",
+      "repeat": 1,
+      "profile": "bytetrack",
+      "scenario": 0,
+      "sensitivity": false,
+      "baseline": {
+        "targets": 0,
+        "TP": 0,
+        "FN": 0,
+        "certain_observed": 0,
+        "FP_proxy": 9,
+        "mean_matched_error_px": null,
+        "longest_incomplete_frame_gap": 0
+      },
+      "candidate": {
+        "targets": 0,
+        "TP": 0,
+        "FN": 0,
+        "certain_observed": 0,
+        "FP_proxy": 9,
+        "mean_matched_error_px": null,
+        "longest_incomplete_frame_gap": 0
+      },
+      "regressions": []
+    },
+    {
+      "case_id": "cohort-held",
+      "repeat": 1,
+      "profile": "bytetrack",
+      "scenario": 0,
+      "sensitivity": true,
+      "baseline": {
+        "targets": 0,
+        "TP": 0,
+        "FN": 0,
+        "certain_observed": 0,
+        "FP_proxy": 9,
+        "mean_matched_error_px": null,
+        "longest_incomplete_frame_gap": 0
+      },
+      "candidate": {
+        "targets": 0,
+        "TP": 0,
+        "FN": 0,
+        "certain_observed": 0,
+        "FP_proxy": 9,
+        "mean_matched_error_px": null,
+        "longest_incomplete_frame_gap": 0
+      },
+      "regressions": []
+    },
+    {
+      "case_id": "cohort-studio-addendum",
+      "repeat": 0,
+      "profile": "kalman",
+      "scenario": 0,
+      "sensitivity": false,
+      "baseline": {
+        "targets": 48,
+        "TP": 48,
+        "FN": 0,
+        "certain_observed": 44,
+        "FP_proxy": 0,
+        "mean_matched_error_px": 1.4843350875439814,
+        "longest_incomplete_frame_gap": 0
+      },
+      "candidate": {
+        "targets": 48,
+        "TP": 48,
+        "FN": 0,
+        "certain_observed": 44,
+        "FP_proxy": 0,
+        "mean_matched_error_px": 1.4843350875439814,
+        "longest_incomplete_frame_gap": 0
+      },
+      "regressions": []
+    },
+    {
+      "case_id": "cohort-studio-addendum",
+      "repeat": 0,
+      "profile": "kalman",
+      "scenario": 0,
+      "sensitivity": true,
+      "baseline": {
+        "targets": 48,
+        "TP": 48,
+        "FN": 0,
+        "certain_observed": 44,
+        "FP_proxy": 0,
+        "mean_matched_error_px": 1.4843350875439814,
+        "longest_incomplete_frame_gap": 0
+      },
+      "candidate": {
+        "targets": 48,
+        "TP": 48,
+        "FN": 0,
+        "certain_observed": 44,
+        "FP_proxy": 0,
+        "mean_matched_error_px": 1.4843350875439814,
+        "longest_incomplete_frame_gap": 0
+      },
+      "regressions": []
+    },
+    {
+      "case_id": "cohort-studio-addendum",
+      "repeat": 0,
+      "profile": "bytetrack",
+      "scenario": 0,
+      "sensitivity": false,
+      "baseline": {
+        "targets": 48,
+        "TP": 48,
+        "FN": 0,
+        "certain_observed": 44,
+        "FP_proxy": 0,
+        "mean_matched_error_px": 1.4843350875439814,
+        "longest_incomplete_frame_gap": 0
+      },
+      "candidate": {
+        "targets": 48,
+        "TP": 48,
+        "FN": 0,
+        "certain_observed": 44,
+        "FP_proxy": 0,
+        "mean_matched_error_px": 1.4843350875439814,
+        "longest_incomplete_frame_gap": 0
+      },
+      "regressions": []
+    },
+    {
+      "case_id": "cohort-studio-addendum",
+      "repeat": 0,
+      "profile": "bytetrack",
+      "scenario": 0,
+      "sensitivity": true,
+      "baseline": {
+        "targets": 48,
+        "TP": 48,
+        "FN": 0,
+        "certain_observed": 44,
+        "FP_proxy": 0,
+        "mean_matched_error_px": 1.4843350875439814,
+        "longest_incomplete_frame_gap": 0
+      },
+      "candidate": {
+        "targets": 48,
+        "TP": 48,
+        "FN": 0,
+        "certain_observed": 44,
+        "FP_proxy": 0,
+        "mean_matched_error_px": 1.4843350875439814,
+        "longest_incomplete_frame_gap": 0
+      },
+      "regressions": []
+    },
+    {
+      "case_id": "cohort-studio-addendum",
+      "repeat": 1,
+      "profile": "kalman",
+      "scenario": 0,
+      "sensitivity": false,
+      "baseline": {
+        "targets": 48,
+        "TP": 48,
+        "FN": 0,
+        "certain_observed": 44,
+        "FP_proxy": 0,
+        "mean_matched_error_px": 1.4843350875439814,
+        "longest_incomplete_frame_gap": 0
+      },
+      "candidate": {
+        "targets": 48,
+        "TP": 48,
+        "FN": 0,
+        "certain_observed": 44,
+        "FP_proxy": 0,
+        "mean_matched_error_px": 1.4843350875439814,
+        "longest_incomplete_frame_gap": 0
+      },
+      "regressions": []
+    },
+    {
+      "case_id": "cohort-studio-addendum",
+      "repeat": 1,
+      "profile": "kalman",
+      "scenario": 0,
+      "sensitivity": true,
+      "baseline": {
+        "targets": 48,
+        "TP": 48,
+        "FN": 0,
+        "certain_observed": 44,
+        "FP_proxy": 0,
+        "mean_matched_error_px": 1.4843350875439814,
+        "longest_incomplete_frame_gap": 0
+      },
+      "candidate": {
+        "targets": 48,
+        "TP": 48,
+        "FN": 0,
+        "certain_observed": 44,
+        "FP_proxy": 0,
+        "mean_matched_error_px": 1.4843350875439814,
+        "longest_incomplete_frame_gap": 0
+      },
+      "regressions": []
+    },
+    {
+      "case_id": "cohort-studio-addendum",
+      "repeat": 1,
+      "profile": "bytetrack",
+      "scenario": 0,
+      "sensitivity": false,
+      "baseline": {
+        "targets": 48,
+        "TP": 48,
+        "FN": 0,
+        "certain_observed": 44,
+        "FP_proxy": 0,
+        "mean_matched_error_px": 1.4843350875439814,
+        "longest_incomplete_frame_gap": 0
+      },
+      "candidate": {
+        "targets": 48,
+        "TP": 48,
+        "FN": 0,
+        "certain_observed": 44,
+        "FP_proxy": 0,
+        "mean_matched_error_px": 1.4843350875439814,
+        "longest_incomplete_frame_gap": 0
+      },
+      "regressions": []
+    },
+    {
+      "case_id": "cohort-studio-addendum",
+      "repeat": 1,
+      "profile": "bytetrack",
+      "scenario": 0,
+      "sensitivity": true,
+      "baseline": {
+        "targets": 48,
+        "TP": 48,
+        "FN": 0,
+        "certain_observed": 44,
+        "FP_proxy": 0,
+        "mean_matched_error_px": 1.4843350875439814,
+        "longest_incomplete_frame_gap": 0
+      },
+      "candidate": {
+        "targets": 48,
+        "TP": 48,
+        "FN": 0,
+        "certain_observed": 44,
+        "FP_proxy": 0,
+        "mean_matched_error_px": 1.4843350875439814,
+        "longest_incomplete_frame_gap": 0
+      },
+      "regressions": []
+    },
+    {
+      "case_id": "cohort-studio",
+      "repeat": 0,
+      "profile": "kalman",
+      "scenario": 0,
+      "sensitivity": false,
+      "baseline": {
+        "targets": 172,
+        "TP": 172,
+        "FN": 0,
+        "certain_observed": 168,
+        "FP_proxy": 0,
+        "mean_matched_error_px": 2.056329894423377,
+        "longest_incomplete_frame_gap": 0
+      },
+      "candidate": {
+        "targets": 172,
+        "TP": 172,
+        "FN": 0,
+        "certain_observed": 168,
+        "FP_proxy": 0,
+        "mean_matched_error_px": 2.056329894423377,
+        "longest_incomplete_frame_gap": 0
+      },
+      "regressions": []
+    },
+    {
+      "case_id": "cohort-studio",
+      "repeat": 0,
+      "profile": "kalman",
+      "scenario": 0,
+      "sensitivity": true,
+      "baseline": {
+        "targets": 172,
+        "TP": 172,
+        "FN": 0,
+        "certain_observed": 168,
+        "FP_proxy": 0,
+        "mean_matched_error_px": 2.056329894423377,
+        "longest_incomplete_frame_gap": 0
+      },
+      "candidate": {
+        "targets": 172,
+        "TP": 172,
+        "FN": 0,
+        "certain_observed": 168,
+        "FP_proxy": 0,
+        "mean_matched_error_px": 2.056329894423377,
+        "longest_incomplete_frame_gap": 0
+      },
+      "regressions": []
+    },
+    {
+      "case_id": "cohort-studio",
+      "repeat": 0,
+      "profile": "bytetrack",
+      "scenario": 0,
+      "sensitivity": false,
+      "baseline": {
+        "targets": 172,
+        "TP": 126,
+        "FN": 46,
+        "certain_observed": 120,
+        "FP_proxy": 0,
+        "mean_matched_error_px": 1.816865582043873,
+        "longest_incomplete_frame_gap": 18
+      },
+      "candidate": {
+        "targets": 172,
+        "TP": 154,
+        "FN": 18,
+        "certain_observed": 148,
+        "FP_proxy": 0,
+        "mean_matched_error_px": 2.0107318261904847,
+        "longest_incomplete_frame_gap": 18
+      },
+      "regressions": [
+        {
+          "metric": "mean_matched_error_px",
+          "baseline": 1.816865582043873,
+          "candidate": 2.0107318261904847
+        },
+        {
+          "metric": "visibility.visible.mean_matched_error_px",
+          "baseline": 1.5132018759428045,
+          "candidate": 1.6186979022764105
+        },
+        {
+          "metric": "visibility.partial_or_overlay.mean_matched_error_px",
+          "baseline": 3.1767508745834383,
+          "candidate": 3.3436471674983306
+        },
+        {
+          "metric": "identities.orange.mean_matched_error_px",
+          "baseline": 1.4973857836106887,
+          "candidate": 1.5550111641139042
+        },
+        {
+          "metric": "identities.purple.mean_matched_error_px",
+          "baseline": 2.2715099105834033,
+          "candidate": 2.58708442822851
+        }
+      ]
+    },
+    {
+      "case_id": "cohort-studio",
+      "repeat": 0,
+      "profile": "bytetrack",
+      "scenario": 0,
+      "sensitivity": true,
+      "baseline": {
+        "targets": 172,
+        "TP": 126,
+        "FN": 46,
+        "certain_observed": 120,
+        "FP_proxy": 0,
+        "mean_matched_error_px": 1.816865582043873,
+        "longest_incomplete_frame_gap": 18
+      },
+      "candidate": {
+        "targets": 172,
+        "TP": 154,
+        "FN": 18,
+        "certain_observed": 148,
+        "FP_proxy": 0,
+        "mean_matched_error_px": 2.0107318261904847,
+        "longest_incomplete_frame_gap": 18
+      },
+      "regressions": [
+        {
+          "metric": "mean_matched_error_px",
+          "baseline": 1.816865582043873,
+          "candidate": 2.0107318261904847
+        },
+        {
+          "metric": "visibility.visible.mean_matched_error_px",
+          "baseline": 1.5132018759428045,
+          "candidate": 1.6186979022764105
+        },
+        {
+          "metric": "visibility.partial_or_overlay.mean_matched_error_px",
+          "baseline": 3.1767508745834383,
+          "candidate": 3.3436471674983306
+        },
+        {
+          "metric": "identities.orange.mean_matched_error_px",
+          "baseline": 1.4973857836106887,
+          "candidate": 1.5550111641139042
+        },
+        {
+          "metric": "identities.purple.mean_matched_error_px",
+          "baseline": 2.2715099105834033,
+          "candidate": 2.58708442822851
+        }
+      ]
+    },
+    {
+      "case_id": "cohort-studio",
+      "repeat": 1,
+      "profile": "kalman",
+      "scenario": 0,
+      "sensitivity": false,
+      "baseline": {
+        "targets": 172,
+        "TP": 172,
+        "FN": 0,
+        "certain_observed": 168,
+        "FP_proxy": 0,
+        "mean_matched_error_px": 2.056329894423377,
+        "longest_incomplete_frame_gap": 0
+      },
+      "candidate": {
+        "targets": 172,
+        "TP": 172,
+        "FN": 0,
+        "certain_observed": 168,
+        "FP_proxy": 0,
+        "mean_matched_error_px": 2.056329894423377,
+        "longest_incomplete_frame_gap": 0
+      },
+      "regressions": []
+    },
+    {
+      "case_id": "cohort-studio",
+      "repeat": 1,
+      "profile": "kalman",
+      "scenario": 0,
+      "sensitivity": true,
+      "baseline": {
+        "targets": 172,
+        "TP": 172,
+        "FN": 0,
+        "certain_observed": 168,
+        "FP_proxy": 0,
+        "mean_matched_error_px": 2.056329894423377,
+        "longest_incomplete_frame_gap": 0
+      },
+      "candidate": {
+        "targets": 172,
+        "TP": 172,
+        "FN": 0,
+        "certain_observed": 168,
+        "FP_proxy": 0,
+        "mean_matched_error_px": 2.056329894423377,
+        "longest_incomplete_frame_gap": 0
+      },
+      "regressions": []
+    },
+    {
+      "case_id": "cohort-studio",
+      "repeat": 1,
+      "profile": "bytetrack",
+      "scenario": 0,
+      "sensitivity": false,
+      "baseline": {
+        "targets": 172,
+        "TP": 126,
+        "FN": 46,
+        "certain_observed": 120,
+        "FP_proxy": 0,
+        "mean_matched_error_px": 1.816865582043873,
+        "longest_incomplete_frame_gap": 18
+      },
+      "candidate": {
+        "targets": 172,
+        "TP": 154,
+        "FN": 18,
+        "certain_observed": 148,
+        "FP_proxy": 0,
+        "mean_matched_error_px": 2.0107318261904847,
+        "longest_incomplete_frame_gap": 18
+      },
+      "regressions": [
+        {
+          "metric": "mean_matched_error_px",
+          "baseline": 1.816865582043873,
+          "candidate": 2.0107318261904847
+        },
+        {
+          "metric": "visibility.visible.mean_matched_error_px",
+          "baseline": 1.5132018759428045,
+          "candidate": 1.6186979022764105
+        },
+        {
+          "metric": "visibility.partial_or_overlay.mean_matched_error_px",
+          "baseline": 3.1767508745834383,
+          "candidate": 3.3436471674983306
+        },
+        {
+          "metric": "identities.orange.mean_matched_error_px",
+          "baseline": 1.4973857836106887,
+          "candidate": 1.5550111641139042
+        },
+        {
+          "metric": "identities.purple.mean_matched_error_px",
+          "baseline": 2.2715099105834033,
+          "candidate": 2.58708442822851
+        }
+      ]
+    },
+    {
+      "case_id": "cohort-studio",
+      "repeat": 1,
+      "profile": "bytetrack",
+      "scenario": 0,
+      "sensitivity": true,
+      "baseline": {
+        "targets": 172,
+        "TP": 126,
+        "FN": 46,
+        "certain_observed": 120,
+        "FP_proxy": 0,
+        "mean_matched_error_px": 1.816865582043873,
+        "longest_incomplete_frame_gap": 18
+      },
+      "candidate": {
+        "targets": 172,
+        "TP": 154,
+        "FN": 18,
+        "certain_observed": 148,
+        "FP_proxy": 0,
+        "mean_matched_error_px": 2.0107318261904847,
+        "longest_incomplete_frame_gap": 18
+      },
+      "regressions": [
+        {
+          "metric": "mean_matched_error_px",
+          "baseline": 1.816865582043873,
+          "candidate": 2.0107318261904847
+        },
+        {
+          "metric": "visibility.visible.mean_matched_error_px",
+          "baseline": 1.5132018759428045,
+          "candidate": 1.6186979022764105
+        },
+        {
+          "metric": "visibility.partial_or_overlay.mean_matched_error_px",
+          "baseline": 3.1767508745834383,
+          "candidate": 3.3436471674983306
+        },
+        {
+          "metric": "identities.orange.mean_matched_error_px",
+          "baseline": 1.4973857836106887,
+          "candidate": 1.5550111641139042
+        },
+        {
+          "metric": "identities.purple.mean_matched_error_px",
+          "baseline": 2.2715099105834033,
+          "candidate": 2.58708442822851
+        }
+      ]
+    },
+    {
+      "case_id": "empty-graphic",
+      "repeat": 0,
+      "profile": "kalman",
+      "scenario": 0,
+      "sensitivity": false,
+      "baseline": {
+        "targets": 0,
+        "TP": 0,
+        "FN": 0,
+        "certain_observed": 0,
+        "FP_proxy": 0,
+        "mean_matched_error_px": null,
+        "longest_incomplete_frame_gap": 0
+      },
+      "candidate": {
+        "targets": 0,
+        "TP": 0,
+        "FN": 0,
+        "certain_observed": 0,
+        "FP_proxy": 0,
+        "mean_matched_error_px": null,
+        "longest_incomplete_frame_gap": 0
+      },
+      "regressions": []
+    },
+    {
+      "case_id": "empty-graphic",
+      "repeat": 0,
+      "profile": "kalman",
+      "scenario": 0,
+      "sensitivity": true,
+      "baseline": {
+        "targets": 0,
+        "TP": 0,
+        "FN": 0,
+        "certain_observed": 0,
+        "FP_proxy": 0,
+        "mean_matched_error_px": null,
+        "longest_incomplete_frame_gap": 0
+      },
+      "candidate": {
+        "targets": 0,
+        "TP": 0,
+        "FN": 0,
+        "certain_observed": 0,
+        "FP_proxy": 0,
+        "mean_matched_error_px": null,
+        "longest_incomplete_frame_gap": 0
+      },
+      "regressions": []
+    },
+    {
+      "case_id": "empty-graphic",
+      "repeat": 0,
+      "profile": "bytetrack",
+      "scenario": 0,
+      "sensitivity": false,
+      "baseline": {
+        "targets": 0,
+        "TP": 0,
+        "FN": 0,
+        "certain_observed": 0,
+        "FP_proxy": 0,
+        "mean_matched_error_px": null,
+        "longest_incomplete_frame_gap": 0
+      },
+      "candidate": {
+        "targets": 0,
+        "TP": 0,
+        "FN": 0,
+        "certain_observed": 0,
+        "FP_proxy": 0,
+        "mean_matched_error_px": null,
+        "longest_incomplete_frame_gap": 0
+      },
+      "regressions": []
+    },
+    {
+      "case_id": "empty-graphic",
+      "repeat": 0,
+      "profile": "bytetrack",
+      "scenario": 0,
+      "sensitivity": true,
+      "baseline": {
+        "targets": 0,
+        "TP": 0,
+        "FN": 0,
+        "certain_observed": 0,
+        "FP_proxy": 0,
+        "mean_matched_error_px": null,
+        "longest_incomplete_frame_gap": 0
+      },
+      "candidate": {
+        "targets": 0,
+        "TP": 0,
+        "FN": 0,
+        "certain_observed": 0,
+        "FP_proxy": 0,
+        "mean_matched_error_px": null,
+        "longest_incomplete_frame_gap": 0
+      },
+      "regressions": []
+    },
+    {
+      "case_id": "empty-graphic",
+      "repeat": 1,
+      "profile": "kalman",
+      "scenario": 0,
+      "sensitivity": false,
+      "baseline": {
+        "targets": 0,
+        "TP": 0,
+        "FN": 0,
+        "certain_observed": 0,
+        "FP_proxy": 0,
+        "mean_matched_error_px": null,
+        "longest_incomplete_frame_gap": 0
+      },
+      "candidate": {
+        "targets": 0,
+        "TP": 0,
+        "FN": 0,
+        "certain_observed": 0,
+        "FP_proxy": 0,
+        "mean_matched_error_px": null,
+        "longest_incomplete_frame_gap": 0
+      },
+      "regressions": []
+    },
+    {
+      "case_id": "empty-graphic",
+      "repeat": 1,
+      "profile": "kalman",
+      "scenario": 0,
+      "sensitivity": true,
+      "baseline": {
+        "targets": 0,
+        "TP": 0,
+        "FN": 0,
+        "certain_observed": 0,
+        "FP_proxy": 0,
+        "mean_matched_error_px": null,
+        "longest_incomplete_frame_gap": 0
+      },
+      "candidate": {
+        "targets": 0,
+        "TP": 0,
+        "FN": 0,
+        "certain_observed": 0,
+        "FP_proxy": 0,
+        "mean_matched_error_px": null,
+        "longest_incomplete_frame_gap": 0
+      },
+      "regressions": []
+    },
+    {
+      "case_id": "empty-graphic",
+      "repeat": 1,
+      "profile": "bytetrack",
+      "scenario": 0,
+      "sensitivity": false,
+      "baseline": {
+        "targets": 0,
+        "TP": 0,
+        "FN": 0,
+        "certain_observed": 0,
+        "FP_proxy": 0,
+        "mean_matched_error_px": null,
+        "longest_incomplete_frame_gap": 0
+      },
+      "candidate": {
+        "targets": 0,
+        "TP": 0,
+        "FN": 0,
+        "certain_observed": 0,
+        "FP_proxy": 0,
+        "mean_matched_error_px": null,
+        "longest_incomplete_frame_gap": 0
+      },
+      "regressions": []
+    },
+    {
+      "case_id": "empty-graphic",
+      "repeat": 1,
+      "profile": "bytetrack",
+      "scenario": 0,
+      "sensitivity": true,
+      "baseline": {
+        "targets": 0,
+        "TP": 0,
+        "FN": 0,
+        "certain_observed": 0,
+        "FP_proxy": 0,
+        "mean_matched_error_px": null,
+        "longest_incomplete_frame_gap": 0
+      },
+      "candidate": {
+        "targets": 0,
+        "TP": 0,
+        "FN": 0,
+        "certain_observed": 0,
+        "FP_proxy": 0,
+        "mean_matched_error_px": null,
+        "longest_incomplete_frame_gap": 0
+      },
+      "regressions": []
+    },
+    {
+      "case_id": "event-yellow-overlap",
+      "repeat": 0,
+      "profile": "kalman",
+      "scenario": 0,
+      "sensitivity": false,
+      "baseline": {
+        "targets": 64,
+        "TP": 64,
+        "FN": 0,
+        "certain_observed": 60,
+        "FP_proxy": 0,
+        "mean_matched_error_px": 6.829423604107062,
+        "longest_incomplete_frame_gap": 0
+      },
+      "candidate": {
+        "targets": 64,
+        "TP": 64,
+        "FN": 0,
+        "certain_observed": 60,
+        "FP_proxy": 0,
+        "mean_matched_error_px": 6.829423604107062,
+        "longest_incomplete_frame_gap": 0
+      },
+      "regressions": []
+    },
+    {
+      "case_id": "event-yellow-overlap",
+      "repeat": 0,
+      "profile": "kalman",
+      "scenario": 0,
+      "sensitivity": true,
+      "baseline": {
+        "targets": 64,
+        "TP": 64,
+        "FN": 0,
+        "certain_observed": 60,
+        "FP_proxy": 0,
+        "mean_matched_error_px": 6.829423604107062,
+        "longest_incomplete_frame_gap": 0
+      },
+      "candidate": {
+        "targets": 64,
+        "TP": 64,
+        "FN": 0,
+        "certain_observed": 60,
+        "FP_proxy": 0,
+        "mean_matched_error_px": 6.829423604107062,
+        "longest_incomplete_frame_gap": 0
+      },
+      "regressions": []
+    },
+    {
+      "case_id": "event-yellow-overlap",
+      "repeat": 0,
+      "profile": "bytetrack",
+      "scenario": 0,
+      "sensitivity": false,
+      "baseline": {
+        "targets": 64,
+        "TP": 64,
+        "FN": 0,
+        "certain_observed": 60,
+        "FP_proxy": 0,
+        "mean_matched_error_px": 6.829423604107062,
+        "longest_incomplete_frame_gap": 0
+      },
+      "candidate": {
+        "targets": 64,
+        "TP": 64,
+        "FN": 0,
+        "certain_observed": 60,
+        "FP_proxy": 0,
+        "mean_matched_error_px": 6.829423604107062,
+        "longest_incomplete_frame_gap": 0
+      },
+      "regressions": []
+    },
+    {
+      "case_id": "event-yellow-overlap",
+      "repeat": 0,
+      "profile": "bytetrack",
+      "scenario": 0,
+      "sensitivity": true,
+      "baseline": {
+        "targets": 64,
+        "TP": 64,
+        "FN": 0,
+        "certain_observed": 60,
+        "FP_proxy": 0,
+        "mean_matched_error_px": 6.829423604107062,
+        "longest_incomplete_frame_gap": 0
+      },
+      "candidate": {
+        "targets": 64,
+        "TP": 64,
+        "FN": 0,
+        "certain_observed": 60,
+        "FP_proxy": 0,
+        "mean_matched_error_px": 6.829423604107062,
+        "longest_incomplete_frame_gap": 0
+      },
+      "regressions": []
+    },
+    {
+      "case_id": "event-yellow-overlap",
+      "repeat": 1,
+      "profile": "kalman",
+      "scenario": 0,
+      "sensitivity": false,
+      "baseline": {
+        "targets": 64,
+        "TP": 64,
+        "FN": 0,
+        "certain_observed": 60,
+        "FP_proxy": 0,
+        "mean_matched_error_px": 6.829423604107062,
+        "longest_incomplete_frame_gap": 0
+      },
+      "candidate": {
+        "targets": 64,
+        "TP": 64,
+        "FN": 0,
+        "certain_observed": 60,
+        "FP_proxy": 0,
+        "mean_matched_error_px": 6.829423604107062,
+        "longest_incomplete_frame_gap": 0
+      },
+      "regressions": []
+    },
+    {
+      "case_id": "event-yellow-overlap",
+      "repeat": 1,
+      "profile": "kalman",
+      "scenario": 0,
+      "sensitivity": true,
+      "baseline": {
+        "targets": 64,
+        "TP": 64,
+        "FN": 0,
+        "certain_observed": 60,
+        "FP_proxy": 0,
+        "mean_matched_error_px": 6.829423604107062,
+        "longest_incomplete_frame_gap": 0
+      },
+      "candidate": {
+        "targets": 64,
+        "TP": 64,
+        "FN": 0,
+        "certain_observed": 60,
+        "FP_proxy": 0,
+        "mean_matched_error_px": 6.829423604107062,
+        "longest_incomplete_frame_gap": 0
+      },
+      "regressions": []
+    },
+    {
+      "case_id": "event-yellow-overlap",
+      "repeat": 1,
+      "profile": "bytetrack",
+      "scenario": 0,
+      "sensitivity": false,
+      "baseline": {
+        "targets": 64,
+        "TP": 64,
+        "FN": 0,
+        "certain_observed": 60,
+        "FP_proxy": 0,
+        "mean_matched_error_px": 6.829423604107062,
+        "longest_incomplete_frame_gap": 0
+      },
+      "candidate": {
+        "targets": 64,
+        "TP": 64,
+        "FN": 0,
+        "certain_observed": 60,
+        "FP_proxy": 0,
+        "mean_matched_error_px": 6.829423604107062,
+        "longest_incomplete_frame_gap": 0
+      },
+      "regressions": []
+    },
+    {
+      "case_id": "event-yellow-overlap",
+      "repeat": 1,
+      "profile": "bytetrack",
+      "scenario": 0,
+      "sensitivity": true,
+      "baseline": {
+        "targets": 64,
+        "TP": 64,
+        "FN": 0,
+        "certain_observed": 60,
+        "FP_proxy": 0,
+        "mean_matched_error_px": 6.829423604107062,
+        "longest_incomplete_frame_gap": 0
+      },
+      "candidate": {
+        "targets": 64,
+        "TP": 64,
+        "FN": 0,
+        "certain_observed": 60,
+        "FP_proxy": 0,
+        "mean_matched_error_px": 6.829423604107062,
+        "longest_incomplete_frame_gap": 0
+      },
+      "regressions": []
+    },
+    {
+      "case_id": "oblique-preburst",
+      "repeat": 0,
+      "profile": "kalman",
+      "scenario": 0,
+      "sensitivity": false,
+      "baseline": {
+        "targets": 32,
+        "TP": 0,
+        "FN": 32,
+        "certain_observed": 0,
+        "FP_proxy": 64,
+        "mean_matched_error_px": null,
+        "longest_incomplete_frame_gap": 32
+      },
+      "candidate": {
+        "targets": 32,
+        "TP": 0,
+        "FN": 32,
+        "certain_observed": 0,
+        "FP_proxy": 64,
+        "mean_matched_error_px": null,
+        "longest_incomplete_frame_gap": 32
+      },
+      "regressions": []
+    },
+    {
+      "case_id": "oblique-preburst",
+      "repeat": 0,
+      "profile": "kalman",
+      "scenario": 0,
+      "sensitivity": true,
+      "baseline": {
+        "targets": 32,
+        "TP": 0,
+        "FN": 32,
+        "certain_observed": 0,
+        "FP_proxy": 64,
+        "mean_matched_error_px": null,
+        "longest_incomplete_frame_gap": 32
+      },
+      "candidate": {
+        "targets": 32,
+        "TP": 0,
+        "FN": 32,
+        "certain_observed": 0,
+        "FP_proxy": 64,
+        "mean_matched_error_px": null,
+        "longest_incomplete_frame_gap": 32
+      },
+      "regressions": []
+    },
+    {
+      "case_id": "oblique-preburst",
+      "repeat": 0,
+      "profile": "bytetrack",
+      "scenario": 0,
+      "sensitivity": false,
+      "baseline": {
+        "targets": 32,
+        "TP": 0,
+        "FN": 32,
+        "certain_observed": 0,
+        "FP_proxy": 64,
+        "mean_matched_error_px": null,
+        "longest_incomplete_frame_gap": 32
+      },
+      "candidate": {
+        "targets": 32,
+        "TP": 0,
+        "FN": 32,
+        "certain_observed": 0,
+        "FP_proxy": 64,
+        "mean_matched_error_px": null,
+        "longest_incomplete_frame_gap": 32
+      },
+      "regressions": []
+    },
+    {
+      "case_id": "oblique-preburst",
+      "repeat": 0,
+      "profile": "bytetrack",
+      "scenario": 0,
+      "sensitivity": true,
+      "baseline": {
+        "targets": 32,
+        "TP": 0,
+        "FN": 32,
+        "certain_observed": 0,
+        "FP_proxy": 64,
+        "mean_matched_error_px": null,
+        "longest_incomplete_frame_gap": 32
+      },
+      "candidate": {
+        "targets": 32,
+        "TP": 0,
+        "FN": 32,
+        "certain_observed": 0,
+        "FP_proxy": 64,
+        "mean_matched_error_px": null,
+        "longest_incomplete_frame_gap": 32
+      },
+      "regressions": []
+    },
+    {
+      "case_id": "oblique-preburst",
+      "repeat": 1,
+      "profile": "kalman",
+      "scenario": 0,
+      "sensitivity": false,
+      "baseline": {
+        "targets": 32,
+        "TP": 0,
+        "FN": 32,
+        "certain_observed": 0,
+        "FP_proxy": 64,
+        "mean_matched_error_px": null,
+        "longest_incomplete_frame_gap": 32
+      },
+      "candidate": {
+        "targets": 32,
+        "TP": 0,
+        "FN": 32,
+        "certain_observed": 0,
+        "FP_proxy": 64,
+        "mean_matched_error_px": null,
+        "longest_incomplete_frame_gap": 32
+      },
+      "regressions": []
+    },
+    {
+      "case_id": "oblique-preburst",
+      "repeat": 1,
+      "profile": "kalman",
+      "scenario": 0,
+      "sensitivity": true,
+      "baseline": {
+        "targets": 32,
+        "TP": 0,
+        "FN": 32,
+        "certain_observed": 0,
+        "FP_proxy": 64,
+        "mean_matched_error_px": null,
+        "longest_incomplete_frame_gap": 32
+      },
+      "candidate": {
+        "targets": 32,
+        "TP": 0,
+        "FN": 32,
+        "certain_observed": 0,
+        "FP_proxy": 64,
+        "mean_matched_error_px": null,
+        "longest_incomplete_frame_gap": 32
+      },
+      "regressions": []
+    },
+    {
+      "case_id": "oblique-preburst",
+      "repeat": 1,
+      "profile": "bytetrack",
+      "scenario": 0,
+      "sensitivity": false,
+      "baseline": {
+        "targets": 32,
+        "TP": 0,
+        "FN": 32,
+        "certain_observed": 0,
+        "FP_proxy": 64,
+        "mean_matched_error_px": null,
+        "longest_incomplete_frame_gap": 32
+      },
+      "candidate": {
+        "targets": 32,
+        "TP": 0,
+        "FN": 32,
+        "certain_observed": 0,
+        "FP_proxy": 64,
+        "mean_matched_error_px": null,
+        "longest_incomplete_frame_gap": 32
+      },
+      "regressions": []
+    },
+    {
+      "case_id": "oblique-preburst",
+      "repeat": 1,
+      "profile": "bytetrack",
+      "scenario": 0,
+      "sensitivity": true,
+      "baseline": {
+        "targets": 32,
+        "TP": 0,
+        "FN": 32,
+        "certain_observed": 0,
+        "FP_proxy": 64,
+        "mean_matched_error_px": null,
+        "longest_incomplete_frame_gap": 32
+      },
+      "candidate": {
+        "targets": 32,
+        "TP": 0,
+        "FN": 32,
+        "certain_observed": 0,
+        "FP_proxy": 64,
+        "mean_matched_error_px": null,
+        "longest_incomplete_frame_gap": 32
+      },
+      "regressions": []
+    },
+    {
+      "case_id": "oblique-reflection",
+      "repeat": 0,
+      "profile": "kalman",
+      "scenario": 0,
+      "sensitivity": false,
+      "baseline": {
+        "targets": 64,
+        "TP": 64,
+        "FN": 0,
+        "certain_observed": 60,
+        "FP_proxy": 0,
+        "mean_matched_error_px": 5.960801272411567,
+        "longest_incomplete_frame_gap": 0
+      },
+      "candidate": {
+        "targets": 64,
+        "TP": 64,
+        "FN": 0,
+        "certain_observed": 60,
+        "FP_proxy": 0,
+        "mean_matched_error_px": 5.960801272411567,
+        "longest_incomplete_frame_gap": 0
+      },
+      "regressions": []
+    },
+    {
+      "case_id": "oblique-reflection",
+      "repeat": 0,
+      "profile": "kalman",
+      "scenario": 0,
+      "sensitivity": true,
+      "baseline": {
+        "targets": 64,
+        "TP": 64,
+        "FN": 0,
+        "certain_observed": 60,
+        "FP_proxy": 0,
+        "mean_matched_error_px": 5.960801272411567,
+        "longest_incomplete_frame_gap": 0
+      },
+      "candidate": {
+        "targets": 64,
+        "TP": 64,
+        "FN": 0,
+        "certain_observed": 60,
+        "FP_proxy": 0,
+        "mean_matched_error_px": 5.960801272411567,
+        "longest_incomplete_frame_gap": 0
+      },
+      "regressions": []
+    },
+    {
+      "case_id": "oblique-reflection",
+      "repeat": 0,
+      "profile": "bytetrack",
+      "scenario": 0,
+      "sensitivity": false,
+      "baseline": {
+        "targets": 64,
+        "TP": 64,
+        "FN": 0,
+        "certain_observed": 60,
+        "FP_proxy": 0,
+        "mean_matched_error_px": 5.960801272411567,
+        "longest_incomplete_frame_gap": 0
+      },
+      "candidate": {
+        "targets": 64,
+        "TP": 64,
+        "FN": 0,
+        "certain_observed": 60,
+        "FP_proxy": 0,
+        "mean_matched_error_px": 5.960801272411567,
+        "longest_incomplete_frame_gap": 0
+      },
+      "regressions": []
+    },
+    {
+      "case_id": "oblique-reflection",
+      "repeat": 0,
+      "profile": "bytetrack",
+      "scenario": 0,
+      "sensitivity": true,
+      "baseline": {
+        "targets": 64,
+        "TP": 64,
+        "FN": 0,
+        "certain_observed": 60,
+        "FP_proxy": 0,
+        "mean_matched_error_px": 5.960801272411567,
+        "longest_incomplete_frame_gap": 0
+      },
+      "candidate": {
+        "targets": 64,
+        "TP": 64,
+        "FN": 0,
+        "certain_observed": 60,
+        "FP_proxy": 0,
+        "mean_matched_error_px": 5.960801272411567,
+        "longest_incomplete_frame_gap": 0
+      },
+      "regressions": []
+    },
+    {
+      "case_id": "oblique-reflection",
+      "repeat": 1,
+      "profile": "kalman",
+      "scenario": 0,
+      "sensitivity": false,
+      "baseline": {
+        "targets": 64,
+        "TP": 64,
+        "FN": 0,
+        "certain_observed": 60,
+        "FP_proxy": 0,
+        "mean_matched_error_px": 5.960801272411567,
+        "longest_incomplete_frame_gap": 0
+      },
+      "candidate": {
+        "targets": 64,
+        "TP": 64,
+        "FN": 0,
+        "certain_observed": 60,
+        "FP_proxy": 0,
+        "mean_matched_error_px": 5.960801272411567,
+        "longest_incomplete_frame_gap": 0
+      },
+      "regressions": []
+    },
+    {
+      "case_id": "oblique-reflection",
+      "repeat": 1,
+      "profile": "kalman",
+      "scenario": 0,
+      "sensitivity": true,
+      "baseline": {
+        "targets": 64,
+        "TP": 64,
+        "FN": 0,
+        "certain_observed": 60,
+        "FP_proxy": 0,
+        "mean_matched_error_px": 5.960801272411567,
+        "longest_incomplete_frame_gap": 0
+      },
+      "candidate": {
+        "targets": 64,
+        "TP": 64,
+        "FN": 0,
+        "certain_observed": 60,
+        "FP_proxy": 0,
+        "mean_matched_error_px": 5.960801272411567,
+        "longest_incomplete_frame_gap": 0
+      },
+      "regressions": []
+    },
+    {
+      "case_id": "oblique-reflection",
+      "repeat": 1,
+      "profile": "bytetrack",
+      "scenario": 0,
+      "sensitivity": false,
+      "baseline": {
+        "targets": 64,
+        "TP": 64,
+        "FN": 0,
+        "certain_observed": 60,
+        "FP_proxy": 0,
+        "mean_matched_error_px": 5.960801272411567,
+        "longest_incomplete_frame_gap": 0
+      },
+      "candidate": {
+        "targets": 64,
+        "TP": 64,
+        "FN": 0,
+        "certain_observed": 60,
+        "FP_proxy": 0,
+        "mean_matched_error_px": 5.960801272411567,
+        "longest_incomplete_frame_gap": 0
+      },
+      "regressions": []
+    },
+    {
+      "case_id": "oblique-reflection",
+      "repeat": 1,
+      "profile": "bytetrack",
+      "scenario": 0,
+      "sensitivity": true,
+      "baseline": {
+        "targets": 64,
+        "TP": 64,
+        "FN": 0,
+        "certain_observed": 60,
+        "FP_proxy": 0,
+        "mean_matched_error_px": 5.960801272411567,
+        "longest_incomplete_frame_gap": 0
+      },
+      "candidate": {
+        "targets": 64,
+        "TP": 64,
+        "FN": 0,
+        "certain_observed": 60,
+        "FP_proxy": 0,
+        "mean_matched_error_px": 5.960801272411567,
+        "longest_incomplete_frame_gap": 0
+      },
+      "regressions": []
+    },
+    {
+      "case_id": "studio-fast-dark",
+      "repeat": 0,
+      "profile": "kalman",
+      "scenario": 0,
+      "sensitivity": false,
+      "baseline": {
+        "targets": 64,
+        "TP": 58,
+        "FN": 6,
+        "certain_observed": 44,
+        "FP_proxy": 0,
+        "mean_matched_error_px": 3.940049728267363,
+        "longest_incomplete_frame_gap": 2
+      },
+      "candidate": {
+        "targets": 64,
+        "TP": 58,
+        "FN": 6,
+        "certain_observed": 44,
+        "FP_proxy": 0,
+        "mean_matched_error_px": 3.940049728267363,
+        "longest_incomplete_frame_gap": 2
+      },
+      "regressions": []
+    },
+    {
+      "case_id": "studio-fast-dark",
+      "repeat": 0,
+      "profile": "kalman",
+      "scenario": 0,
+      "sensitivity": true,
+      "baseline": {
+        "targets": 64,
+        "TP": 58,
+        "FN": 6,
+        "certain_observed": 44,
+        "FP_proxy": 0,
+        "mean_matched_error_px": 3.940049728267363,
+        "longest_incomplete_frame_gap": 2
+      },
+      "candidate": {
+        "targets": 64,
+        "TP": 58,
+        "FN": 6,
+        "certain_observed": 44,
+        "FP_proxy": 0,
+        "mean_matched_error_px": 3.940049728267363,
+        "longest_incomplete_frame_gap": 2
+      },
+      "regressions": []
+    },
+    {
+      "case_id": "studio-fast-dark",
+      "repeat": 0,
+      "profile": "bytetrack",
+      "scenario": 0,
+      "sensitivity": false,
+      "baseline": {
+        "targets": 64,
+        "TP": 32,
+        "FN": 32,
+        "certain_observed": 0,
+        "FP_proxy": 0,
+        "mean_matched_error_px": 2.6291451165260287,
+        "longest_incomplete_frame_gap": 32
+      },
+      "candidate": {
+        "targets": 64,
+        "TP": 41,
+        "FN": 23,
+        "certain_observed": 35,
+        "FP_proxy": 0,
+        "mean_matched_error_px": 3.7149367161231686,
+        "longest_incomplete_frame_gap": 13
+      },
+      "regressions": [
+        {
+          "metric": "mean_matched_error_px",
+          "baseline": 2.6291451165260287,
+          "candidate": 3.7149367161231686
+        },
+        {
+          "metric": "visibility.visible.mean_matched_error_px",
+          "baseline": 1.9042746705815228,
+          "candidate": 1.960438823177989
+        },
+        {
+          "metric": "visibility.partial_or_overlay.mean_matched_error_px",
+          "baseline": 3.561121404168965,
+          "candidate": 5.230184896394006
+        },
+        {
+          "metric": "identities.green.TP",
+          "baseline": 20,
+          "candidate": 19
+        },
+        {
+          "metric": "identities.green.FN",
+          "baseline": 12,
+          "candidate": 13
+        },
+        {
+          "metric": "identities.green.longest_measured_gap",
+          "baseline": 5,
+          "candidate": 13
+        },
+        {
+          "metric": "identities.green.mean_matched_error_px",
+          "baseline": 2.1206785121810796,
+          "candidate": 2.841641774141348
+        },
+        {
+          "metric": "identities.green.mean_capped_error_px",
+          "baseline": 10.325424070113176,
+          "candidate": 11.437224803396425
+        },
+        {
+          "metric": "identities.dark_blue.mean_matched_error_px",
+          "baseline": 3.4765894571009444,
+          "candidate": 4.469145984198378
+        }
+      ]
+    },
+    {
+      "case_id": "studio-fast-dark",
+      "repeat": 0,
+      "profile": "bytetrack",
+      "scenario": 0,
+      "sensitivity": true,
+      "baseline": {
+        "targets": 64,
+        "TP": 32,
+        "FN": 32,
+        "certain_observed": 0,
+        "FP_proxy": 0,
+        "mean_matched_error_px": 2.6291451165260287,
+        "longest_incomplete_frame_gap": 32
+      },
+      "candidate": {
+        "targets": 64,
+        "TP": 41,
+        "FN": 23,
+        "certain_observed": 35,
+        "FP_proxy": 0,
+        "mean_matched_error_px": 3.7149367161231686,
+        "longest_incomplete_frame_gap": 13
+      },
+      "regressions": [
+        {
+          "metric": "mean_matched_error_px",
+          "baseline": 2.6291451165260287,
+          "candidate": 3.7149367161231686
+        },
+        {
+          "metric": "visibility.visible.mean_matched_error_px",
+          "baseline": 1.9042746705815228,
+          "candidate": 1.960438823177989
+        },
+        {
+          "metric": "visibility.partial_or_overlay.mean_matched_error_px",
+          "baseline": 3.561121404168965,
+          "candidate": 5.230184896394006
+        },
+        {
+          "metric": "identities.green.TP",
+          "baseline": 20,
+          "candidate": 19
+        },
+        {
+          "metric": "identities.green.FN",
+          "baseline": 12,
+          "candidate": 13
+        },
+        {
+          "metric": "identities.green.longest_measured_gap",
+          "baseline": 5,
+          "candidate": 13
+        },
+        {
+          "metric": "identities.green.mean_matched_error_px",
+          "baseline": 2.1206785121810796,
+          "candidate": 2.841641774141348
+        },
+        {
+          "metric": "identities.green.mean_capped_error_px",
+          "baseline": 10.325424070113176,
+          "candidate": 11.437224803396425
+        },
+        {
+          "metric": "identities.dark_blue.mean_matched_error_px",
+          "baseline": 3.4765894571009444,
+          "candidate": 4.469145984198378
+        }
+      ]
+    },
+    {
+      "case_id": "studio-fast-dark",
+      "repeat": 1,
+      "profile": "kalman",
+      "scenario": 0,
+      "sensitivity": false,
+      "baseline": {
+        "targets": 64,
+        "TP": 58,
+        "FN": 6,
+        "certain_observed": 44,
+        "FP_proxy": 0,
+        "mean_matched_error_px": 3.940049728267363,
+        "longest_incomplete_frame_gap": 2
+      },
+      "candidate": {
+        "targets": 64,
+        "TP": 58,
+        "FN": 6,
+        "certain_observed": 44,
+        "FP_proxy": 0,
+        "mean_matched_error_px": 3.940049728267363,
+        "longest_incomplete_frame_gap": 2
+      },
+      "regressions": []
+    },
+    {
+      "case_id": "studio-fast-dark",
+      "repeat": 1,
+      "profile": "kalman",
+      "scenario": 0,
+      "sensitivity": true,
+      "baseline": {
+        "targets": 64,
+        "TP": 58,
+        "FN": 6,
+        "certain_observed": 44,
+        "FP_proxy": 0,
+        "mean_matched_error_px": 3.940049728267363,
+        "longest_incomplete_frame_gap": 2
+      },
+      "candidate": {
+        "targets": 64,
+        "TP": 58,
+        "FN": 6,
+        "certain_observed": 44,
+        "FP_proxy": 0,
+        "mean_matched_error_px": 3.940049728267363,
+        "longest_incomplete_frame_gap": 2
+      },
+      "regressions": []
+    },
+    {
+      "case_id": "studio-fast-dark",
+      "repeat": 1,
+      "profile": "bytetrack",
+      "scenario": 0,
+      "sensitivity": false,
+      "baseline": {
+        "targets": 64,
+        "TP": 32,
+        "FN": 32,
+        "certain_observed": 0,
+        "FP_proxy": 0,
+        "mean_matched_error_px": 2.6291451165260287,
+        "longest_incomplete_frame_gap": 32
+      },
+      "candidate": {
+        "targets": 64,
+        "TP": 41,
+        "FN": 23,
+        "certain_observed": 35,
+        "FP_proxy": 0,
+        "mean_matched_error_px": 3.7149367161231686,
+        "longest_incomplete_frame_gap": 13
+      },
+      "regressions": [
+        {
+          "metric": "mean_matched_error_px",
+          "baseline": 2.6291451165260287,
+          "candidate": 3.7149367161231686
+        },
+        {
+          "metric": "visibility.visible.mean_matched_error_px",
+          "baseline": 1.9042746705815228,
+          "candidate": 1.960438823177989
+        },
+        {
+          "metric": "visibility.partial_or_overlay.mean_matched_error_px",
+          "baseline": 3.561121404168965,
+          "candidate": 5.230184896394006
+        },
+        {
+          "metric": "identities.green.TP",
+          "baseline": 20,
+          "candidate": 19
+        },
+        {
+          "metric": "identities.green.FN",
+          "baseline": 12,
+          "candidate": 13
+        },
+        {
+          "metric": "identities.green.longest_measured_gap",
+          "baseline": 5,
+          "candidate": 13
+        },
+        {
+          "metric": "identities.green.mean_matched_error_px",
+          "baseline": 2.1206785121810796,
+          "candidate": 2.841641774141348
+        },
+        {
+          "metric": "identities.green.mean_capped_error_px",
+          "baseline": 10.325424070113176,
+          "candidate": 11.437224803396425
+        },
+        {
+          "metric": "identities.dark_blue.mean_matched_error_px",
+          "baseline": 3.4765894571009444,
+          "candidate": 4.469145984198378
+        }
+      ]
+    },
+    {
+      "case_id": "studio-fast-dark",
+      "repeat": 1,
+      "profile": "bytetrack",
+      "scenario": 0,
+      "sensitivity": true,
+      "baseline": {
+        "targets": 64,
+        "TP": 32,
+        "FN": 32,
+        "certain_observed": 0,
+        "FP_proxy": 0,
+        "mean_matched_error_px": 2.6291451165260287,
+        "longest_incomplete_frame_gap": 32
+      },
+      "candidate": {
+        "targets": 64,
+        "TP": 41,
+        "FN": 23,
+        "certain_observed": 35,
+        "FP_proxy": 0,
+        "mean_matched_error_px": 3.7149367161231686,
+        "longest_incomplete_frame_gap": 13
+      },
+      "regressions": [
+        {
+          "metric": "mean_matched_error_px",
+          "baseline": 2.6291451165260287,
+          "candidate": 3.7149367161231686
+        },
+        {
+          "metric": "visibility.visible.mean_matched_error_px",
+          "baseline": 1.9042746705815228,
+          "candidate": 1.960438823177989
+        },
+        {
+          "metric": "visibility.partial_or_overlay.mean_matched_error_px",
+          "baseline": 3.561121404168965,
+          "candidate": 5.230184896394006
+        },
+        {
+          "metric": "identities.green.TP",
+          "baseline": 20,
+          "candidate": 19
+        },
+        {
+          "metric": "identities.green.FN",
+          "baseline": 12,
+          "candidate": 13
+        },
+        {
+          "metric": "identities.green.longest_measured_gap",
+          "baseline": 5,
+          "candidate": 13
+        },
+        {
+          "metric": "identities.green.mean_matched_error_px",
+          "baseline": 2.1206785121810796,
+          "candidate": 2.841641774141348
+        },
+        {
+          "metric": "identities.green.mean_capped_error_px",
+          "baseline": 10.325424070113176,
+          "candidate": 11.437224803396425
+        },
+        {
+          "metric": "identities.dark_blue.mean_matched_error_px",
+          "baseline": 3.4765894571009444,
+          "candidate": 4.469145984198378
+        }
+      ]
+    },
+    {
+      "case_id": "studio-fast-rail",
+      "repeat": 0,
+      "profile": "kalman",
+      "scenario": 0,
+      "sensitivity": false,
+      "baseline": {
+        "targets": 46,
+        "TP": 44,
+        "FN": 2,
+        "certain_observed": 18,
+        "FP_proxy": 0,
+        "mean_matched_error_px": 2.2064322470758566,
+        "longest_incomplete_frame_gap": 2
+      },
+      "candidate": {
+        "targets": 46,
+        "TP": 44,
+        "FN": 2,
+        "certain_observed": 24,
+        "FP_proxy": 0,
+        "mean_matched_error_px": 2.2064322470758566,
+        "longest_incomplete_frame_gap": 2
+      },
+      "regressions": []
+    },
+    {
+      "case_id": "studio-fast-rail",
+      "repeat": 0,
+      "profile": "kalman",
+      "scenario": 0,
+      "sensitivity": true,
+      "baseline": {
+        "targets": 46,
+        "TP": 44,
+        "FN": 2,
+        "certain_observed": 18,
+        "FP_proxy": 0,
+        "mean_matched_error_px": 2.2064322470758566,
+        "longest_incomplete_frame_gap": 2
+      },
+      "candidate": {
+        "targets": 46,
+        "TP": 44,
+        "FN": 2,
+        "certain_observed": 24,
+        "FP_proxy": 0,
+        "mean_matched_error_px": 2.2064322470758566,
+        "longest_incomplete_frame_gap": 2
+      },
+      "regressions": []
+    },
+    {
+      "case_id": "studio-fast-rail",
+      "repeat": 0,
+      "profile": "bytetrack",
+      "scenario": 0,
+      "sensitivity": false,
+      "baseline": {
+        "targets": 46,
+        "TP": 29,
+        "FN": 17,
+        "certain_observed": 15,
+        "FP_proxy": 0,
+        "mean_matched_error_px": 2.2528140592521626,
+        "longest_incomplete_frame_gap": 7
+      },
+      "candidate": {
+        "targets": 46,
+        "TP": 28,
+        "FN": 18,
+        "certain_observed": 24,
+        "FP_proxy": 0,
+        "mean_matched_error_px": 2.2885046549942496,
+        "longest_incomplete_frame_gap": 18
+      },
+      "regressions": [
+        {
+          "metric": "TP",
+          "baseline": 29,
+          "candidate": 28
+        },
+        {
+          "metric": "FN",
+          "baseline": 17,
+          "candidate": 18
+        },
+        {
+          "metric": "mean_matched_error_px",
+          "baseline": 2.2528140592521626,
+          "candidate": 2.2885046549942496
+        },
+        {
+          "metric": "mean_capped_error_px",
+          "baseline": 10.289817559093757,
+          "candidate": 10.78430718130085
+        },
+        {
+          "metric": "longest_incomplete_frame_gap",
+          "baseline": 7,
+          "candidate": 18
+        },
+        {
+          "metric": "visibility.visible.TP",
+          "baseline": 29,
+          "candidate": 28
+        },
+        {
+          "metric": "visibility.visible.FN",
+          "baseline": 16,
+          "candidate": 17
+        },
+        {
+          "metric": "visibility.visible.mean_matched_error_px",
+          "baseline": 2.2528140592521626,
+          "candidate": 2.2885046549942496
+        },
+        {
+          "metric": "visibility.visible.mean_capped_error_px",
+          "baseline": 9.985146838184729,
+          "candidate": 10.490625118663091
+        },
+        {
+          "metric": "identities.purple.TP",
+          "baseline": 10,
+          "candidate": 5
+        },
+        {
+          "metric": "identities.purple.FN",
+          "baseline": 13,
+          "candidate": 18
+        },
+        {
+          "metric": "identities.purple.longest_measured_gap",
+          "baseline": 5,
+          "candidate": 18
+        },
+        {
+          "metric": "identities.purple.mean_matched_error_px",
+          "baseline": 2.58369554026092,
+          "candidate": 3.501144883308889
+        },
+        {
+          "metric": "identities.purple.mean_capped_error_px",
+          "baseline": 14.688563278374312,
+          "candidate": 19.54372714854541
+        }
+      ]
+    },
+    {
+      "case_id": "studio-fast-rail",
+      "repeat": 0,
+      "profile": "bytetrack",
+      "scenario": 0,
+      "sensitivity": true,
+      "baseline": {
+        "targets": 46,
+        "TP": 29,
+        "FN": 17,
+        "certain_observed": 15,
+        "FP_proxy": 0,
+        "mean_matched_error_px": 2.2528140592521626,
+        "longest_incomplete_frame_gap": 7
+      },
+      "candidate": {
+        "targets": 46,
+        "TP": 28,
+        "FN": 18,
+        "certain_observed": 24,
+        "FP_proxy": 0,
+        "mean_matched_error_px": 2.2885046549942496,
+        "longest_incomplete_frame_gap": 18
+      },
+      "regressions": [
+        {
+          "metric": "TP",
+          "baseline": 29,
+          "candidate": 28
+        },
+        {
+          "metric": "FN",
+          "baseline": 17,
+          "candidate": 18
+        },
+        {
+          "metric": "mean_matched_error_px",
+          "baseline": 2.2528140592521626,
+          "candidate": 2.2885046549942496
+        },
+        {
+          "metric": "mean_capped_error_px",
+          "baseline": 10.289817559093757,
+          "candidate": 10.78430718130085
+        },
+        {
+          "metric": "longest_incomplete_frame_gap",
+          "baseline": 7,
+          "candidate": 18
+        },
+        {
+          "metric": "visibility.visible.TP",
+          "baseline": 29,
+          "candidate": 28
+        },
+        {
+          "metric": "visibility.visible.FN",
+          "baseline": 16,
+          "candidate": 17
+        },
+        {
+          "metric": "visibility.visible.mean_matched_error_px",
+          "baseline": 2.2528140592521626,
+          "candidate": 2.2885046549942496
+        },
+        {
+          "metric": "visibility.visible.mean_capped_error_px",
+          "baseline": 9.985146838184729,
+          "candidate": 10.490625118663091
+        },
+        {
+          "metric": "identities.purple.TP",
+          "baseline": 10,
+          "candidate": 5
+        },
+        {
+          "metric": "identities.purple.FN",
+          "baseline": 13,
+          "candidate": 18
+        },
+        {
+          "metric": "identities.purple.longest_measured_gap",
+          "baseline": 5,
+          "candidate": 18
+        },
+        {
+          "metric": "identities.purple.mean_matched_error_px",
+          "baseline": 2.58369554026092,
+          "candidate": 3.501144883308889
+        },
+        {
+          "metric": "identities.purple.mean_capped_error_px",
+          "baseline": 14.688563278374312,
+          "candidate": 19.54372714854541
+        }
+      ]
+    },
+    {
+      "case_id": "studio-fast-rail",
+      "repeat": 1,
+      "profile": "kalman",
+      "scenario": 0,
+      "sensitivity": false,
+      "baseline": {
+        "targets": 46,
+        "TP": 44,
+        "FN": 2,
+        "certain_observed": 18,
+        "FP_proxy": 0,
+        "mean_matched_error_px": 2.2064322470758566,
+        "longest_incomplete_frame_gap": 2
+      },
+      "candidate": {
+        "targets": 46,
+        "TP": 44,
+        "FN": 2,
+        "certain_observed": 24,
+        "FP_proxy": 0,
+        "mean_matched_error_px": 2.2064322470758566,
+        "longest_incomplete_frame_gap": 2
+      },
+      "regressions": []
+    },
+    {
+      "case_id": "studio-fast-rail",
+      "repeat": 1,
+      "profile": "kalman",
+      "scenario": 0,
+      "sensitivity": true,
+      "baseline": {
+        "targets": 46,
+        "TP": 44,
+        "FN": 2,
+        "certain_observed": 18,
+        "FP_proxy": 0,
+        "mean_matched_error_px": 2.2064322470758566,
+        "longest_incomplete_frame_gap": 2
+      },
+      "candidate": {
+        "targets": 46,
+        "TP": 44,
+        "FN": 2,
+        "certain_observed": 24,
+        "FP_proxy": 0,
+        "mean_matched_error_px": 2.2064322470758566,
+        "longest_incomplete_frame_gap": 2
+      },
+      "regressions": []
+    },
+    {
+      "case_id": "studio-fast-rail",
+      "repeat": 1,
+      "profile": "bytetrack",
+      "scenario": 0,
+      "sensitivity": false,
+      "baseline": {
+        "targets": 46,
+        "TP": 29,
+        "FN": 17,
+        "certain_observed": 15,
+        "FP_proxy": 0,
+        "mean_matched_error_px": 2.2528140592521626,
+        "longest_incomplete_frame_gap": 7
+      },
+      "candidate": {
+        "targets": 46,
+        "TP": 28,
+        "FN": 18,
+        "certain_observed": 24,
+        "FP_proxy": 0,
+        "mean_matched_error_px": 2.2885046549942496,
+        "longest_incomplete_frame_gap": 18
+      },
+      "regressions": [
+        {
+          "metric": "TP",
+          "baseline": 29,
+          "candidate": 28
+        },
+        {
+          "metric": "FN",
+          "baseline": 17,
+          "candidate": 18
+        },
+        {
+          "metric": "mean_matched_error_px",
+          "baseline": 2.2528140592521626,
+          "candidate": 2.2885046549942496
+        },
+        {
+          "metric": "mean_capped_error_px",
+          "baseline": 10.289817559093757,
+          "candidate": 10.78430718130085
+        },
+        {
+          "metric": "longest_incomplete_frame_gap",
+          "baseline": 7,
+          "candidate": 18
+        },
+        {
+          "metric": "visibility.visible.TP",
+          "baseline": 29,
+          "candidate": 28
+        },
+        {
+          "metric": "visibility.visible.FN",
+          "baseline": 16,
+          "candidate": 17
+        },
+        {
+          "metric": "visibility.visible.mean_matched_error_px",
+          "baseline": 2.2528140592521626,
+          "candidate": 2.2885046549942496
+        },
+        {
+          "metric": "visibility.visible.mean_capped_error_px",
+          "baseline": 9.985146838184729,
+          "candidate": 10.490625118663091
+        },
+        {
+          "metric": "identities.purple.TP",
+          "baseline": 10,
+          "candidate": 5
+        },
+        {
+          "metric": "identities.purple.FN",
+          "baseline": 13,
+          "candidate": 18
+        },
+        {
+          "metric": "identities.purple.longest_measured_gap",
+          "baseline": 5,
+          "candidate": 18
+        },
+        {
+          "metric": "identities.purple.mean_matched_error_px",
+          "baseline": 2.58369554026092,
+          "candidate": 3.501144883308889
+        },
+        {
+          "metric": "identities.purple.mean_capped_error_px",
+          "baseline": 14.688563278374312,
+          "candidate": 19.54372714854541
+        }
+      ]
+    },
+    {
+      "case_id": "studio-fast-rail",
+      "repeat": 1,
+      "profile": "bytetrack",
+      "scenario": 0,
+      "sensitivity": true,
+      "baseline": {
+        "targets": 46,
+        "TP": 29,
+        "FN": 17,
+        "certain_observed": 15,
+        "FP_proxy": 0,
+        "mean_matched_error_px": 2.2528140592521626,
+        "longest_incomplete_frame_gap": 7
+      },
+      "candidate": {
+        "targets": 46,
+        "TP": 28,
+        "FN": 18,
+        "certain_observed": 24,
+        "FP_proxy": 0,
+        "mean_matched_error_px": 2.2885046549942496,
+        "longest_incomplete_frame_gap": 18
+      },
+      "regressions": [
+        {
+          "metric": "TP",
+          "baseline": 29,
+          "candidate": 28
+        },
+        {
+          "metric": "FN",
+          "baseline": 17,
+          "candidate": 18
+        },
+        {
+          "metric": "mean_matched_error_px",
+          "baseline": 2.2528140592521626,
+          "candidate": 2.2885046549942496
+        },
+        {
+          "metric": "mean_capped_error_px",
+          "baseline": 10.289817559093757,
+          "candidate": 10.78430718130085
+        },
+        {
+          "metric": "longest_incomplete_frame_gap",
+          "baseline": 7,
+          "candidate": 18
+        },
+        {
+          "metric": "visibility.visible.TP",
+          "baseline": 29,
+          "candidate": 28
+        },
+        {
+          "metric": "visibility.visible.FN",
+          "baseline": 16,
+          "candidate": 17
+        },
+        {
+          "metric": "visibility.visible.mean_matched_error_px",
+          "baseline": 2.2528140592521626,
+          "candidate": 2.2885046549942496
+        },
+        {
+          "metric": "visibility.visible.mean_capped_error_px",
+          "baseline": 9.985146838184729,
+          "candidate": 10.490625118663091
+        },
+        {
+          "metric": "identities.purple.TP",
+          "baseline": 10,
+          "candidate": 5
+        },
+        {
+          "metric": "identities.purple.FN",
+          "baseline": 13,
+          "candidate": 18
+        },
+        {
+          "metric": "identities.purple.longest_measured_gap",
+          "baseline": 5,
+          "candidate": 18
+        },
+        {
+          "metric": "identities.purple.mean_matched_error_px",
+          "baseline": 2.58369554026092,
+          "candidate": 3.501144883308889
+        },
+        {
+          "metric": "identities.purple.mean_capped_error_px",
+          "baseline": 14.688563278374312,
+          "candidate": 19.54372714854541
+        }
+      ]
+    },
+    {
+      "case_id": "studio-green-rail",
+      "repeat": 0,
+      "profile": "kalman",
+      "scenario": 0,
+      "sensitivity": false,
+      "baseline": {
+        "targets": 64,
+        "TP": 64,
+        "FN": 0,
+        "certain_observed": 60,
+        "FP_proxy": 0,
+        "mean_matched_error_px": 1.959921701747782,
+        "longest_incomplete_frame_gap": 0
+      },
+      "candidate": {
+        "targets": 64,
+        "TP": 64,
+        "FN": 0,
+        "certain_observed": 60,
+        "FP_proxy": 0,
+        "mean_matched_error_px": 1.959921701747782,
+        "longest_incomplete_frame_gap": 0
+      },
+      "regressions": []
+    },
+    {
+      "case_id": "studio-green-rail",
+      "repeat": 0,
+      "profile": "kalman",
+      "scenario": 0,
+      "sensitivity": true,
+      "baseline": {
+        "targets": 64,
+        "TP": 64,
+        "FN": 0,
+        "certain_observed": 60,
+        "FP_proxy": 0,
+        "mean_matched_error_px": 1.959921701747782,
+        "longest_incomplete_frame_gap": 0
+      },
+      "candidate": {
+        "targets": 64,
+        "TP": 64,
+        "FN": 0,
+        "certain_observed": 60,
+        "FP_proxy": 0,
+        "mean_matched_error_px": 1.959921701747782,
+        "longest_incomplete_frame_gap": 0
+      },
+      "regressions": []
+    },
+    {
+      "case_id": "studio-green-rail",
+      "repeat": 0,
+      "profile": "bytetrack",
+      "scenario": 0,
+      "sensitivity": false,
+      "baseline": {
+        "targets": 64,
+        "TP": 61,
+        "FN": 3,
+        "certain_observed": 57,
+        "FP_proxy": 0,
+        "mean_matched_error_px": 1.9685391302558748,
+        "longest_incomplete_frame_gap": 3
+      },
+      "candidate": {
+        "targets": 64,
+        "TP": 64,
+        "FN": 0,
+        "certain_observed": 60,
+        "FP_proxy": 0,
+        "mean_matched_error_px": 1.959921701747782,
+        "longest_incomplete_frame_gap": 0
+      },
+      "regressions": [
+        {
+          "metric": "visibility.visible.mean_matched_error_px",
+          "baseline": 1.858273721921532,
+          "candidate": 1.878587195535936
+        }
+      ]
+    },
+    {
+      "case_id": "studio-green-rail",
+      "repeat": 0,
+      "profile": "bytetrack",
+      "scenario": 0,
+      "sensitivity": true,
+      "baseline": {
+        "targets": 64,
+        "TP": 61,
+        "FN": 3,
+        "certain_observed": 57,
+        "FP_proxy": 0,
+        "mean_matched_error_px": 1.9685391302558748,
+        "longest_incomplete_frame_gap": 3
+      },
+      "candidate": {
+        "targets": 64,
+        "TP": 64,
+        "FN": 0,
+        "certain_observed": 60,
+        "FP_proxy": 0,
+        "mean_matched_error_px": 1.959921701747782,
+        "longest_incomplete_frame_gap": 0
+      },
+      "regressions": [
+        {
+          "metric": "visibility.visible.mean_matched_error_px",
+          "baseline": 1.858273721921532,
+          "candidate": 1.878587195535936
+        }
+      ]
+    },
+    {
+      "case_id": "studio-green-rail",
+      "repeat": 1,
+      "profile": "kalman",
+      "scenario": 0,
+      "sensitivity": false,
+      "baseline": {
+        "targets": 64,
+        "TP": 64,
+        "FN": 0,
+        "certain_observed": 60,
+        "FP_proxy": 0,
+        "mean_matched_error_px": 1.959921701747782,
+        "longest_incomplete_frame_gap": 0
+      },
+      "candidate": {
+        "targets": 64,
+        "TP": 64,
+        "FN": 0,
+        "certain_observed": 60,
+        "FP_proxy": 0,
+        "mean_matched_error_px": 1.959921701747782,
+        "longest_incomplete_frame_gap": 0
+      },
+      "regressions": []
+    },
+    {
+      "case_id": "studio-green-rail",
+      "repeat": 1,
+      "profile": "kalman",
+      "scenario": 0,
+      "sensitivity": true,
+      "baseline": {
+        "targets": 64,
+        "TP": 64,
+        "FN": 0,
+        "certain_observed": 60,
+        "FP_proxy": 0,
+        "mean_matched_error_px": 1.959921701747782,
+        "longest_incomplete_frame_gap": 0
+      },
+      "candidate": {
+        "targets": 64,
+        "TP": 64,
+        "FN": 0,
+        "certain_observed": 60,
+        "FP_proxy": 0,
+        "mean_matched_error_px": 1.959921701747782,
+        "longest_incomplete_frame_gap": 0
+      },
+      "regressions": []
+    },
+    {
+      "case_id": "studio-green-rail",
+      "repeat": 1,
+      "profile": "bytetrack",
+      "scenario": 0,
+      "sensitivity": false,
+      "baseline": {
+        "targets": 64,
+        "TP": 61,
+        "FN": 3,
+        "certain_observed": 57,
+        "FP_proxy": 0,
+        "mean_matched_error_px": 1.9685391302558748,
+        "longest_incomplete_frame_gap": 3
+      },
+      "candidate": {
+        "targets": 64,
+        "TP": 64,
+        "FN": 0,
+        "certain_observed": 60,
+        "FP_proxy": 0,
+        "mean_matched_error_px": 1.959921701747782,
+        "longest_incomplete_frame_gap": 0
+      },
+      "regressions": [
+        {
+          "metric": "visibility.visible.mean_matched_error_px",
+          "baseline": 1.858273721921532,
+          "candidate": 1.878587195535936
+        }
+      ]
+    },
+    {
+      "case_id": "studio-green-rail",
+      "repeat": 1,
+      "profile": "bytetrack",
+      "scenario": 0,
+      "sensitivity": true,
+      "baseline": {
+        "targets": 64,
+        "TP": 61,
+        "FN": 3,
+        "certain_observed": 57,
+        "FP_proxy": 0,
+        "mean_matched_error_px": 1.9685391302558748,
+        "longest_incomplete_frame_gap": 3
+      },
+      "candidate": {
+        "targets": 64,
+        "TP": 64,
+        "FN": 0,
+        "certain_observed": 60,
+        "FP_proxy": 0,
+        "mean_matched_error_px": 1.959921701747782,
+        "longest_incomplete_frame_gap": 0
+      },
+      "regressions": [
+        {
+          "metric": "visibility.visible.mean_matched_error_px",
+          "baseline": 1.858273721921532,
+          "candidate": 1.878587195535936
+        }
+      ]
+    },
+    {
+      "case_id": "preburst-contact-transition",
+      "repeat": 0,
+      "profile": "kalman",
+      "scenario": 0,
+      "sensitivity": false,
+      "baseline": {
+        "targets": 57,
+        "TP": 46,
+        "FN": 11,
+        "certain_observed": 37,
+        "FP_proxy": 10,
+        "mean_matched_error_px": 6.721200915595477,
+        "longest_incomplete_frame_gap": 5
+      },
+      "candidate": {
+        "targets": 57,
+        "TP": 46,
+        "FN": 11,
+        "certain_observed": 37,
+        "FP_proxy": 10,
+        "mean_matched_error_px": 6.721200915595477,
+        "longest_incomplete_frame_gap": 5
+      },
+      "regressions": []
+    },
+    {
+      "case_id": "preburst-contact-transition",
+      "repeat": 0,
+      "profile": "kalman",
+      "scenario": 0,
+      "sensitivity": true,
+      "baseline": {
+        "targets": 57,
+        "TP": 46,
+        "FN": 11,
+        "certain_observed": 37,
+        "FP_proxy": 10,
+        "mean_matched_error_px": 6.721200915595477,
+        "longest_incomplete_frame_gap": 5
+      },
+      "candidate": {
+        "targets": 57,
+        "TP": 46,
+        "FN": 11,
+        "certain_observed": 37,
+        "FP_proxy": 10,
+        "mean_matched_error_px": 6.721200915595477,
+        "longest_incomplete_frame_gap": 5
+      },
+      "regressions": []
+    },
+    {
+      "case_id": "preburst-contact-transition",
+      "repeat": 0,
+      "profile": "kalman",
+      "scenario": 1,
+      "sensitivity": false,
+      "baseline": {
+        "targets": 58,
+        "TP": 47,
+        "FN": 11,
+        "certain_observed": 38,
+        "FP_proxy": 9,
+        "mean_matched_error_px": 6.858839535923503,
+        "longest_incomplete_frame_gap": 5
+      },
+      "candidate": {
+        "targets": 58,
+        "TP": 47,
+        "FN": 11,
+        "certain_observed": 38,
+        "FP_proxy": 9,
+        "mean_matched_error_px": 6.858839535923503,
+        "longest_incomplete_frame_gap": 5
+      },
+      "regressions": []
+    },
+    {
+      "case_id": "preburst-contact-transition",
+      "repeat": 0,
+      "profile": "kalman",
+      "scenario": 1,
+      "sensitivity": true,
+      "baseline": {
+        "targets": 58,
+        "TP": 47,
+        "FN": 11,
+        "certain_observed": 38,
+        "FP_proxy": 9,
+        "mean_matched_error_px": 6.858839535923503,
+        "longest_incomplete_frame_gap": 5
+      },
+      "candidate": {
+        "targets": 58,
+        "TP": 47,
+        "FN": 11,
+        "certain_observed": 38,
+        "FP_proxy": 9,
+        "mean_matched_error_px": 6.858839535923503,
+        "longest_incomplete_frame_gap": 5
+      },
+      "regressions": []
+    },
+    {
+      "case_id": "preburst-contact-transition",
+      "repeat": 0,
+      "profile": "kalman",
+      "scenario": 2,
+      "sensitivity": false,
+      "baseline": {
+        "targets": 58,
+        "TP": 46,
+        "FN": 12,
+        "certain_observed": 37,
+        "FP_proxy": 10,
+        "mean_matched_error_px": 6.721200915595477,
+        "longest_incomplete_frame_gap": 5
+      },
+      "candidate": {
+        "targets": 58,
+        "TP": 46,
+        "FN": 12,
+        "certain_observed": 37,
+        "FP_proxy": 10,
+        "mean_matched_error_px": 6.721200915595477,
+        "longest_incomplete_frame_gap": 5
+      },
+      "regressions": []
+    },
+    {
+      "case_id": "preburst-contact-transition",
+      "repeat": 0,
+      "profile": "kalman",
+      "scenario": 2,
+      "sensitivity": true,
+      "baseline": {
+        "targets": 58,
+        "TP": 46,
+        "FN": 12,
+        "certain_observed": 37,
+        "FP_proxy": 10,
+        "mean_matched_error_px": 6.721200915595477,
+        "longest_incomplete_frame_gap": 5
+      },
+      "candidate": {
+        "targets": 58,
+        "TP": 46,
+        "FN": 12,
+        "certain_observed": 37,
+        "FP_proxy": 10,
+        "mean_matched_error_px": 6.721200915595477,
+        "longest_incomplete_frame_gap": 5
+      },
+      "regressions": []
+    },
+    {
+      "case_id": "preburst-contact-transition",
+      "repeat": 0,
+      "profile": "kalman",
+      "scenario": 3,
+      "sensitivity": false,
+      "baseline": {
+        "targets": 59,
+        "TP": 47,
+        "FN": 12,
+        "certain_observed": 38,
+        "FP_proxy": 9,
+        "mean_matched_error_px": 6.858839535923503,
+        "longest_incomplete_frame_gap": 5
+      },
+      "candidate": {
+        "targets": 59,
+        "TP": 47,
+        "FN": 12,
+        "certain_observed": 38,
+        "FP_proxy": 9,
+        "mean_matched_error_px": 6.858839535923503,
+        "longest_incomplete_frame_gap": 5
+      },
+      "regressions": []
+    },
+    {
+      "case_id": "preburst-contact-transition",
+      "repeat": 0,
+      "profile": "kalman",
+      "scenario": 3,
+      "sensitivity": true,
+      "baseline": {
+        "targets": 59,
+        "TP": 47,
+        "FN": 12,
+        "certain_observed": 38,
+        "FP_proxy": 9,
+        "mean_matched_error_px": 6.858839535923503,
+        "longest_incomplete_frame_gap": 5
+      },
+      "candidate": {
+        "targets": 59,
+        "TP": 47,
+        "FN": 12,
+        "certain_observed": 38,
+        "FP_proxy": 9,
+        "mean_matched_error_px": 6.858839535923503,
+        "longest_incomplete_frame_gap": 5
+      },
+      "regressions": []
+    },
+    {
+      "case_id": "preburst-contact-transition",
+      "repeat": 0,
+      "profile": "bytetrack",
+      "scenario": 0,
+      "sensitivity": false,
+      "baseline": {
+        "targets": 57,
+        "TP": 34,
+        "FN": 23,
+        "certain_observed": 28,
+        "FP_proxy": 4,
+        "mean_matched_error_px": 7.430538606880866,
+        "longest_incomplete_frame_gap": 10
+      },
+      "candidate": {
+        "targets": 57,
+        "TP": 41,
+        "FN": 16,
+        "certain_observed": 37,
+        "FP_proxy": 1,
+        "mean_matched_error_px": 6.805205075959476,
+        "longest_incomplete_frame_gap": 12
+      },
+      "regressions": [
+        {
+          "metric": "longest_incomplete_frame_gap",
+          "baseline": 10,
+          "candidate": 12
+        },
+        {
+          "metric": "identities.green.longest_measured_gap",
+          "baseline": 10,
+          "candidate": 12
+        },
+        {
+          "metric": "identities.green.longest_certain_gap",
+          "baseline": 10,
+          "candidate": 12
+        },
+        {
+          "metric": "identities.turquoise.mean_matched_error_px",
+          "baseline": 7.850830709867253,
+          "candidate": 8.008352049623756
+        }
+      ]
+    },
+    {
+      "case_id": "preburst-contact-transition",
+      "repeat": 0,
+      "profile": "bytetrack",
+      "scenario": 0,
+      "sensitivity": true,
+      "baseline": {
+        "targets": 57,
+        "TP": 34,
+        "FN": 23,
+        "certain_observed": 28,
+        "FP_proxy": 4,
+        "mean_matched_error_px": 7.430538606880866,
+        "longest_incomplete_frame_gap": 10
+      },
+      "candidate": {
+        "targets": 57,
+        "TP": 41,
+        "FN": 16,
+        "certain_observed": 37,
+        "FP_proxy": 1,
+        "mean_matched_error_px": 6.805205075959476,
+        "longest_incomplete_frame_gap": 12
+      },
+      "regressions": [
+        {
+          "metric": "longest_incomplete_frame_gap",
+          "baseline": 10,
+          "candidate": 12
+        },
+        {
+          "metric": "identities.green.longest_measured_gap",
+          "baseline": 10,
+          "candidate": 12
+        },
+        {
+          "metric": "identities.green.longest_certain_gap",
+          "baseline": 10,
+          "candidate": 12
+        },
+        {
+          "metric": "identities.turquoise.mean_matched_error_px",
+          "baseline": 7.850830709867253,
+          "candidate": 8.008352049623756
+        }
+      ]
+    },
+    {
+      "case_id": "preburst-contact-transition",
+      "repeat": 0,
+      "profile": "bytetrack",
+      "scenario": 1,
+      "sensitivity": false,
+      "baseline": {
+        "targets": 58,
+        "TP": 34,
+        "FN": 24,
+        "certain_observed": 28,
+        "FP_proxy": 4,
+        "mean_matched_error_px": 7.430538606880866,
+        "longest_incomplete_frame_gap": 10
+      },
+      "candidate": {
+        "targets": 58,
+        "TP": 42,
+        "FN": 16,
+        "certain_observed": 38,
+        "FP_proxy": 0,
+        "mean_matched_error_px": 6.957229147270265,
+        "longest_incomplete_frame_gap": 12
+      },
+      "regressions": [
+        {
+          "metric": "longest_incomplete_frame_gap",
+          "baseline": 10,
+          "candidate": 12
+        },
+        {
+          "metric": "identities.green.longest_measured_gap",
+          "baseline": 10,
+          "candidate": 12
+        },
+        {
+          "metric": "identities.green.longest_certain_gap",
+          "baseline": 10,
+          "candidate": 12
+        },
+        {
+          "metric": "identities.turquoise.mean_matched_error_px",
+          "baseline": 7.850830709867253,
+          "candidate": 8.2674452506932
+        }
+      ]
+    },
+    {
+      "case_id": "preburst-contact-transition",
+      "repeat": 0,
+      "profile": "bytetrack",
+      "scenario": 1,
+      "sensitivity": true,
+      "baseline": {
+        "targets": 58,
+        "TP": 34,
+        "FN": 24,
+        "certain_observed": 28,
+        "FP_proxy": 4,
+        "mean_matched_error_px": 7.430538606880866,
+        "longest_incomplete_frame_gap": 10
+      },
+      "candidate": {
+        "targets": 58,
+        "TP": 42,
+        "FN": 16,
+        "certain_observed": 38,
+        "FP_proxy": 0,
+        "mean_matched_error_px": 6.957229147270265,
+        "longest_incomplete_frame_gap": 12
+      },
+      "regressions": [
+        {
+          "metric": "longest_incomplete_frame_gap",
+          "baseline": 10,
+          "candidate": 12
+        },
+        {
+          "metric": "identities.green.longest_measured_gap",
+          "baseline": 10,
+          "candidate": 12
+        },
+        {
+          "metric": "identities.green.longest_certain_gap",
+          "baseline": 10,
+          "candidate": 12
+        },
+        {
+          "metric": "identities.turquoise.mean_matched_error_px",
+          "baseline": 7.850830709867253,
+          "candidate": 8.2674452506932
+        }
+      ]
+    },
+    {
+      "case_id": "preburst-contact-transition",
+      "repeat": 0,
+      "profile": "bytetrack",
+      "scenario": 2,
+      "sensitivity": false,
+      "baseline": {
+        "targets": 58,
+        "TP": 34,
+        "FN": 24,
+        "certain_observed": 28,
+        "FP_proxy": 4,
+        "mean_matched_error_px": 7.430538606880866,
+        "longest_incomplete_frame_gap": 10
+      },
+      "candidate": {
+        "targets": 58,
+        "TP": 41,
+        "FN": 17,
+        "certain_observed": 37,
+        "FP_proxy": 1,
+        "mean_matched_error_px": 6.805205075959476,
+        "longest_incomplete_frame_gap": 12
+      },
+      "regressions": [
+        {
+          "metric": "longest_incomplete_frame_gap",
+          "baseline": 10,
+          "candidate": 12
+        },
+        {
+          "metric": "identities.green.longest_measured_gap",
+          "baseline": 10,
+          "candidate": 12
+        },
+        {
+          "metric": "identities.green.longest_certain_gap",
+          "baseline": 10,
+          "candidate": 12
+        },
+        {
+          "metric": "identities.turquoise.mean_matched_error_px",
+          "baseline": 7.850830709867253,
+          "candidate": 8.008352049623756
+        }
+      ]
+    },
+    {
+      "case_id": "preburst-contact-transition",
+      "repeat": 0,
+      "profile": "bytetrack",
+      "scenario": 2,
+      "sensitivity": true,
+      "baseline": {
+        "targets": 58,
+        "TP": 34,
+        "FN": 24,
+        "certain_observed": 28,
+        "FP_proxy": 4,
+        "mean_matched_error_px": 7.430538606880866,
+        "longest_incomplete_frame_gap": 10
+      },
+      "candidate": {
+        "targets": 58,
+        "TP": 41,
+        "FN": 17,
+        "certain_observed": 37,
+        "FP_proxy": 1,
+        "mean_matched_error_px": 6.805205075959476,
+        "longest_incomplete_frame_gap": 12
+      },
+      "regressions": [
+        {
+          "metric": "longest_incomplete_frame_gap",
+          "baseline": 10,
+          "candidate": 12
+        },
+        {
+          "metric": "identities.green.longest_measured_gap",
+          "baseline": 10,
+          "candidate": 12
+        },
+        {
+          "metric": "identities.green.longest_certain_gap",
+          "baseline": 10,
+          "candidate": 12
+        },
+        {
+          "metric": "identities.turquoise.mean_matched_error_px",
+          "baseline": 7.850830709867253,
+          "candidate": 8.008352049623756
+        }
+      ]
+    },
+    {
+      "case_id": "preburst-contact-transition",
+      "repeat": 0,
+      "profile": "bytetrack",
+      "scenario": 3,
+      "sensitivity": false,
+      "baseline": {
+        "targets": 59,
+        "TP": 34,
+        "FN": 25,
+        "certain_observed": 28,
+        "FP_proxy": 4,
+        "mean_matched_error_px": 7.430538606880866,
+        "longest_incomplete_frame_gap": 10
+      },
+      "candidate": {
+        "targets": 59,
+        "TP": 42,
+        "FN": 17,
+        "certain_observed": 38,
+        "FP_proxy": 0,
+        "mean_matched_error_px": 6.957229147270265,
+        "longest_incomplete_frame_gap": 12
+      },
+      "regressions": [
+        {
+          "metric": "longest_incomplete_frame_gap",
+          "baseline": 10,
+          "candidate": 12
+        },
+        {
+          "metric": "identities.green.longest_measured_gap",
+          "baseline": 10,
+          "candidate": 12
+        },
+        {
+          "metric": "identities.green.longest_certain_gap",
+          "baseline": 10,
+          "candidate": 12
+        },
+        {
+          "metric": "identities.turquoise.mean_matched_error_px",
+          "baseline": 7.850830709867253,
+          "candidate": 8.2674452506932
+        }
+      ]
+    },
+    {
+      "case_id": "preburst-contact-transition",
+      "repeat": 0,
+      "profile": "bytetrack",
+      "scenario": 3,
+      "sensitivity": true,
+      "baseline": {
+        "targets": 59,
+        "TP": 34,
+        "FN": 25,
+        "certain_observed": 28,
+        "FP_proxy": 4,
+        "mean_matched_error_px": 7.430538606880866,
+        "longest_incomplete_frame_gap": 10
+      },
+      "candidate": {
+        "targets": 59,
+        "TP": 42,
+        "FN": 17,
+        "certain_observed": 38,
+        "FP_proxy": 0,
+        "mean_matched_error_px": 6.957229147270265,
+        "longest_incomplete_frame_gap": 12
+      },
+      "regressions": [
+        {
+          "metric": "longest_incomplete_frame_gap",
+          "baseline": 10,
+          "candidate": 12
+        },
+        {
+          "metric": "identities.green.longest_measured_gap",
+          "baseline": 10,
+          "candidate": 12
+        },
+        {
+          "metric": "identities.green.longest_certain_gap",
+          "baseline": 10,
+          "candidate": 12
+        },
+        {
+          "metric": "identities.turquoise.mean_matched_error_px",
+          "baseline": 7.850830709867253,
+          "candidate": 8.2674452506932
+        }
+      ]
+    },
+    {
+      "case_id": "preburst-contact-transition",
+      "repeat": 1,
+      "profile": "kalman",
+      "scenario": 0,
+      "sensitivity": false,
+      "baseline": {
+        "targets": 57,
+        "TP": 46,
+        "FN": 11,
+        "certain_observed": 37,
+        "FP_proxy": 10,
+        "mean_matched_error_px": 6.721200915595477,
+        "longest_incomplete_frame_gap": 5
+      },
+      "candidate": {
+        "targets": 57,
+        "TP": 46,
+        "FN": 11,
+        "certain_observed": 37,
+        "FP_proxy": 10,
+        "mean_matched_error_px": 6.721200915595477,
+        "longest_incomplete_frame_gap": 5
+      },
+      "regressions": []
+    },
+    {
+      "case_id": "preburst-contact-transition",
+      "repeat": 1,
+      "profile": "kalman",
+      "scenario": 0,
+      "sensitivity": true,
+      "baseline": {
+        "targets": 57,
+        "TP": 46,
+        "FN": 11,
+        "certain_observed": 37,
+        "FP_proxy": 10,
+        "mean_matched_error_px": 6.721200915595477,
+        "longest_incomplete_frame_gap": 5
+      },
+      "candidate": {
+        "targets": 57,
+        "TP": 46,
+        "FN": 11,
+        "certain_observed": 37,
+        "FP_proxy": 10,
+        "mean_matched_error_px": 6.721200915595477,
+        "longest_incomplete_frame_gap": 5
+      },
+      "regressions": []
+    },
+    {
+      "case_id": "preburst-contact-transition",
+      "repeat": 1,
+      "profile": "kalman",
+      "scenario": 1,
+      "sensitivity": false,
+      "baseline": {
+        "targets": 58,
+        "TP": 47,
+        "FN": 11,
+        "certain_observed": 38,
+        "FP_proxy": 9,
+        "mean_matched_error_px": 6.858839535923503,
+        "longest_incomplete_frame_gap": 5
+      },
+      "candidate": {
+        "targets": 58,
+        "TP": 47,
+        "FN": 11,
+        "certain_observed": 38,
+        "FP_proxy": 9,
+        "mean_matched_error_px": 6.858839535923503,
+        "longest_incomplete_frame_gap": 5
+      },
+      "regressions": []
+    },
+    {
+      "case_id": "preburst-contact-transition",
+      "repeat": 1,
+      "profile": "kalman",
+      "scenario": 1,
+      "sensitivity": true,
+      "baseline": {
+        "targets": 58,
+        "TP": 47,
+        "FN": 11,
+        "certain_observed": 38,
+        "FP_proxy": 9,
+        "mean_matched_error_px": 6.858839535923503,
+        "longest_incomplete_frame_gap": 5
+      },
+      "candidate": {
+        "targets": 58,
+        "TP": 47,
+        "FN": 11,
+        "certain_observed": 38,
+        "FP_proxy": 9,
+        "mean_matched_error_px": 6.858839535923503,
+        "longest_incomplete_frame_gap": 5
+      },
+      "regressions": []
+    },
+    {
+      "case_id": "preburst-contact-transition",
+      "repeat": 1,
+      "profile": "kalman",
+      "scenario": 2,
+      "sensitivity": false,
+      "baseline": {
+        "targets": 58,
+        "TP": 46,
+        "FN": 12,
+        "certain_observed": 37,
+        "FP_proxy": 10,
+        "mean_matched_error_px": 6.721200915595477,
+        "longest_incomplete_frame_gap": 5
+      },
+      "candidate": {
+        "targets": 58,
+        "TP": 46,
+        "FN": 12,
+        "certain_observed": 37,
+        "FP_proxy": 10,
+        "mean_matched_error_px": 6.721200915595477,
+        "longest_incomplete_frame_gap": 5
+      },
+      "regressions": []
+    },
+    {
+      "case_id": "preburst-contact-transition",
+      "repeat": 1,
+      "profile": "kalman",
+      "scenario": 2,
+      "sensitivity": true,
+      "baseline": {
+        "targets": 58,
+        "TP": 46,
+        "FN": 12,
+        "certain_observed": 37,
+        "FP_proxy": 10,
+        "mean_matched_error_px": 6.721200915595477,
+        "longest_incomplete_frame_gap": 5
+      },
+      "candidate": {
+        "targets": 58,
+        "TP": 46,
+        "FN": 12,
+        "certain_observed": 37,
+        "FP_proxy": 10,
+        "mean_matched_error_px": 6.721200915595477,
+        "longest_incomplete_frame_gap": 5
+      },
+      "regressions": []
+    },
+    {
+      "case_id": "preburst-contact-transition",
+      "repeat": 1,
+      "profile": "kalman",
+      "scenario": 3,
+      "sensitivity": false,
+      "baseline": {
+        "targets": 59,
+        "TP": 47,
+        "FN": 12,
+        "certain_observed": 38,
+        "FP_proxy": 9,
+        "mean_matched_error_px": 6.858839535923503,
+        "longest_incomplete_frame_gap": 5
+      },
+      "candidate": {
+        "targets": 59,
+        "TP": 47,
+        "FN": 12,
+        "certain_observed": 38,
+        "FP_proxy": 9,
+        "mean_matched_error_px": 6.858839535923503,
+        "longest_incomplete_frame_gap": 5
+      },
+      "regressions": []
+    },
+    {
+      "case_id": "preburst-contact-transition",
+      "repeat": 1,
+      "profile": "kalman",
+      "scenario": 3,
+      "sensitivity": true,
+      "baseline": {
+        "targets": 59,
+        "TP": 47,
+        "FN": 12,
+        "certain_observed": 38,
+        "FP_proxy": 9,
+        "mean_matched_error_px": 6.858839535923503,
+        "longest_incomplete_frame_gap": 5
+      },
+      "candidate": {
+        "targets": 59,
+        "TP": 47,
+        "FN": 12,
+        "certain_observed": 38,
+        "FP_proxy": 9,
+        "mean_matched_error_px": 6.858839535923503,
+        "longest_incomplete_frame_gap": 5
+      },
+      "regressions": []
+    },
+    {
+      "case_id": "preburst-contact-transition",
+      "repeat": 1,
+      "profile": "bytetrack",
+      "scenario": 0,
+      "sensitivity": false,
+      "baseline": {
+        "targets": 57,
+        "TP": 34,
+        "FN": 23,
+        "certain_observed": 28,
+        "FP_proxy": 4,
+        "mean_matched_error_px": 7.430538606880866,
+        "longest_incomplete_frame_gap": 10
+      },
+      "candidate": {
+        "targets": 57,
+        "TP": 41,
+        "FN": 16,
+        "certain_observed": 37,
+        "FP_proxy": 1,
+        "mean_matched_error_px": 6.805205075959476,
+        "longest_incomplete_frame_gap": 12
+      },
+      "regressions": [
+        {
+          "metric": "longest_incomplete_frame_gap",
+          "baseline": 10,
+          "candidate": 12
+        },
+        {
+          "metric": "identities.green.longest_measured_gap",
+          "baseline": 10,
+          "candidate": 12
+        },
+        {
+          "metric": "identities.green.longest_certain_gap",
+          "baseline": 10,
+          "candidate": 12
+        },
+        {
+          "metric": "identities.turquoise.mean_matched_error_px",
+          "baseline": 7.850830709867253,
+          "candidate": 8.008352049623756
+        }
+      ]
+    },
+    {
+      "case_id": "preburst-contact-transition",
+      "repeat": 1,
+      "profile": "bytetrack",
+      "scenario": 0,
+      "sensitivity": true,
+      "baseline": {
+        "targets": 57,
+        "TP": 34,
+        "FN": 23,
+        "certain_observed": 28,
+        "FP_proxy": 4,
+        "mean_matched_error_px": 7.430538606880866,
+        "longest_incomplete_frame_gap": 10
+      },
+      "candidate": {
+        "targets": 57,
+        "TP": 41,
+        "FN": 16,
+        "certain_observed": 37,
+        "FP_proxy": 1,
+        "mean_matched_error_px": 6.805205075959476,
+        "longest_incomplete_frame_gap": 12
+      },
+      "regressions": [
+        {
+          "metric": "longest_incomplete_frame_gap",
+          "baseline": 10,
+          "candidate": 12
+        },
+        {
+          "metric": "identities.green.longest_measured_gap",
+          "baseline": 10,
+          "candidate": 12
+        },
+        {
+          "metric": "identities.green.longest_certain_gap",
+          "baseline": 10,
+          "candidate": 12
+        },
+        {
+          "metric": "identities.turquoise.mean_matched_error_px",
+          "baseline": 7.850830709867253,
+          "candidate": 8.008352049623756
+        }
+      ]
+    },
+    {
+      "case_id": "preburst-contact-transition",
+      "repeat": 1,
+      "profile": "bytetrack",
+      "scenario": 1,
+      "sensitivity": false,
+      "baseline": {
+        "targets": 58,
+        "TP": 34,
+        "FN": 24,
+        "certain_observed": 28,
+        "FP_proxy": 4,
+        "mean_matched_error_px": 7.430538606880866,
+        "longest_incomplete_frame_gap": 10
+      },
+      "candidate": {
+        "targets": 58,
+        "TP": 42,
+        "FN": 16,
+        "certain_observed": 38,
+        "FP_proxy": 0,
+        "mean_matched_error_px": 6.957229147270265,
+        "longest_incomplete_frame_gap": 12
+      },
+      "regressions": [
+        {
+          "metric": "longest_incomplete_frame_gap",
+          "baseline": 10,
+          "candidate": 12
+        },
+        {
+          "metric": "identities.green.longest_measured_gap",
+          "baseline": 10,
+          "candidate": 12
+        },
+        {
+          "metric": "identities.green.longest_certain_gap",
+          "baseline": 10,
+          "candidate": 12
+        },
+        {
+          "metric": "identities.turquoise.mean_matched_error_px",
+          "baseline": 7.850830709867253,
+          "candidate": 8.2674452506932
+        }
+      ]
+    },
+    {
+      "case_id": "preburst-contact-transition",
+      "repeat": 1,
+      "profile": "bytetrack",
+      "scenario": 1,
+      "sensitivity": true,
+      "baseline": {
+        "targets": 58,
+        "TP": 34,
+        "FN": 24,
+        "certain_observed": 28,
+        "FP_proxy": 4,
+        "mean_matched_error_px": 7.430538606880866,
+        "longest_incomplete_frame_gap": 10
+      },
+      "candidate": {
+        "targets": 58,
+        "TP": 42,
+        "FN": 16,
+        "certain_observed": 38,
+        "FP_proxy": 0,
+        "mean_matched_error_px": 6.957229147270265,
+        "longest_incomplete_frame_gap": 12
+      },
+      "regressions": [
+        {
+          "metric": "longest_incomplete_frame_gap",
+          "baseline": 10,
+          "candidate": 12
+        },
+        {
+          "metric": "identities.green.longest_measured_gap",
+          "baseline": 10,
+          "candidate": 12
+        },
+        {
+          "metric": "identities.green.longest_certain_gap",
+          "baseline": 10,
+          "candidate": 12
+        },
+        {
+          "metric": "identities.turquoise.mean_matched_error_px",
+          "baseline": 7.850830709867253,
+          "candidate": 8.2674452506932
+        }
+      ]
+    },
+    {
+      "case_id": "preburst-contact-transition",
+      "repeat": 1,
+      "profile": "bytetrack",
+      "scenario": 2,
+      "sensitivity": false,
+      "baseline": {
+        "targets": 58,
+        "TP": 34,
+        "FN": 24,
+        "certain_observed": 28,
+        "FP_proxy": 4,
+        "mean_matched_error_px": 7.430538606880866,
+        "longest_incomplete_frame_gap": 10
+      },
+      "candidate": {
+        "targets": 58,
+        "TP": 41,
+        "FN": 17,
+        "certain_observed": 37,
+        "FP_proxy": 1,
+        "mean_matched_error_px": 6.805205075959476,
+        "longest_incomplete_frame_gap": 12
+      },
+      "regressions": [
+        {
+          "metric": "longest_incomplete_frame_gap",
+          "baseline": 10,
+          "candidate": 12
+        },
+        {
+          "metric": "identities.green.longest_measured_gap",
+          "baseline": 10,
+          "candidate": 12
+        },
+        {
+          "metric": "identities.green.longest_certain_gap",
+          "baseline": 10,
+          "candidate": 12
+        },
+        {
+          "metric": "identities.turquoise.mean_matched_error_px",
+          "baseline": 7.850830709867253,
+          "candidate": 8.008352049623756
+        }
+      ]
+    },
+    {
+      "case_id": "preburst-contact-transition",
+      "repeat": 1,
+      "profile": "bytetrack",
+      "scenario": 2,
+      "sensitivity": true,
+      "baseline": {
+        "targets": 58,
+        "TP": 34,
+        "FN": 24,
+        "certain_observed": 28,
+        "FP_proxy": 4,
+        "mean_matched_error_px": 7.430538606880866,
+        "longest_incomplete_frame_gap": 10
+      },
+      "candidate": {
+        "targets": 58,
+        "TP": 41,
+        "FN": 17,
+        "certain_observed": 37,
+        "FP_proxy": 1,
+        "mean_matched_error_px": 6.805205075959476,
+        "longest_incomplete_frame_gap": 12
+      },
+      "regressions": [
+        {
+          "metric": "longest_incomplete_frame_gap",
+          "baseline": 10,
+          "candidate": 12
+        },
+        {
+          "metric": "identities.green.longest_measured_gap",
+          "baseline": 10,
+          "candidate": 12
+        },
+        {
+          "metric": "identities.green.longest_certain_gap",
+          "baseline": 10,
+          "candidate": 12
+        },
+        {
+          "metric": "identities.turquoise.mean_matched_error_px",
+          "baseline": 7.850830709867253,
+          "candidate": 8.008352049623756
+        }
+      ]
+    },
+    {
+      "case_id": "preburst-contact-transition",
+      "repeat": 1,
+      "profile": "bytetrack",
+      "scenario": 3,
+      "sensitivity": false,
+      "baseline": {
+        "targets": 59,
+        "TP": 34,
+        "FN": 25,
+        "certain_observed": 28,
+        "FP_proxy": 4,
+        "mean_matched_error_px": 7.430538606880866,
+        "longest_incomplete_frame_gap": 10
+      },
+      "candidate": {
+        "targets": 59,
+        "TP": 42,
+        "FN": 17,
+        "certain_observed": 38,
+        "FP_proxy": 0,
+        "mean_matched_error_px": 6.957229147270265,
+        "longest_incomplete_frame_gap": 12
+      },
+      "regressions": [
+        {
+          "metric": "longest_incomplete_frame_gap",
+          "baseline": 10,
+          "candidate": 12
+        },
+        {
+          "metric": "identities.green.longest_measured_gap",
+          "baseline": 10,
+          "candidate": 12
+        },
+        {
+          "metric": "identities.green.longest_certain_gap",
+          "baseline": 10,
+          "candidate": 12
+        },
+        {
+          "metric": "identities.turquoise.mean_matched_error_px",
+          "baseline": 7.850830709867253,
+          "candidate": 8.2674452506932
+        }
+      ]
+    },
+    {
+      "case_id": "preburst-contact-transition",
+      "repeat": 1,
+      "profile": "bytetrack",
+      "scenario": 3,
+      "sensitivity": true,
+      "baseline": {
+        "targets": 59,
+        "TP": 34,
+        "FN": 25,
+        "certain_observed": 28,
+        "FP_proxy": 4,
+        "mean_matched_error_px": 7.430538606880866,
+        "longest_incomplete_frame_gap": 10
+      },
+      "candidate": {
+        "targets": 59,
+        "TP": 42,
+        "FN": 17,
+        "certain_observed": 38,
+        "FP_proxy": 0,
+        "mean_matched_error_px": 6.957229147270265,
+        "longest_incomplete_frame_gap": 12
+      },
+      "regressions": [
+        {
+          "metric": "longest_incomplete_frame_gap",
+          "baseline": 10,
+          "candidate": 12
+        },
+        {
+          "metric": "identities.green.longest_measured_gap",
+          "baseline": 10,
+          "candidate": 12
+        },
+        {
+          "metric": "identities.green.longest_certain_gap",
+          "baseline": 10,
+          "candidate": 12
+        },
+        {
+          "metric": "identities.turquoise.mean_matched_error_px",
+          "baseline": 7.850830709867253,
+          "candidate": 8.2674452506932
+        }
+      ]
+    }
+  ],
+  "selected_state_tensor_sha256": "487abde7c98a62edfe4b5b21198e6f5bb588f7bbd7c494c165328c8d40dc4f1a",
+  "selected_deleted_checkpoint_sha256": "05141108d87cc2c1412fba762118a176ea09e0ea775fd9a5a88c4a25eb425185"
+}
