@@ -1,0 +1,66 @@
+{
+  "completed": true,
+  "optimizer_updates": 0,
+  "new_training_round": false,
+  "new_inference_calls": 0,
+  "original_file_references_verified": 1592,
+  "selected_TRAIN_images": 146,
+  "selected_TRAIN_body_boxes": 259,
+  "selected_TRAIN_empty_images": 8,
+  "excluded_parent_TRAIN_rows": 549,
+  "excluded_legacy_metadata_counts": {
+    "('llm', 'pending')": 531,
+    "(None, 'pending')": 15,
+    "('llm', 'llm_cross_reviewed_pending_human')": 3
+  },
+  "original_legacy_manifest_kind": "llm_pseudo_label_experiment",
+  "new_pseudo_labels": 0,
+  "labels_modified": 0,
+  "original_files_modified": 0,
+  "heldout_byte_identical": true,
+  "TRAIN_heldout_exact_overlap": 0,
+  "TRAIN_acceptance_exact_overlap": 0,
+  "split_counts": {
+    "train": 146,
+    "val": 54,
+    "test": 47
+  },
+  "per_review": [
+    {
+      "review_number": 1,
+      "frames": 56,
+      "body_boxes": 72,
+      "independent_human_truth": false
+    },
+    {
+      "review_number": 2,
+      "frames": 42,
+      "body_boxes": 84,
+      "independent_human_truth": false
+    },
+    {
+      "review_number": 3,
+      "frames": 41,
+      "body_boxes": 82,
+      "independent_human_truth": false
+    },
+    {
+      "review_number": 4,
+      "frames": 7,
+      "body_boxes": 21,
+      "independent_human_truth": false
+    }
+  ],
+  "stratum_counts": {
+    "hard": 6,
+    "empty": 8,
+    "white": 41,
+    "gray": 7,
+    "easy": 84
+  },
+  "examples_per_epoch": 695,
+  "replacement": true,
+  "independent_human_truth": false,
+  "erases_inherited_pretraining": false,
+  "declares_excluded_labels_wrong": false
+}
