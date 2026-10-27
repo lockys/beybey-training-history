@@ -1,0 +1,60 @@
+{
+  "run_id": 193,
+  "status": "training_in_progress",
+  "vendor_training_validation_rows": [
+    {
+      "epoch": 1.0,
+      "time": 29.0883,
+      "train/box_loss": 1.29237,
+      "train/cls_loss": 0.6461,
+      "train/dfl_loss": 1.15702,
+      "metrics/precision(B)": 0.98596,
+      "metrics/recall(B)": 0.96471,
+      "metrics/mAP50(B)": 0.97552,
+      "metrics/mAP50-95(B)": 0.68999,
+      "val/box_loss": 1.04118,
+      "val/cls_loss": 0.4832,
+      "val/dfl_loss": 0.98594,
+      "lr/pg0": 5e-05,
+      "lr/pg1": 4.97126e-05,
+      "lr/pg2": 4.97126e-05
+    },
+    {
+      "epoch": 2.0,
+      "time": 56.7428,
+      "train/box_loss": 1.03735,
+      "train/cls_loss": 0.50467,
+      "train/dfl_loss": 1.01476,
+      "metrics/precision(B)": 0.99686,
+      "metrics/recall(B)": 0.96471,
+      "metrics/mAP50(B)": 0.97981,
+      "metrics/mAP50-95(B)": 0.66095,
+      "val/box_loss": 1.17218,
+      "val/cls_loss": 0.55112,
+      "val/dfl_loss": 1.00873,
+      "lr/pg0": 4.835e-05,
+      "lr/pg1": 4.835e-05,
+      "lr/pg2": 4.835e-05
+    },
+    {
+      "epoch": 3.0,
+      "time": 82.7339,
+      "train/box_loss": 1.07111,
+      "train/cls_loss": 0.48915,
+      "train/dfl_loss": 1.03553,
+      "metrics/precision(B)": 0.97491,
+      "metrics/recall(B)": 0.96471,
+      "metrics/mAP50(B)": 0.97931,
+      "metrics/mAP50-95(B)": 0.65598,
+      "val/box_loss": 1.13957,
+      "val/cls_loss": 0.55271,
+      "val/dfl_loss": 1.01429,
+      "lr/pg0": 4.67e-05,
+      "lr/pg1": 4.67e-05,
+      "lr/pg2": 4.67e-05
+    }
+  ],
+  "available_completed_rows": 3,
+  "fixed_acceptance_evaluation": false,
+  "caveat": "Vendor VAL learning curve is not fixed-threshold precision or trajectory acceptance."
+}
