@@ -1,25 +1,328 @@
 {
   "run_id": 186,
-  "status": "training_in_progress",
-  "snapshot_utc": "2026-10-27T05:04:32.486208+00:00",
-  "planned_epochs": 30,
-  "completed_epochs": 6,
-  "actual_optimizer_updates": 86,
-  "train_batches": 1044,
-  "train_samples_seen": 4170,
-  "unique_TRAIN_images": 146,
-  "TRAIN_body_boxes": 259,
-  "TRAIN_empty_images": 8,
-  "draws_per_epoch": 695,
-  "replacement": true,
-  "VAL_frames_unchanged": 54,
-  "TEST_frames_unchanged": 47,
-  "selected_parameter_tensors": 24,
-  "selected_parameter_elements": 639936,
-  "bn_buffer_checks": 1044,
-  "frozen_state_epoch_checks": 6,
-  "final_accuracy": null,
-  "formal_accuracy_evaluation_completed": false,
+  "status": "rejected_early_detector_gate",
+  "updated_utc": "2026-10-27T05:20:59.436629+00:00",
+  "model_type": "standard_YOLO_bbox_feature_branches",
+  "trainable_tensors": 24,
+  "trainable_parameters": 639936,
+  "frozen_states_verified": 475,
+  "completed_epochs": 30,
+  "TRAIN_batches": 5220,
+  "TRAIN_visits": 20850,
+  "actual_optimizer_updates": 347,
+  "selected_sha256": "60c6546fbc8023eeed98f3f55d9e58b5556e590d9017f2ad574d04eee95343ba",
+  "selection": "vendor_VAL_fitness_only",
+  "selected_epoch": null,
+  "selected_epoch_note": "Stripped checkpoint epoch=-1; final_eval replaces best train_results with full30epoch curve. No selected epoch inferred.",
+  "detector_VAL": {
+    "frames": 54,
+    "GT_boxes": 85,
+    "confidence": 0.35,
+    "NMS_IoU": 0.5,
+    "GT_matching_IoU": 0.5,
+    "independent_human_truth": false,
+    "models": {
+      "ares-v1.3.33": {
+        "VAL": {
+          "TP": 82,
+          "FP": 1,
+          "FN": 3,
+          "empty_frames": 4,
+          "empty_FP": 0,
+          "precision": 0.9879518072289156,
+          "recall": 0.9647058823529412
+        },
+        "development": {
+          "targets": 46,
+          "TP": 45,
+          "FN": 1,
+          "certain_observed": 45,
+          "mean_matched_error_px": 2.134750813657198,
+          "mean_capped_error_px": 2.6100823177081285,
+          "FP_proxy": 0,
+          "detached_or_held_matches": 0,
+          "unmatched_on_unobservable_frames": 0,
+          "predicted_only_rows": 0,
+          "identity_transfers": 0,
+          "identity_transfer_points": 0,
+          "longest_incomplete_frame_gap": 1,
+          "unobservable_objects": 0,
+          "ambiguous_state_objects": 0,
+          "identity_ineligible_targets": 0,
+          "unknown_occlusion_frames": 0,
+          "unlocalized_distractor_descriptions": 0,
+          "visibility": {
+            "visible": {
+              "targets": 46,
+              "TP": 45,
+              "FN": 1,
+              "certain_observed": 45,
+              "mean_matched_error_px": 2.134750813657198,
+              "mean_capped_error_px": 2.6100823177081285
+            }
+          },
+          "identities": {
+            "blue": {
+              "targets": 23,
+              "TP": 22,
+              "FN": 1,
+              "certain_observed": 22,
+              "longest_measured_gap": 1,
+              "longest_certain_gap": 1,
+              "longest_estimated_gap": 23,
+              "measured_fragmentations": 1,
+              "certain_fragmentations": 1,
+              "track_id_changes": 0,
+              "certain_native_segments": [],
+              "mean_matched_error_px": 1.5534160226516136,
+              "mean_capped_error_px": 2.529354456449369,
+              "certain_native_fragmentations": 0
+            },
+            "white": {
+              "targets": 23,
+              "TP": 23,
+              "FN": 0,
+              "certain_observed": 23,
+              "longest_measured_gap": 0,
+              "longest_certain_gap": 0,
+              "longest_estimated_gap": 23,
+              "measured_fragmentations": 0,
+              "certain_fragmentations": 0,
+              "track_id_changes": 0,
+              "certain_native_segments": [],
+              "mean_matched_error_px": 2.690810178966888,
+              "mean_capped_error_px": 2.690810178966888,
+              "certain_native_fragmentations": 0
+            }
+          }
+        },
+        "accelerated_hits": {
+          "blue": 5,
+          "white": 5
+        }
+      },
+      "research-run186": {
+        "VAL": {
+          "TP": 82,
+          "FP": 1,
+          "FN": 3,
+          "empty_frames": 4,
+          "empty_FP": 0,
+          "precision": 0.9879518072289156,
+          "recall": 0.9647058823529412
+        },
+        "development": {
+          "targets": 46,
+          "TP": 45,
+          "FN": 1,
+          "certain_observed": 45,
+          "mean_matched_error_px": 2.0619837897708932,
+          "mean_capped_error_px": 2.538897185645439,
+          "FP_proxy": 0,
+          "detached_or_held_matches": 0,
+          "unmatched_on_unobservable_frames": 0,
+          "predicted_only_rows": 0,
+          "identity_transfers": 0,
+          "identity_transfer_points": 0,
+          "longest_incomplete_frame_gap": 1,
+          "unobservable_objects": 0,
+          "ambiguous_state_objects": 0,
+          "identity_ineligible_targets": 0,
+          "unknown_occlusion_frames": 0,
+          "unlocalized_distractor_descriptions": 0,
+          "visibility": {
+            "visible": {
+              "targets": 46,
+              "TP": 45,
+              "FN": 1,
+              "certain_observed": 45,
+              "mean_matched_error_px": 2.0619837897708932,
+              "mean_capped_error_px": 2.538897185645439
+            }
+          },
+          "identities": {
+            "blue": {
+              "targets": 23,
+              "TP": 22,
+              "FN": 1,
+              "certain_observed": 22,
+              "longest_measured_gap": 1,
+              "longest_certain_gap": 1,
+              "longest_estimated_gap": 23,
+              "measured_fragmentations": 1,
+              "certain_fragmentations": 1,
+              "track_id_changes": 0,
+              "certain_native_segments": [],
+              "mean_matched_error_px": 1.5601302242505404,
+              "mean_capped_error_px": 2.535776736239647,
+              "certain_native_fragmentations": 0
+            },
+            "white": {
+              "targets": 23,
+              "TP": 23,
+              "FN": 0,
+              "certain_observed": 23,
+              "longest_measured_gap": 0,
+              "longest_certain_gap": 0,
+              "longest_estimated_gap": 23,
+              "measured_fragmentations": 0,
+              "certain_fragmentations": 0,
+              "track_id_changes": 0,
+              "certain_native_segments": [],
+              "mean_matched_error_px": 2.5420176350512302,
+              "mean_capped_error_px": 2.5420176350512302,
+              "certain_native_fragmentations": 0
+            }
+          }
+        },
+        "accelerated_hits": {
+          "blue": 5,
+          "white": 5
+        }
+      }
+    }
+  },
+  "early_fresh_predict_calls": 154,
+  "early_gate_passed": false,
+  "early_failures": [
+    {
+      "gate": "development",
+      "metric": "identities.blue.mean_matched_error_px",
+      "baseline": 1.5534160226516136,
+      "candidate": 1.5601302242505404
+    },
+    {
+      "gate": "development",
+      "metric": "identities.blue.mean_capped_error_px",
+      "baseline": 2.529354456449369,
+      "candidate": 2.535776736239647
+    }
+  ],
+  "full_acceptance": {
+    "performed": false,
+    "reason": "early nonregression prerequisite failed",
+    "passed": false
+  },
+  "cohort_exposure_audit": {
+    "completed": true,
+    "run_id": 186,
+    "new_optimizer_updates": 0,
+    "new_inference_calls": 0,
+    "actual_training_epochs_verified": 30,
+    "actual_TRAIN_visits": 20850,
+    "actual_distinct_TRAIN_images_visited": 146,
+    "excluded_parent_TRAIN_images": 549,
+    "excluded_parent_new_optimizer_visits": 0,
+    "cohort_current_optimizer_only": true,
+    "does_not_erase_inherited_pretraining": true,
+    "actual_stratum_visits": {
+      "hard": 5170,
+      "empty": 4167,
+      "white": 4192,
+      "gray": 1021,
+      "easy": 6300
+    },
+    "minimum_visits_per_visited_image": 43,
+    "maximum_visits_per_visited_image": 910,
+    "actual_sampler_plans_replayed_exact": true,
+    "worker_epoch_hook_verified_actual_paths_equal_plan": true,
+    "network_attempts": 0
+  },
+  "paired_development_audit": {
+    "completed": true,
+    "run_id": 186,
+    "optimizer_updates": 0,
+    "new_inference_calls": 0,
+    "baseline_hits": 45,
+    "candidate_hits": 45,
+    "common_hits": 45,
+    "baseline_hits_lost": 0,
+    "new_hits_added": 0,
+    "same_reference_hit_set": true,
+    "common_point_baseline_mean_error_px": 2.1347508136571984,
+    "common_point_candidate_mean_error_px": 2.061983789770893,
+    "common_point_mean_delta_px": -0.0727670238863055,
+    "common_points_lower_error": 26,
+    "common_points_higher_error": 19,
+    "common_points_unchanged": 0,
+    "per_identity": {
+      "blue": {
+        "common_hits": 22,
+        "baseline_mean_error_px": 1.5534160226516136,
+        "candidate_mean_error_px": 1.5601302242505404,
+        "mean_delta_px": 0.006714201598926772
+      },
+      "white": {
+        "common_hits": 23,
+        "baseline_mean_error_px": 2.6908101789668883,
+        "candidate_mean_error_px": 2.5420176350512302,
+        "mean_delta_px": -0.1487925439156581
+      }
+    },
+    "early_gate_still_passed": false,
+    "full_evaluation_performed": false,
+    "limitations": [
+      "23frame provisional detector-center development cohort only",
+      "Not independent human truth or full trajectory improvement",
+      "No reference, threshold, selection or prediction changes"
+    ]
+  },
+  "standard_checkpoint_audit": {
+    "completed": true,
+    "run_id": 186,
+    "completed_epochs": 30,
+    "TRAIN_batches": 5220,
+    "TRAIN_visits": 20850,
+    "optimizer_updates": 347,
+    "frozen_states_verified": 475,
+    "selected_parameter_tensors": 24,
+    "selected_parameter_elements": 639936,
+    "changed_bbox_feature_conv_tensors": 4,
+    "standard_YOLO_checkpoint": true,
+    "selected_checkpoint_raw_and_decoded_class_scores_exact": true,
+    "selected_checkpoint_boxes_changed": true,
+    "synthetic_forward_calls": 2,
+    "optimizer_updates_in_audit": 0,
+    "accepted": false,
+    "API_eligible": false,
+    "selected_sha256": "60c6546fbc8023eeed98f3f55d9e58b5556e590d9017f2ad574d04eee95343ba"
+  },
+  "accepted": false,
   "API_promoted": false,
-  "stable_improvement_proven": false
+  "stable_trajectory_improvement_proven": false,
+  "retention": {
+    "run_id": 186,
+    "created_utc": "2026-10-27T05:20:59.436629+00:00",
+    "accepted": false,
+    "rejected": true,
+    "API_eligible": false,
+    "candidate_checkpoint_deleted": true,
+    "selected_checkpoint_retained": false,
+    "selected_sha256": "60c6546fbc8023eeed98f3f55d9e58b5556e590d9017f2ad574d04eee95343ba",
+    "retained_API_versions": 9,
+    "API_changed": false,
+    "logical_bytes_freed": 38350516,
+    "failures": 0,
+    "source_and_reference_deleted": false,
+    "may_resume_from_run186_checkpoint": false
+  },
+  "window_progress": {
+    "window": [
+      180,
+      189
+    ],
+    "actual_completed_training_runs": 7,
+    "optimizer_updates": 13744,
+    "qualified_versions": 0,
+    "API_promotions": 0,
+    "goal_achieved": false
+  },
+  "limitations": [
+    "Fixed54frame detector precision/recall is not full trajectory accuracy",
+    "Provisional assistant-reviewed references; no independent human truth",
+    "Current146native-frame optimizer cohort excludes110legacy spatial blur rows; inheritedpretraining exclusion remains unproven",
+    "No new external footage admitted",
+    "Six failing scalar checks overlap; not six independent physical failures",
+    "Vendor curve metrics use their own validation definitions; not interchangeable with fixed conf0.35 audited counts"
+  ]
 }

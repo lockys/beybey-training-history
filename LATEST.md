@@ -1,6 +1,6 @@
 # 訓練與評估索引
 
-最新完成第185輪，仍未取得合格晉升版本。第186輪改用四批明確複核准入的146TRAIN／259框／8empty續訓；2026-10-27T05:04:32.486208+00:00快照完成6/30epochs、86次實測optimizer更新，尚無最終精準度或驗收結果。既有54VAL／47TEST與完整驗收未改，沒有新pseudo-label或外部素材准入。180–189目前6次完成／13,397updates／零合格，186是第7次進行中的訓練，九個API權重不變。
+最新完成第186輪，仍未取得合格晉升版本。186完成30epochs／實測347updates，實際20850TRAIN訪次僅來自146張複核原生資料，549個舊列的新optimizer訪次0。固定54VAL precision98.80%／recall96.47%維持基準；23frame development相同45個命中點平均誤差2.134751→2.061984px，但blue略退步0.006714px、2個scalar門檻失敗，early拒絕，完整204比較未啟動。權重已清理、九個API權重不變；180–189目前7次完成／13744updates／零合格與零API晉升。
 
 [第 142 輪](runs/run-142.md)（原程序失敗後另行稽核及比較）。
 
@@ -105,4 +105,4 @@
 
 第185輪後：[定位監督來源稽核與複核原生資料前置驗證](evaluations/round-185-curated-native-supervision-preflight.md) · [數量與來源稽核](evaluations/round-185-curated-native-cohort-audit.json)：原695TRAIN中146張可逐批直接連到後續視覺複核准入，549個較舊列只從新optimizer訪次排除，原檔保留；不宣稱舊標註都錯，亦不抹除pretraining。資料隔離／抽樣RED/GREEN與原生loader/backward通過，前置控制零optimizer。
 
-第186輪：[複核原生資料監督訓練中](runs/run-186.md) · [具時間戳快照](runs/run-186-metrics.json)。維持同185的標準bbox特徵分支與訓練／抽樣預算，完成後沿用154fresh-predict early與204完整比較門檻；精準度及軌跡改善待實測。
+第186輪：[複核原生監督最終報告](runs/run-186.md) · [精準度、配對定位與實際曝光稽核](runs/run-186-metrics.json) · [30epoch vendor曲線](runs/run-186-learning-curve.json)。整體development誤差下降，但blue微退步、early gate拒絕；完整204比較未執行，不能稱為穩定高速模糊軌跡改善或來源群驗收通過。候選已清理，API不變。
