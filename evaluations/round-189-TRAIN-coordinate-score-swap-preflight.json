@@ -1,0 +1,184 @@
+{
+  "completed": true,
+  "TRAIN_only": true,
+  "raw_model_forward_calls": 0,
+  "optimizer_updates": 0,
+  "new_checkpoint_files": 0,
+  "NMS_frames_processed": 1022,
+  "three_native_counts_replayed_exact": true,
+  "shared_grid_exact": true,
+  "results": {
+    "teacher_native_replay": {
+      "coordinates": "teacher",
+      "class_scores": "teacher",
+      "counts": {
+        "GT": 259,
+        "TP": 255,
+        "FN": 4,
+        "FP_relative_to_curated_labels": 15,
+        "empty_frames": 8,
+        "empty_FP": 0
+      },
+      "missed_targets": [
+        {
+          "source_id": "state-supplement-x-2111470788977258950",
+          "frame_index": 458,
+          "target_index": 0
+        },
+        {
+          "source_id": "state-supplement-x-2111470788977258950",
+          "frame_index": 459,
+          "target_index": 0
+        },
+        {
+          "source_id": "state-supplement-x-2111470788977258950",
+          "frame_index": 522,
+          "target_index": 0
+        },
+        {
+          "source_id": "state-supplement-x-2111470788977258950",
+          "frame_index": 535,
+          "target_index": 0
+        }
+      ]
+    },
+    "selected189_native_replay": {
+      "coordinates": "selected189",
+      "class_scores": "selected189",
+      "counts": {
+        "GT": 259,
+        "TP": 258,
+        "FN": 1,
+        "FP_relative_to_curated_labels": 14,
+        "empty_frames": 8,
+        "empty_FP": 0
+      },
+      "missed_targets": [
+        {
+          "source_id": "state-supplement-x-2111470788977258950",
+          "frame_index": 522,
+          "target_index": 0
+        }
+      ]
+    },
+    "final189_native_replay": {
+      "coordinates": "final189",
+      "class_scores": "final189",
+      "counts": {
+        "GT": 259,
+        "TP": 259,
+        "FN": 0,
+        "FP_relative_to_curated_labels": 0,
+        "empty_frames": 8,
+        "empty_FP": 0
+      },
+      "missed_targets": []
+    },
+    "teacher_boxes_selected189_scores": {
+      "coordinates": "teacher",
+      "class_scores": "selected189",
+      "counts": {
+        "GT": 259,
+        "TP": 258,
+        "FN": 1,
+        "FP_relative_to_curated_labels": 14,
+        "empty_frames": 8,
+        "empty_FP": 0
+      },
+      "missed_targets": [
+        {
+          "source_id": "state-supplement-x-2111470788977258950",
+          "frame_index": 522,
+          "target_index": 0
+        }
+      ]
+    },
+    "teacher_boxes_final189_scores": {
+      "coordinates": "teacher",
+      "class_scores": "final189",
+      "counts": {
+        "GT": 259,
+        "TP": 259,
+        "FN": 0,
+        "FP_relative_to_curated_labels": 0,
+        "empty_frames": 8,
+        "empty_FP": 0
+      },
+      "missed_targets": []
+    },
+    "selected189_boxes_teacher_scores": {
+      "coordinates": "selected189",
+      "class_scores": "teacher",
+      "counts": {
+        "GT": 259,
+        "TP": 255,
+        "FN": 4,
+        "FP_relative_to_curated_labels": 15,
+        "empty_frames": 8,
+        "empty_FP": 0
+      },
+      "missed_targets": [
+        {
+          "source_id": "state-supplement-x-2111470788977258950",
+          "frame_index": 458,
+          "target_index": 0
+        },
+        {
+          "source_id": "state-supplement-x-2111470788977258950",
+          "frame_index": 459,
+          "target_index": 0
+        },
+        {
+          "source_id": "state-supplement-x-2111470788977258950",
+          "frame_index": 522,
+          "target_index": 0
+        },
+        {
+          "source_id": "state-supplement-x-2111470788977258950",
+          "frame_index": 535,
+          "target_index": 0
+        }
+      ]
+    },
+    "final189_boxes_teacher_scores": {
+      "coordinates": "final189",
+      "class_scores": "teacher",
+      "counts": {
+        "GT": 259,
+        "TP": 255,
+        "FN": 4,
+        "FP_relative_to_curated_labels": 15,
+        "empty_frames": 8,
+        "empty_FP": 0
+      },
+      "missed_targets": [
+        {
+          "source_id": "state-supplement-x-2111470788977258950",
+          "frame_index": 458,
+          "target_index": 0
+        },
+        {
+          "source_id": "state-supplement-x-2111470788977258950",
+          "frame_index": 459,
+          "target_index": 0
+        },
+        {
+          "source_id": "state-supplement-x-2111470788977258950",
+          "frame_index": 522,
+          "target_index": 0
+        },
+        {
+          "source_id": "state-supplement-x-2111470788977258950",
+          "frame_index": 535,
+          "target_index": 0
+        }
+      ]
+    }
+  },
+  "limitations": [
+    "TRAIN-only cached attribution; not independent validation or trajectory quality",
+    "Hybrid is not a model or checkpoint and never API eligible",
+    "Frozen bbox during future optimization changes assignment/loss trajectory; cannot infer future result from this swap",
+    "No thresholds, labels, checkpoints or original189decision changed"
+  ]
+}
