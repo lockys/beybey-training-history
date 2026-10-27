@@ -1,6 +1,6 @@
 # 訓練與評估索引
 
-最新完成第187輪，仍未取得合格晉升版本。187完成30epochs／實測347updates，分類輸出確實學習，但固定54VAL TP82→81、recall96.47%→95.29%，development TP45→44，17個scalar門檻失敗；完整204比較未啟動。Selected／最終epoch的TRAIN均TP254／FN5，原4漏框仍在。記憶體恢復Ares33分類輸出的對照恢復命中，但blue定位仍2項微退步，不合格且未改選。權重已清理、九個API權重不變；180–189目前8次完成／14091updates／零合格與零API晉升。
+第188輪因紀錄程式錯誤在第一個epoch結束時中止：六個來源路徑誤加入實際抽樣路徑清單，精確稽核將其擋下。無checkpoint、無精準度或軌跡驗收結果，實測optimizer次數未落盤，不能記為零；不重跑或續訓188。最新完整訓練仍為187（拒絕）。目前批次180–187共8次完整訓練／14091實測updates／零合格、零API晉升，188中止另列。九個API權重不變。
 
 [第 142 輪](runs/run-142.md)（原程序失敗後另行稽核及比較）。
 
@@ -111,3 +111,5 @@
 第186輪後：[TRAIN分類訊號診斷與前置驗證](evaluations/round-186-TRAIN-classification-signal-preflight.md) · [TRAIN診斷計數](evaluations/round-186-TRAIN-classification-signal.json)：先封存146raw推論再合併既有259框，4個FN皆有現有IoU框但低class/grid分數，另15未配對；是TRAIN診斷，非獨立驗證。新增6既有分類輸出tensors的梯度／固定state控制通過，前置零optimizer。
 
 第187輪：[聯合分類輸出學習最終報告](runs/run-187.md) · [精準度、全部退步與三項對照](runs/run-187-metrics.json) · [30epoch vendor曲線](runs/run-187-learning-curve.json)。Formal early gate拒絕、完整204比較未執行；TRAIN selected／末期及分類還原皆未產生合格版本。候選已清理、API不變。
+
+第188輪：[紀錄程式錯誤中止報告](runs/run-188.md) · [已知數量、未知更新次數與根因](runs/run-188-metrics.json)。首epoch稽核攔截六個多餘來源路徑；無可驗收權重，未跑精準度或完整軌跡驗收，不算完整訓練，API不變。
