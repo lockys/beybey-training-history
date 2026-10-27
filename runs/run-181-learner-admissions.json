@@ -1,0 +1,67 @@
+{
+  "completed": true,
+  "run_id": 181,
+  "optimizer_updates": 2610,
+  "actual_visit_counts": {
+    "pair_visits": 165450,
+    "original_pair_visits": 110310,
+    "learner_pair_visits": 55140,
+    "synthetic_visits": 49903,
+    "native_fallback_visits": 5182,
+    "unchanged_original_visits": 55225
+  },
+  "selected_epoch": 25,
+  "selected_after_actual_learner_fitting": true,
+  "selected_state_tensor_sha256": "855f34db78d4976cc08ba0438db51c6cb91d38a1dec14c8e8ef828436ee1e484",
+  "learner_captures": [
+    {
+      "epoch": 10,
+      "model_state_sha256": "0bf9f741f60e281125acaad82568205d2c4f0fe7f499548dbe85cd5c387d958c",
+      "capture_updates": 1548,
+      "capture_forward_calls": 5479,
+      "changed_frames": 249,
+      "known_pairs": 5355,
+      "novel_pairs": 814,
+      "duplicates_with_original": 4541,
+      "exclusions": {
+        "mixed_or_unknown_identity": 124
+      },
+      "actual_current_trained_snapshot": true,
+      "control_data_admitted": false,
+      "validation_and_acceptance_admitted": false,
+      "TRAIN_only": true,
+      "capture_completion_sha256": "c8ca2386b3603aff9697bf865ce9c853f6d5f2b0afe585fdee3a044ee03e15f8",
+      "joined_packet_sha256": "1b1279f18b32c5a21b611f59a22be1b77a2613e904ced9ebfd7bf8bc88f7c392",
+      "pool_data_sha256": "79a8261f047a17d41b2ab5d6bab3560f453803f8675f7ce32fab916e34db7653",
+      "optimizer_unchanged_during_capture": true,
+      "shuffle_generator_unchanged": true,
+      "train_model_and_snapshot_digest_equal": true
+    },
+    {
+      "epoch": 20,
+      "model_state_sha256": "41aae5e310d42a6c86a26201e19ba75245828f4b7e42f49652847497574ecf82",
+      "capture_updates": 1548,
+      "capture_forward_calls": 5460,
+      "changed_frames": 253,
+      "known_pairs": 5335,
+      "novel_pairs": 802,
+      "duplicates_with_original": 4533,
+      "exclusions": {
+        "mixed_or_unknown_identity": 125
+      },
+      "actual_current_trained_snapshot": true,
+      "control_data_admitted": false,
+      "validation_and_acceptance_admitted": false,
+      "TRAIN_only": true,
+      "capture_completion_sha256": "6a29a793ddea486762b5ddee8d2715cebe74d7250cc6a679c95e84a42897793f",
+      "joined_packet_sha256": "857b486d583ae5b89a5025bba6907b4a214de64184fe983593c9add90ec348e2",
+      "pool_data_sha256": "b90bffe7889880888e6453053dd890102ab14938b611c85b440633d017fceb74",
+      "optimizer_unchanged_during_capture": true,
+      "shuffle_generator_unchanged": true,
+      "train_model_and_snapshot_digest_equal": true
+    }
+  ],
+  "training_control_data_admitted": false,
+  "validation_unchanged": true,
+  "API_mutations": 0
+}

@@ -1,6 +1,6 @@
 # 訓練與評估索引
 
-目前更新至第 180 輪；仍未取得合格晉升版本。180輪已知VAL配對precision／recall均100%，但完整追蹤40/136項退步，拒絕晉升並已清除候選。170–179共十次實際訓練、14,177 optimizer updates、零合格與零API晉升；180–189目前1次實際訓練、2,610 updates。配對分類成績不等於高速／模糊整段軌跡準確率。
+目前更新至第 181 輪；仍未取得合格晉升版本。181輪完成實際learner-state續訓，55,140次自身狀態訪次；已知215個VAL precision／recall100%，但完整追蹤40/136項退步，拒絕晉升並已清除候選。Byte原命中流失數由180輪46降至32，但certain由531降至496。170–179十次訓練14,177updates、零晉升；180–189目前2次訓練5,220updates、零合格與零API晉升。配對分類成績不等於穩定高速／模糊軌跡準確率。
 
 [第 142 輪](runs/run-142.md)（原程序失敗後另行稽核及比較）。
 
@@ -78,3 +78,6 @@
 
 
 第180輪後：[共同命中分解與learner-state前置驗證](evaluations/round-180-composition-and-learner-state-preflight.md)：Kalman原708TP全保留、共同量測不變；Byte原545TP中流失46點、另新增102點，不能以淨增56掩蓋流失。TRAIN-only控制核對5515原配對精確相同，非學習控制產生792筆新Byte狀態配對，但控制資料未准入optimizer。零新增訓練，最新實際輪次仍為180；181須改用真正當前模型快照驗證。全套本機產品檢查通過，原拒絕及API不變。
+
+
+第181輪：[真正當前模型狀態TRAIN續訓完整報告](runs/run-181.md)完成30epochs／2,610updates，epoch10／20快照產生814／802筆新狀態配對、實際混入55,140訪次。最佳epoch25已受learner資料訓練，215 VAL precision／recall100%、BCE0.001867。Kalman TP722／certain594；Byte TP609／certain496，原命中流失32（180輪46），但完整40/136仍退步且零來源群通過兩profile。拒絕晉升，權重清理完畢、九個API權重不變。[曲線](runs/run-181-learning-curve.json) · [136比較與精準度](runs/run-181-metrics.json) · [learner資料稽核](runs/run-181-learner-admissions.json)。180–189視窗目前2次實際訓練、5,220updates、零合格。
