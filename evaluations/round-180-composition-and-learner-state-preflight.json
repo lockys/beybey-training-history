@@ -1,0 +1,175 @@
+{
+  "completed": true,
+  "after_run": 180,
+  "new_training_round": false,
+  "optimizer_updates": 0,
+  "API_mutations": 0,
+  "new_permanent_weights": 0,
+  "original180_rejection_unchanged": true,
+  "composition_summary": {
+    "kalman": {
+      "baseline_errors": {
+        "count": 708,
+        "mean": 3.6847082096358035
+      },
+      "candidate_errors": {
+        "count": 721,
+        "mean": 3.7504453534389
+      },
+      "common_baseline_errors": {
+        "count": 708,
+        "mean": 3.6847082096358035
+      },
+      "common_candidate_errors": {
+        "count": 708,
+        "mean": 3.6847082096358035
+      },
+      "paired_common_error_delta": {
+        "count": 708,
+        "mean": 0.0
+      },
+      "common_same_xy": {
+        "count": 708,
+        "mean": 1
+      },
+      "added_errors": {
+        "count": 13,
+        "mean": 7.330591339022911
+      }
+    },
+    "bytetrack": {
+      "baseline_errors": {
+        "count": 545,
+        "mean": 3.659391570453584
+      },
+      "candidate_errors": {
+        "count": 601,
+        "mean": 3.7235700174170634
+      },
+      "common_baseline_errors": {
+        "count": 499,
+        "mean": 3.7342454679715167
+      },
+      "common_candidate_errors": {
+        "count": 499,
+        "mean": 3.7342454679715167
+      },
+      "paired_common_error_delta": {
+        "count": 499,
+        "mean": 0.0
+      },
+      "common_same_xy": {
+        "count": 499,
+        "mean": 1
+      },
+      "added_errors": {
+        "count": 102,
+        "mean": 3.671344038724199
+      },
+      "removed_errors": {
+        "count": 46,
+        "mean": 2.8473895082481877
+      }
+    }
+  },
+  "controls": {
+    "zero": {
+      "unique_pairs": 5515,
+      "new_vs_original": 0,
+      "missing_vs_original": 0,
+      "changed_frames": 0,
+      "runtime_features_verified": 5515,
+      "excluded": {
+        "mixed_or_unknown_identity": 123
+      },
+      "tracker_updates": 1548,
+      "forward_calls": 5638
+    },
+    "appearance-sign": {
+      "unique_pairs": 5352,
+      "new_vs_original": 792,
+      "missing_vs_original": 955,
+      "changed_frames": 227,
+      "runtime_features_verified": 5352,
+      "excluded": {
+        "mixed_or_unknown_identity": 126
+      },
+      "tracker_updates": 1548,
+      "forward_calls": 5478
+    }
+  },
+  "original_TRAIN_exact_with_zero": true,
+  "nonlearned_control_pairs_admitted": false,
+  "actual_learned_policy_capture_not_yet_done": true,
+  "label_contract": {
+    "completed": true,
+    "mixed_or_unknown_excluded": true,
+    "validation_refused": true,
+    "input_unchanged": true,
+    "optimizer_updates": 0
+  },
+  "product_checks": {
+    "all_required_product_checks_passed": true,
+    "product_sources_modified": false,
+    "formal_model_acceptance": false,
+    "backend_environment": "existing API venv",
+    "annotator_coverage_source": "actual libs/beyannotate; command run from libs",
+    "prior_environment_attempts_failed": [],
+    "backend": {
+      "exit_code": 0,
+      "verified_summary": [
+        "398 passed",
+        "8 skipped"
+      ],
+      "log_sha256": "4041489e26d0226d1f56e88aa98390667299082ab283f8edb298f3ba9fbd1a47"
+    },
+    "annotator": {
+      "exit_code": 0,
+      "verified_summary": [
+        "163 passed",
+        "Total coverage: 94.29%"
+      ],
+      "log_sha256": "cdaf6c33b59dd6ff1cb235ef3ce6038036b0a8d1ece7d1616797c5b5e2e82022"
+    },
+    "UI_coverage": {
+      "exit_code": 0,
+      "verified_summary": [
+        "42 passed"
+      ],
+      "log_sha256": "014c54dbf360d300f7429d29317e600a61b7a4381f803c18cc3780589d12daa6"
+    },
+    "UI_build": {
+      "exit_code": 0,
+      "verified_summary": [
+        "built in"
+      ],
+      "log_sha256": "f94851ec0a1882368a49c4b8fe8479f878538ab49034e9907b55aacb946813cf"
+    },
+    "e2e": {
+      "exit_code": 0,
+      "verified_summary": [
+        "39 passed"
+      ],
+      "log_sha256": "55b2010695a5dd92d7f81d4ca3a5dcc0ea69889142e779c13980216ccd5df120"
+    },
+    "Android": {
+      "exit_code": 0,
+      "verified_summary": [
+        "BUILD SUCCESSFUL",
+        "testDebugUnitTest UP-TO-DATE",
+        "verifySpinPartsCatalog"
+      ],
+      "log_sha256": "e5571194db7c421b4d3b8e1a942f52217bddacf7828af787bea6f11f9930ccd4"
+    }
+  },
+  "quality_improvement_proven": false,
+  "hypothesis": "learner-induced state distribution requires actual next-training experiment",
+  "proof_sha256": {
+    "capture.py": "0e235f4968cc733c639bf6926aa8a90dfc6a467f470cc2cb2d0ef18dc17bbd39",
+    "join.py": "9752953192eaa36daeeea9452f3b2687977d70aca9b041d1d3a3d7b87cf5d412",
+    "label_rules.py": "786ecc0ce68ae056117337fe1d3c6622217a58500cb48a996e566ec253f40dcc",
+    "capture-contract.json": "f4803de58b00f04311f19e889123fdf4ba328f794729321d26bab9c5c8771642",
+    "label-contract.json": "e1da8d56c9f8e246be8509046e538a1bca83def678634e8222372fda9846180f",
+    "composition-diagnostic.json": "2f03fe20608032b40c7e9c167129723735aae7d85ad8683faf5e796e39e72e66"
+  }
+}

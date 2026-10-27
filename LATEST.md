@@ -75,3 +75,6 @@
 
 
 第180輪：[實際觀測外觀39維完整報告](runs/run-180.md)完成30epochs／2,610實際更新；215個已知VAL配對TP156／FP0／FN0／TN59，precision／recall100%。完整Kalman TP708→721、certain531→594；Byte TP545→601、certain440→531，但40/136比較仍退步、零來源群同時通過兩profile。拒絕晉升，候選已清理、九個API權重不變。[學習曲線](runs/run-180-learning-curve.json) · [136比較及精準度摘要](runs/run-180-metrics.json)。新視窗180–189目前1次訓練／零合格，穩定高速／模糊軌跡目標持續。
+
+
+第180輪後：[共同命中分解與learner-state前置驗證](evaluations/round-180-composition-and-learner-state-preflight.md)：Kalman原708TP全保留、共同量測不變；Byte原545TP中流失46點、另新增102點，不能以淨增56掩蓋流失。TRAIN-only控制核對5515原配對精確相同，非學習控制產生792筆新Byte狀態配對，但控制資料未准入optimizer。零新增訓練，最新實際輪次仍為180；181須改用真正當前模型快照驗證。全套本機產品檢查通過，原拒絕及API不變。
