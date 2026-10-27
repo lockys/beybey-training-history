@@ -1,0 +1,143 @@
+{
+  "run_id": 184,
+  "status": "rejected_binary_gate",
+  "optimizer_updates": 2610,
+  "completed_epochs": 30,
+  "best_epoch": 1,
+  "selected_state_tensor_sha256": "598bfd36fcc4bb0cc6bc11332280a0bef5cc8b65550040a28e60103ecd30ddaf",
+  "pair_validation": {
+    "all": {
+      "pairs": 215,
+      "positive": 156,
+      "negative": 59,
+      "BCE": 0.15001948177814484,
+      "threshold": 0.95,
+      "TP": 0,
+      "FP": 0,
+      "FN": 156,
+      "TN": 59,
+      "precision": null,
+      "recall": 0.0
+    },
+    "kalman": {
+      "pairs": 106,
+      "positive": 76,
+      "negative": 30,
+      "BCE": 0.13499917089939117,
+      "threshold": 0.95,
+      "TP": 0,
+      "FP": 0,
+      "FN": 76,
+      "TN": 30,
+      "precision": null,
+      "recall": 0.0
+    },
+    "bytetrack": {
+      "pairs": 109,
+      "positive": 80,
+      "negative": 29,
+      "BCE": 0.16462640464305878,
+      "threshold": 0.95,
+      "TP": 0,
+      "FP": 0,
+      "FN": 80,
+      "TN": 29,
+      "precision": null,
+      "recall": 0.0
+    }
+  },
+  "binary_validation_gate_passed": false,
+  "failures": [
+    "kalman_fewer_than_10_TP",
+    "bytetrack_fewer_than_10_TP"
+  ],
+  "temporal_DEV": {
+    "metrics": {
+      "known_targets": 492,
+      "measured_hits": 423,
+      "observed_hits": 324,
+      "certain_observed": 157,
+      "hypothesis_ID_switches": 11,
+      "certain_transfer_points": 0,
+      "ignored_unknown_output": 0
+    },
+    "baseline_metrics": {
+      "known_targets": 492,
+      "measured_hits": 423,
+      "observed_hits": 324,
+      "certain_observed": 157,
+      "hypothesis_ID_switches": 11,
+      "certain_transfer_points": 0,
+      "ignored_unknown_output": 0
+    },
+    "per_profile": {
+      "kalman": {
+        "known_targets": 246,
+        "measured_hits": 240,
+        "observed_hits": 192,
+        "certain_observed": 80,
+        "hypothesis_ID_switches": 4,
+        "certain_transfer_points": 0,
+        "ignored_unknown_output": 0
+      },
+      "bytetrack": {
+        "known_targets": 246,
+        "measured_hits": 183,
+        "observed_hits": 132,
+        "certain_observed": 77,
+        "hypothesis_ID_switches": 7,
+        "certain_transfer_points": 0,
+        "ignored_unknown_output": 0
+      }
+    },
+    "profile_gains": {
+      "kalman": {
+        "certain": 0,
+        "observed": 0,
+        "measured": 0
+      },
+      "bytetrack": {
+        "certain": 0,
+        "observed": 0,
+        "measured": 0
+      }
+    },
+    "native_measured_lost": 0,
+    "native_observed_lost": 0,
+    "native_certain_lost": 0,
+    "gap_regressions": 0,
+    "extra_ID_switches": 0,
+    "extra_certain_transfer_points": 0,
+    "violations": 0,
+    "worst_gaps": {
+      "measured": 6,
+      "observed": 6,
+      "certain": 10
+    },
+    "measured_gain": 0,
+    "observed_gain": 0,
+    "certain_gain": 0,
+    "detector_conditioned_only": true
+  },
+  "full_acceptance": {
+    "performed": false,
+    "reason": "binary prerequisite failed",
+    "passed": false
+  },
+  "qualified": false,
+  "API_promoted": false,
+  "accuracy_scope": "Known source-held detector pair classification; not physical detector or complete trajectory accuracy",
+  "retention": {
+    "run_id": 184,
+    "accepted": false,
+    "rejected": true,
+    "API_eligible": false,
+    "candidate_checkpoint_deleted": true,
+    "selected_checkpoint_retained": false,
+    "retained_API_versions": 9,
+    "API_changed": false,
+    "logical_bytes_freed": 49696,
+    "failures": 0,
+    "source_and_reference_deleted": false
+  }
+}

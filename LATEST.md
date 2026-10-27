@@ -1,6 +1,6 @@
 # 訓練與評估索引
 
-目前更新至第 183 輪；仍未取得合格晉升版本。183完成2,610updates，選25epoch已受learner訓練，pair VAL precision／recall100%、BCE0.009072，但Byte TP635／certain520、原命中流失27，差於182的653／526／23。完整40/136仍退步，拒絕晉升並清理權重。同183tensor用舊政策的932更新／68比較完全相同，不能把退步歸因新政策。180–189目前4次實際訓練10,440updates、零合格與零API晉升。
+目前更新至第184輪；仍未取得合格晉升版本。184完成2,610updates，逐epoch時序DEV排序選第1epoch，但pair recall0%、未通過前置門檻；完整136比較未執行。全部訓練loss、VAL與訪次精確同183，僅選模不同。27個符合pair門檻的epoch仍全有時序退步，不能靠改過濾條件取得合格版本。候選已清理、九個API權重不變；180–189目前5次實際訓練／13,050updates／零合格與零API晉升。
 
 [第 142 輪](runs/run-142.md)（原程序失敗後另行稽核及比較）。
 
@@ -93,3 +93,6 @@
 
 
 第183輪後：[時序 DEV 選模評估前置驗證](evaluations/round-183-temporal-dev-preflight.md)：41影格／2片段、24序列、984次 tracker updates、1780次神經配對呼叫，零 optimizer。零修正與原生逐欄位一致；固定正向控制改變35影格，雖淨增命中仍有逐序列新增3次身分切換，保守排序判為退步。未證明真正 epoch 選模改善；184尚未啟動，API不變。
+
+
+第184輪：[逐epoch時序DEV選模完整報告](runs/run-184.md)：30epochs／2,610次實際更新；全部epoch loss、VAL與訪次精確同183，唯一介入為選模。9組時序排序選第1epoch，DEV同原生但pair TP0／FN156、recall0%，未過前置門檻，完整136比較未執行。27個符合pair門檻的epoch仍全有時序退步，最好的22仍6項違反；事後未改選或晉升。[曲線](runs/run-184-learning-curve.json) · [精準度與拒絕](runs/run-184-metrics.json) · [選模診斷](runs/run-184-diagnostics.json)。權重已清理、九個API權重不變；180–189目前5次／13,050updates／零合格。
