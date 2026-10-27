@@ -81,3 +81,6 @@
 
 
 第181輪：[真正當前模型狀態TRAIN續訓完整報告](runs/run-181.md)完成30epochs／2,610updates，epoch10／20快照產生814／802筆新狀態配對、實際混入55,140訪次。最佳epoch25已受learner資料訓練，215 VAL precision／recall100%、BCE0.001867。Kalman TP722／certain594；Byte TP609／certain496，原命中流失32（180輪46），但完整40/136仍退步且零來源群通過兩profile。拒絕晉升，權重清理完畢、九個API權重不變。[曲線](runs/run-181-learning-curve.json) · [136比較與精準度](runs/run-181-metrics.json) · [learner資料稽核](runs/run-181-learner-admissions.json)。180–189視窗目前2次實際訓練、5,220updates、零合格。
+
+
+第181輪後：[封存分數精確重播與綁定診斷](evaluations/round-181-exact-policy-binding-diagnosis.md)：14案例／932更新／3689封存分數精確重現，零新NN或optimizer。32個原Byte命中流失中31個core感測已送出但ID與guard綁定不符，另1個原生guard拒收；certain相較180輪54失去／19新增，淨減35。85條改變邊含44未綁定、41已綁定，不能假設只禁止未綁定即可修好。下一提案資格機制尚未實作，第182輪未啟動；原拒絕與API不變。

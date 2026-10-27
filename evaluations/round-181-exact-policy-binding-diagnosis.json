@@ -1,0 +1,138 @@
+{
+  "completed": true,
+  "after_run": 181,
+  "new_training_round": false,
+  "optimizer_updates": 0,
+  "new_neural_calls": 0,
+  "API_mutations": 0,
+  "original181_rejection_unchanged": true,
+  "trace": {
+    "tracker_updates": 932,
+    "cached_score_lookups": 3689,
+    "case_count": 14,
+    "profiles": [
+      "kalman",
+      "bytetrack"
+    ],
+    "all_rows_and_proposals_exact": true,
+    "reference_annotations_read_during_replay": false
+  },
+  "baseline_only_Byte_hits": 32,
+  "local_loss_stage_counts": {
+    "guard_binding_mismatch": 31,
+    "forwarded_bound_sensor_rejected_by_native_guard": 1,
+    "core_sensor_not_forwarded": 0
+  },
+  "case_counts": [
+    {
+      "case_id": "cohort-event",
+      "counts": {
+        "guard_rejected_forwarded_bound_sensor": 1,
+        "guard_binding_mismatch": 10
+      }
+    },
+    {
+      "case_id": "studio-fast-dark",
+      "counts": {
+        "guard_binding_mismatch": 10
+      }
+    },
+    {
+      "case_id": "studio-fast-rail",
+      "counts": {
+        "guard_binding_mismatch": 7
+      }
+    },
+    {
+      "case_id": "preburst-contact-transition",
+      "counts": {
+        "guard_binding_mismatch": 4
+      }
+    }
+  ],
+  "certain_vs180": {
+    "previous_certain": 531,
+    "current_certain": 496,
+    "gained": 19,
+    "lost": 54,
+    "lost:measurement_missing": 20,
+    "lost_with_sticky_uncertainty": 31,
+    "lost:new_hypothesis": 1,
+    "lost:certain": 2,
+    "lost:identity_uncertain": 31
+  },
+  "changed_core_edges": {
+    "unbound": 44,
+    "bound": 41
+  },
+  "prior_adoption_before_loss": 32,
+  "prior_adoption_is_not_causal_proof": true,
+  "control_or_acceptance_data_admitted_to_TRAIN": false,
+  "next_eligibility_policy_implemented": false,
+  "quality_improvement_proven": false,
+  "product_checks": {
+    "all_required_product_checks_passed": true,
+    "product_sources_modified": false,
+    "formal_model_acceptance": false,
+    "backend_environment": "existing API venv",
+    "annotator_coverage_source": "actual libs/beyannotate; command run from libs",
+    "prior_environment_attempts_failed": [],
+    "backend": {
+      "exit_code": 0,
+      "verified_summary": [
+        "398 passed",
+        "8 skipped"
+      ],
+      "log_sha256": "73ff2bd57a6b4593b4bafb21a6712a8ee9a870be734bb8da119b792e38eca28b"
+    },
+    "annotator": {
+      "exit_code": 0,
+      "verified_summary": [
+        "163 passed",
+        "Total coverage: 94.29%"
+      ],
+      "log_sha256": "107589212fa72fda4148c40e7482b01d9b2fda7ef66698d5a14e8388b3420d3e"
+    },
+    "UI_coverage": {
+      "exit_code": 0,
+      "verified_summary": [
+        "42 passed"
+      ],
+      "log_sha256": "4032a69d9cd0622038347ee7093e146f6179c414c09b9cd4a3753c825759051c"
+    },
+    "UI_build": {
+      "exit_code": 0,
+      "verified_summary": [
+        "built in"
+      ],
+      "log_sha256": "34412352b7c67c17b6035c534cc61f197d2dc3b4f4603db20442b8a64e2ece0b"
+    },
+    "e2e": {
+      "exit_code": 0,
+      "verified_summary": [
+        "39 passed"
+      ],
+      "log_sha256": "e79ab685f5db8652bea2088e65c1446ec785000a04374dad81b2914ff48534e9"
+    },
+    "Android": {
+      "exit_code": 0,
+      "verified_summary": [
+        "BUILD SUCCESSFUL",
+        "testDebugUnitTest UP-TO-DATE",
+        "verifySpinPartsCatalog"
+      ],
+      "log_sha256": "e5571194db7c421b4d3b8e1a942f52217bddacf7828af787bea6f11f9930ccd4"
+    }
+  },
+  "proof_sha256": {
+    "replay.py": "23dee34093634b42258a092c57178fbcd8a1a4cd5d14d090dc5f10906cc33036",
+    "replay_binding.py": "6867485f612ec375eee3ec49d0785c414d1ec5008b0151a94650ee430b750946",
+    "score_tape.py": "cef83cf2ed6ea97b4acf76e4f3e89983db9146748ddf831436f28208875c852b",
+    "tape-contract.json": "50dd96999f301cb8698bbcfc3e22e8750e48e4c66170c92eb26e614eab63fbae",
+    "join.py": "08831172f9f170fd12f65816a9835c888299bdf49e6050b0ed4d775fb2f9a54d",
+    "diagnosis.json": "a1cc6643e87c400d0d5fe1ee5ea803134a26af1756cfc8b2e98b63cf5df598a7",
+    "analyze_edges.py": "56f59791b502c94300ef61e9749884722131bbaad3edb5916d8a29da8fad352b",
+    "edge-diagnosis.json": "37666bd2811ff3178fda11841455b2fe779f8cec7a087b1ff6069fe400fd5c46",
+    "completion.json": "dbc0f3ff64bceb85b1a86ef9b81bee23c3fd9f5814288d196186d904a4989d53"
+  }
+}
