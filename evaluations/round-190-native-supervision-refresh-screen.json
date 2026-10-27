@@ -1,0 +1,90 @@
+{
+  "completed": true,
+  "stage": "native_source_screen_not_training_admission",
+  "framing_criterion": {
+    "source": "direct user reply in current thread",
+    "criterion": "\u5b8c\u6574\u6230\u9b25\u7897\u8207\u8ecc\u9053\u5373\u53ef\uff08\u5efa\u8b70\uff09",
+    "outer_housing_corner_crop_allowed": true,
+    "complete_battle_bowl_required": true,
+    "complete_rail_required": true,
+    "near_overhead_required": true,
+    "existing_training_or_fixed_evaluation_changed": false
+  },
+  "candidate_images": 16,
+  "canonical_videos": 2,
+  "heldout_reference_images": 585,
+  "exact_heldout_overlap": 0,
+  "minimum_global_phash_distance": 12,
+  "manual_nearest_pairs_reviewed": 8,
+  "annotation_proposal_candidates": 8,
+  "held_for_suspected_camera_background_overlap": 8,
+  "screening_decision": {
+    "completed": true,
+    "stage": "source_and_framing_screen_not_training_admission",
+    "framing_criterion_source": "direct user reply: \u5b8c\u6574\u6230\u9b25\u7897\u8207\u8ecc\u9053\u5373\u53ef\uff08\u5efa\u8b70\uff09",
+    "candidates_reviewed": 16,
+    "heldout_reference_images_compared": 585,
+    "exact_overlap": 0,
+    "minimum_global_phash_distance": 12,
+    "manual_nearest_pairs_seen": 8,
+    "groups": [
+      {
+        "canonical_source": "youtube:LSyhxO3Bz_g",
+        "candidate_ids": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "framing": "near-overhead; complete battle bowl and rail visible; outer housing may crop as user allowed",
+        "nearest_pair_review": "four closest sampled comparisons show different bowl/rail/lighting/overlay scenes; this is not proof of every camera-family exclusion",
+        "decision": "eligible_for_new_body_annotation_proposals_only",
+        "training_admitted": false
+      },
+      {
+        "canonical_source": "youtube:kRZzRTw6K9s",
+        "candidate_ids": [
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16
+        ],
+        "framing": "near-overhead; complete battle bowl and rail visible; housing corners crop",
+        "nearest_pair_review": "distinctive red/blue illumination, circular reflections and scratched bowl background recur in heldout images; suspected shared camera setup despite different video identifiers",
+        "decision": "hold_from_new_TRAIN_due_to_camera_background_overlap",
+        "training_admitted": false
+      }
+    ],
+    "next_stage": "new native body/assembly annotation proposals for eight tournament frames, followed by separate visual review and admission/data-loader checks",
+    "old_labels_read": 0,
+    "new_TRAIN_admissions": 0,
+    "model_forward_calls": 0,
+    "optimizer_updates": 0,
+    "training_191_started": false,
+    "limitations": [
+      "Perceptual hashes are warning signals, not proof of data independence",
+      "Same assistant review is not independent human ground truth",
+      "Inherited pretraining may include legacy source images",
+      "No fixed references, thresholds, current TRAIN inputs or API weights changed"
+    ]
+  },
+  "old_labels_read": 0,
+  "new_TRAIN_admissions": 0,
+  "model_forward_calls": 0,
+  "optimizer_updates": 0,
+  "training191_started": false,
+  "selection_script_correction": {
+    "problem": "select.py shadowed Python standard select during SciPy import",
+    "archived_source_preserved": true,
+    "selection_v2_same_candidates": true,
+    "training_exposure": 0
+  }
+}

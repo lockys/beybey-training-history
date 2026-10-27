@@ -126,4 +126,6 @@
 
 第190輪後：[舊素材盤點更正](evaluations/round-190-legacy-native-source-scout.md) · [來源像素與衍生圖稽核](evaluations/round-190-legacy-native-source-scout.json)。原12原圖／原生說法更正為11原生、1linear-motion-blur衍生（第4張）；0label／NN／optimizer／TRAIN准入，未造成訓練曝光。完整外殼、來源與近重複仍待核對，未上傳媒體。
 
-第190輪後補充：[原生來源追溯v2與視角複核](evaluations/round-190-native-source-provenance-v2.md) · [來源別名、衍生排除與計數](evaluations/round-190-native-source-provenance-v2.json)。第二批19原生影格、10內部來源ID對應8標籤（7公開影片身份、1未解析），不等同獨立攝影來源；累計36張不同影像為35原生、1衍生，已知heldout canonical重疊0。0TRAIN准入，完整盤面標準待釐清，191未啟動，190模型拒絕與API不變。
+第190輪後補充：[原生來源追溯v2與視角複核](evaluations/round-190-native-source-provenance-v2.md) · [來源別名、衍生排除與計數](evaluations/round-190-native-source-provenance-v2.json)。第二批19原生影格、10內部來源ID對應8標籤（7公開影片身份、1未解析），不等同獨立攝影來源；累計36張不同影像為35原生、1衍生，已知heldout canonical重疊0。0TRAIN准入；使用者已確認完整戰鬥碗／軌道即可、外殼邊角可裁切，191未啟動，190模型拒絕與API不變。
+
+第190輪後素材篩選：[完整戰鬥碗／軌道與攝影背景複核](evaluations/round-190-native-supervision-refresh-screen.md) · [數量與准入限制](evaluations/round-190-native-supervision-refresh-screen.json)。16候選對585唯一參考exact重疊0，但LED8張疑似共用heldout背景而保留；賽事8張只進入新標註提案，0舊label／NN／optimizer／TRAIN准入，191未啟動。

@@ -56,7 +56,7 @@
         "camera": "near overhead gray/blue arena",
         "battle_bowl_and_rail": "visible",
         "outer_housing": "cropped at image edges",
-        "eligibility": "framing preference and detailed body review pending"
+        "eligibility": "body and per-frame complete bowl/rail review pending under user-confirmed criterion"
       },
       {
         "sample_ids": [
@@ -101,7 +101,7 @@
         "camera": "downward near-overhead purple-lit arena",
         "battle_bowl_and_rail": "visible",
         "outer_housing": "cropped at bottom",
-        "eligibility": "framing preference and detailed body review pending"
+        "eligibility": "body and per-frame complete bowl/rail review pending under user-confirmed criterion"
       },
       {
         "sample_ids": [
@@ -112,7 +112,7 @@
         "battle_bowl_and_rail": "visible",
         "outer_housing": "cropped",
         "source_note": "same canonical YouTube video as v1samples9and10; not independent new source",
-        "eligibility": "framing preference and detailed body review pending"
+        "eligibility": "body and per-frame complete bowl/rail review pending under user-confirmed criterion"
       }
     ],
     "purple_sequence_review": {
@@ -132,7 +132,7 @@
       "video_camera_not_uniform": true,
       "new_admissions": 0
     },
-    "framing_scope_question_pending": true,
+    "framing_scope_question_pending": false,
     "limitations": [
       "Native source pixels do not guarantee suitable camera framing",
       "No whole-video or independent camera-family claim",
@@ -535,5 +535,6 @@
       "derived_transform": null,
       "known_canonical_heldout_overlap": false
     }
-  ]
+  ],
+  "framing_criterion_confirmed_by_user": "完整戰鬥碗與軌道即可；外殼邊角可裁切"
 }
