@@ -1,0 +1,11 @@
+# 七張新視覺標註准入研究TRAIN，非API模型資格
+
+依使用者「完整戰鬥碗與軌道即可」標準，賽事來源8張原生候選經逐張新標註、放大輪廓與同助理第二次複核，7張14body框准入研究cohort；第7張的白／黃本體受模糊及護罩影響無法可靠定界，整張不准入，未當作空背景。LED共用攝影背景候選也仍排除。
+
+原生像素保持SHA一致，複製到獨立影像與相鄰新label路徑，舊label不修改、不用於新提案。這7張是既有舊來源像素的新視覺標註，不是新外部影片或新的獨立攝影來源；初始Ares33的pretraining可能已看過舊來源。標註仍不是獨立人工真值，也不宣稱精確物理旋轉中心或測得速度。
+
+新cohort153TRAIN／273bodyGT／8empty，VAL54與TEST47清單逐byte相同。全部508影像／label引用SHA核對；相同圖若故意路由到舊label，原生YOLO實際bbox座標驗證紅燈，不能默默讀回pseudo-label。該控制會刻意讀舊label以證明失敗，但新標註本身未以舊label或模型預測為依據。新label座標全部7張載入正確；held／heldout注入、舊sampler與有效normalized-uniform分布均被拒絕。
+
+正確sampler維持原五層mass及695draws/epoch、seed47，80模擬epochs／55600draws通過。原生4TRAIN／8GT一次GPUforward/backward，66grads58nonzero、42classification非零，0optimizer，全部state不變。初版測試沿用146上界及uniform分母的錯誤保留紀錄；正確控制以153合法範圍、有效正規化uniform另測，未拿無效控制充當通過。
+
+新訓練191需另行完成30epochs及原高速／模糊軌跡與固定案例驗收；資料准入、TRAIN loss或梯度不等於模型準確率、穩定軌跡或API資格。沒有上傳新影像、標註座標、私有路徑或權重。

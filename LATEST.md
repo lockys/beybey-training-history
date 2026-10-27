@@ -1,6 +1,6 @@
 # 訓練與評估索引
 
-第190輪完成30epochs／347實測updates，固定bbox但分類／NMS結果仍退步。固定54VAL81TP／1FP／4FN（P98.78%、R95.29%），development45→44TP、23個scalar門檻失敗，完整204比較未啟動。146TRAIN的原始座標逐值等於Ares33，但這不保證偵測與軌跡不退步。權重清理完畢、九個API權重不變。本批十次完整訓練180–187、189、190／14785實測updates／零合格，沒有可晉升的五個版本；188中止未知更新數另列。穩定高速模糊軌跡目標尚未達成，下一步優先補強經複核的訓練素材。
+第191輪訓練中，快照10/30epochs／130實測updates／1740/5220batches，尚無精準度或驗收結果。本輪沿用189joint head66tensors／819779參數，只補充經兩次視覺複核的7張舊原生影格14新bodylabels，研究TRAIN153圖／273框／8empty；54VAL／47TEST不變。第7張模糊護罩輪廓不可靠整張保留，LED共用背景組也不准入。原154early與完整204比較／來源群門檻不變，API九個權重不變。上一個十次完整批次14785updates／零合格，191是下一批第一次嘗試，完成30epochs才計完成。
 
 [第 142 輪](runs/run-142.md)（原程序失敗後另行稽核及比較）。
 
@@ -129,3 +129,7 @@
 第190輪後補充：[原生來源追溯v2與視角複核](evaluations/round-190-native-source-provenance-v2.md) · [來源別名、衍生排除與計數](evaluations/round-190-native-source-provenance-v2.json)。第二批19原生影格、10內部來源ID對應8標籤（7公開影片身份、1未解析），不等同獨立攝影來源；累計36張不同影像為35原生、1衍生，已知heldout canonical重疊0。0TRAIN准入；使用者已確認完整戰鬥碗／軌道即可、外殼邊角可裁切，191未啟動，190模型拒絕與API不變。
 
 第190輪後素材篩選：[完整戰鬥碗／軌道與攝影背景複核](evaluations/round-190-native-supervision-refresh-screen.md) · [數量與准入限制](evaluations/round-190-native-supervision-refresh-screen.json)。16候選對585唯一參考exact重疊0，但LED8張疑似共用heldout背景而保留；賽事8張只進入新標註提案，0舊label／NN／optimizer／TRAIN准入，191未啟動。
+
+第190輪後：[七張新視覺標註准入研究TRAIN](evaluations/round-190-native-supervision-refresh-admission.md) · [原生載入、資料路由與零optimizer前置控制](evaluations/round-190-native-supervision-refresh-admission.json)。153圖／273框、VAL／TEST原清單不變；新label全部原生讀取精確，回舊label、held／heldout與錯sampler皆紅燈。這是舊來源像素的新標註，非新外部影片、非獨立人工真值，不抹除pretraining。
+
+第191輪：[複核原生監督補充訓練進行中](runs/run-191.md) · [實際進度與前置檢查](runs/run-191-metrics.json)。全套產品測試重新通過；尚無準確率、穩定軌跡或API晉升結論。

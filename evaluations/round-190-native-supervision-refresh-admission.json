@@ -1,0 +1,53 @@
+{
+  "completed": true,
+  "role": "admitted_to_research_TRAIN_cohort_not_model_API_qualification",
+  "reviewed_images_admitted": 7,
+  "new_visual_body_boxes": 14,
+  "new_empty_frames": 0,
+  "held_candidate_ids": [
+    7
+  ],
+  "LED_shared_background_group_admitted": false,
+  "cohort_images": 153,
+  "cohort_body_boxes": 273,
+  "cohort_empty_frames": 8,
+  "heldout_lists_unchanged": true,
+  "new_annotation_source": "same_assistant_two_pass_visual_review",
+  "independent_human_truth": false,
+  "old_pseudo_labels_reenabled": false,
+  "annotation_old_labels_used": false,
+  "stale_label_negative_control_intentionally_reads_legacy_label": true,
+  "new_external_footage": false,
+  "historical_pretraining_lineage_exclusion": false,
+  "optimizer_updates": 0,
+  "model_API_eligible": false,
+  "cohort": {
+    "train_images": 153,
+    "body_boxes": 273,
+    "empty_frames": 8,
+    "val_images": 54,
+    "test_images": 47,
+    "heldout_lists_byte_identical": true
+  },
+  "data_preflight": {
+    "verified_file_references": 508,
+    "all_new_label_coordinates_loaded_exact": true,
+    "negative_controls": 5,
+    "stale_label_route_rejected_before_inference": true,
+    "sampler_simulated_epochs": 80,
+    "sampler_draws": 55600,
+    "native_TRAIN_forward_calls": 1,
+    "native_TRAIN_backward_gradient_tensors": 66,
+    "native_TRAIN_nonzero_gradient_tensors": 58,
+    "native_TRAIN_nonzero_classification_tensors": 42,
+    "optimizer_updates": 0
+  },
+  "sampler_measured_masses": {
+    "hard": 0.25217625899280577,
+    "empty": 0.1997841726618705,
+    "white": 0.2006294964028777,
+    "gray": 0.048237410071942446,
+    "easy": 0.2991726618705036
+  },
+  "native_forward_batch_GT": 8
+}
