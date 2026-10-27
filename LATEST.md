@@ -90,3 +90,6 @@
 
 
 第183輪：[正動作資格／負證據分離完整報告](runs/run-183.md)完成30epochs／2,610updates，實際55,140learner訪次，選25epoch（新tensor）。Byte TP635、certain520、原命中流失27，仍40/136退步、零來源群通過兩profile。固定同tensor舊政策診斷與本輪所有輸出／68指標完全相同。既有41個VAL影格的時序study可分出known-detector命中155→160，但certain88不變且不能測完整物理定位／場外FP；下一步先凍結時序DEV而非再只看pair BCE。[曲線](runs/run-183-learning-curve.json) · [136比較](runs/run-183-metrics.json) · [learner／控制／VAL與fold稽核](runs/run-183-diagnostics.json)。候選已清理，本機9個API權重不變；180–189目前4次／10,440updates／零合格。
+
+
+第183輪後：[時序 DEV 選模評估前置驗證](evaluations/round-183-temporal-dev-preflight.md)：41影格／2片段、24序列、984次 tracker updates、1780次神經配對呼叫，零 optimizer。零修正與原生逐欄位一致；固定正向控制改變35影格，雖淨增命中仍有逐序列新增3次身分切換，保守排序判為退步。未證明真正 epoch 選模改善；184尚未啟動，API不變。
