@@ -1,0 +1,539 @@
+{
+  "completed": true,
+  "source_scout_only": true,
+  "labels_read": 0,
+  "model_forward_calls": 0,
+  "optimizer_updates": 0,
+  "new_admissions": 0,
+  "new_TRAIN_images": 0,
+  "prior_v1_correction": {
+    "viewed": 12,
+    "native_source_pixels_verified": 11,
+    "linear_motion_blur_derivative": 1,
+    "derived_sample_id": 4,
+    "previous_all_native_claim_corrected": true,
+    "training_exposure": 0
+  },
+  "v2_summary": {
+    "samples": 19,
+    "internal_source_ids": 10,
+    "canonical_session_labels": 8,
+    "resolved_public_video_identities": 7,
+    "unresolved_canonical_labels": 1
+  },
+  "total_unique_reviewed_images": 36,
+  "native_unique_reviewed_images": 35,
+  "known_canonical_heldout_overlaps": 0,
+  "limitations": [
+    "Canonical video identity is not independent camera-family identity",
+    "One custom session label remains unresolved, not a verified public video",
+    "No TRAIN admission; stadium completeness/camera/body annotations still require review",
+    "Historical pretraining lineage and all near duplicates unverified"
+  ],
+  "visual_review": {
+    "completed": true,
+    "reviewer": "same_assistant_not_independent_human",
+    "source_samples_seen": 19,
+    "native_source_pixels_verified": 19,
+    "new_admissions": 0,
+    "labels_read": 0,
+    "model_calls": 0,
+    "observations": [
+      {
+        "sample_ids": [
+          1,
+          2,
+          19
+        ],
+        "camera": "oblique downward view of oval white/red arena",
+        "eligibility": "hold: stadium family and target framing not confirmed; do not assume X eligibility"
+      },
+      {
+        "sample_ids": [
+          3,
+          4
+        ],
+        "camera": "near overhead gray/blue arena",
+        "battle_bowl_and_rail": "visible",
+        "outer_housing": "cropped at image edges",
+        "eligibility": "framing preference and detailed body review pending"
+      },
+      {
+        "sample_ids": [
+          5,
+          6
+        ],
+        "camera": "oblique downward custom-painted dark arena",
+        "canonical_public_video": "unresolved",
+        "eligibility": "hold source identity and framing"
+      },
+      {
+        "sample_ids": [
+          7,
+          8
+        ],
+        "camera": "side-oblique dark/green arena",
+        "eligibility": "exclude sampled views from current near-overhead shortlist"
+      },
+      {
+        "sample_ids": [
+          9,
+          10,
+          11,
+          12,
+          15,
+          16
+        ],
+        "camera": "low angle white arena",
+        "eligibility": "exclude sampled views from near-overhead shortlist"
+      },
+      {
+        "sample_ids": [
+          13
+        ],
+        "camera": "close detail of purple-lit arena",
+        "eligibility": "exclude partial-bowl detail"
+      },
+      {
+        "sample_ids": [
+          14
+        ],
+        "camera": "downward near-overhead purple-lit arena",
+        "battle_bowl_and_rail": "visible",
+        "outer_housing": "cropped at bottom",
+        "eligibility": "framing preference and detailed body review pending"
+      },
+      {
+        "sample_ids": [
+          17,
+          18
+        ],
+        "camera": "near overhead green arena",
+        "battle_bowl_and_rail": "visible",
+        "outer_housing": "cropped",
+        "source_note": "same canonical YouTube video as v1samples9and10; not independent new source",
+        "eligibility": "framing preference and detailed body review pending"
+      }
+    ],
+    "purple_sequence_review": {
+      "native_images_seen": 7,
+      "already_in_v2_scout": 2,
+      "detail_or_partial_bowl_frames": [
+        14400,
+        14700,
+        14850,
+        15150
+      ],
+      "downward_full_battle_area_but_outer_housing_cropped_frames": [
+        18000,
+        18750,
+        20550
+      ],
+      "video_camera_not_uniform": true,
+      "new_admissions": 0
+    },
+    "framing_scope_question_pending": true,
+    "limitations": [
+      "Native source pixels do not guarantee suitable camera framing",
+      "No whole-video or independent camera-family claim",
+      "No old label or model output was read to decide eligibility",
+      "Training and fixed evaluation data unchanged"
+    ]
+  },
+  "identity_behavior_control": {
+    "legacy_alias_test_exit_code": 1,
+    "new_alias_test_exit_code": 0
+  },
+  "samples": [
+    {
+      "stage": "v1",
+      "sample_id": 1,
+      "video_id": "v079399791cdb67c39806",
+      "frame_index": 21120,
+      "canonical_source": "youtube:kRZzRTw6K9s",
+      "native_pixels_verified": true,
+      "derived_transform": null,
+      "known_canonical_heldout_overlap": false
+    },
+    {
+      "stage": "v1",
+      "sample_id": 2,
+      "video_id": "v079399791cdb67c39806",
+      "frame_index": 27360,
+      "canonical_source": "youtube:kRZzRTw6K9s",
+      "native_pixels_verified": true,
+      "derived_transform": null,
+      "known_canonical_heldout_overlap": false
+    },
+    {
+      "stage": "v1",
+      "sample_id": 3,
+      "video_id": "vaf7986dc76741f7a4818",
+      "frame_index": 10845,
+      "canonical_source": "youtube:K6RKFapFWIo",
+      "native_pixels_verified": true,
+      "derived_transform": null,
+      "known_canonical_heldout_overlap": false
+    },
+    {
+      "stage": "v1",
+      "sample_id": 4,
+      "video_id": "vaf7986dc76741f7a4818",
+      "frame_index": 15600,
+      "canonical_source": "youtube:K6RKFapFWIo",
+      "native_pixels_verified": false,
+      "derived_transform": {
+        "kind": "linear_motion_blur",
+        "kernel_size": 7,
+        "angle_degrees": 67.7141245175153,
+        "border": "reflect101",
+        "source_shape": [
+          720,
+          1280,
+          3
+        ]
+      },
+      "known_canonical_heldout_overlap": false
+    },
+    {
+      "stage": "v1",
+      "sample_id": 5,
+      "video_id": "vedfe946832745749043c",
+      "frame_index": 8340,
+      "canonical_source": "youtube:QbeH5MGHXU4",
+      "native_pixels_verified": true,
+      "derived_transform": null,
+      "known_canonical_heldout_overlap": false
+    },
+    {
+      "stage": "v1",
+      "sample_id": 6,
+      "video_id": "vedfe946832745749043c",
+      "frame_index": 16980,
+      "canonical_source": "youtube:QbeH5MGHXU4",
+      "native_pixels_verified": true,
+      "derived_transform": null,
+      "known_canonical_heldout_overlap": false
+    },
+    {
+      "stage": "v1",
+      "sample_id": 7,
+      "video_id": "vb05833f5ed4076ec1e1a",
+      "frame_index": 28440,
+      "canonical_source": "youtube:LSyhxO3Bz_g",
+      "native_pixels_verified": true,
+      "derived_transform": null,
+      "known_canonical_heldout_overlap": false
+    },
+    {
+      "stage": "v1",
+      "sample_id": 8,
+      "video_id": "vb05833f5ed4076ec1e1a",
+      "frame_index": 34560,
+      "canonical_source": "youtube:LSyhxO3Bz_g",
+      "native_pixels_verified": true,
+      "derived_transform": null,
+      "known_canonical_heldout_overlap": false
+    },
+    {
+      "stage": "v1",
+      "sample_id": 9,
+      "video_id": "vdb7e4e0a7f5141f0397f",
+      "frame_index": 11160,
+      "canonical_source": "youtube:KHbDA9kOJho",
+      "native_pixels_verified": true,
+      "derived_transform": null,
+      "known_canonical_heldout_overlap": false
+    },
+    {
+      "stage": "v1",
+      "sample_id": 10,
+      "video_id": "vdb7e4e0a7f5141f0397f",
+      "frame_index": 19800,
+      "canonical_source": "youtube:KHbDA9kOJho",
+      "native_pixels_verified": true,
+      "derived_transform": null,
+      "known_canonical_heldout_overlap": false
+    },
+    {
+      "stage": "v1",
+      "sample_id": 11,
+      "video_id": "v183c5d7689e5a0ded253",
+      "frame_index": 4921,
+      "canonical_source": "dailymotion:x8rh5ic",
+      "native_pixels_verified": true,
+      "derived_transform": null,
+      "known_canonical_heldout_overlap": false
+    },
+    {
+      "stage": "v1",
+      "sample_id": 12,
+      "video_id": "v183c5d7689e5a0ded253",
+      "frame_index": 6450,
+      "canonical_source": "dailymotion:x8rh5ic",
+      "native_pixels_verified": true,
+      "derived_transform": null,
+      "known_canonical_heldout_overlap": false
+    },
+    {
+      "stage": "v2",
+      "sample_id": 1,
+      "video_id": "vf6d6461b0e933c83c230",
+      "frame_index": 14880,
+      "canonical_source": "youtube:u-EjRUhMuCc",
+      "native_pixels_verified": true,
+      "derived_transform": null,
+      "known_canonical_heldout_overlap": false
+    },
+    {
+      "stage": "v2",
+      "sample_id": 2,
+      "video_id": "vf6d6461b0e933c83c230",
+      "frame_index": 25800,
+      "canonical_source": "youtube:u-EjRUhMuCc",
+      "native_pixels_verified": true,
+      "derived_transform": null,
+      "known_canonical_heldout_overlap": false
+    },
+    {
+      "stage": "v2",
+      "sample_id": 3,
+      "video_id": "youtube-_hokxdEiiUc",
+      "frame_index": 31440,
+      "canonical_source": "youtube:_hokxdEiiUc",
+      "native_pixels_verified": true,
+      "derived_transform": null,
+      "known_canonical_heldout_overlap": false
+    },
+    {
+      "stage": "v2",
+      "sample_id": 4,
+      "video_id": "youtube-_hokxdEiiUc",
+      "frame_index": 33840,
+      "canonical_source": "youtube:_hokxdEiiUc",
+      "native_pixels_verified": true,
+      "derived_transform": null,
+      "known_canonical_heldout_overlap": false
+    },
+    {
+      "stage": "v2",
+      "sample_id": 5,
+      "video_id": "youtube-7_YZ9sYKlrM",
+      "frame_index": 7214,
+      "canonical_source": "unresolved:cyprus-painted-black-stadium-neon-rails",
+      "native_pixels_verified": true,
+      "derived_transform": null,
+      "known_canonical_heldout_overlap": false
+    },
+    {
+      "stage": "v2",
+      "sample_id": 6,
+      "video_id": "youtube-7_YZ9sYKlrM",
+      "frame_index": 16030,
+      "canonical_source": "unresolved:cyprus-painted-black-stadium-neon-rails",
+      "native_pixels_verified": true,
+      "derived_transform": null,
+      "known_canonical_heldout_overlap": false
+    },
+    {
+      "stage": "v2",
+      "sample_id": 7,
+      "video_id": "vd859118eba35b3910daa",
+      "frame_index": 161,
+      "canonical_source": "dailymotion:x93stos",
+      "native_pixels_verified": true,
+      "derived_transform": null,
+      "known_canonical_heldout_overlap": false
+    },
+    {
+      "stage": "v2",
+      "sample_id": 8,
+      "video_id": "vd859118eba35b3910daa",
+      "frame_index": 581,
+      "canonical_source": "dailymotion:x93stos",
+      "native_pixels_verified": true,
+      "derived_transform": null,
+      "known_canonical_heldout_overlap": false
+    },
+    {
+      "stage": "v2",
+      "sample_id": 9,
+      "video_id": "youtube-SMb85H1izpg",
+      "frame_index": 30811,
+      "canonical_source": "youtube:SMb85H1izpg",
+      "native_pixels_verified": true,
+      "derived_transform": null,
+      "known_canonical_heldout_overlap": false
+    },
+    {
+      "stage": "v2",
+      "sample_id": 10,
+      "video_id": "youtube-SMb85H1izpg",
+      "frame_index": 30821,
+      "canonical_source": "youtube:SMb85H1izpg",
+      "native_pixels_verified": true,
+      "derived_transform": null,
+      "known_canonical_heldout_overlap": false
+    },
+    {
+      "stage": "v2",
+      "sample_id": 11,
+      "video_id": "v2618ab3a0d82bc519343",
+      "frame_index": 300,
+      "canonical_source": "youtube:R-rJtDwtLdU",
+      "native_pixels_verified": true,
+      "derived_transform": null,
+      "known_canonical_heldout_overlap": false
+    },
+    {
+      "stage": "v2",
+      "sample_id": 12,
+      "video_id": "v2618ab3a0d82bc519343",
+      "frame_index": 1259,
+      "canonical_source": "youtube:R-rJtDwtLdU",
+      "native_pixels_verified": true,
+      "derived_transform": null,
+      "known_canonical_heldout_overlap": false
+    },
+    {
+      "stage": "v2",
+      "sample_id": 13,
+      "video_id": "v141931869951669553b1",
+      "frame_index": 14850,
+      "canonical_source": "youtube:ktLrvJWcilI",
+      "native_pixels_verified": true,
+      "derived_transform": null,
+      "known_canonical_heldout_overlap": false
+    },
+    {
+      "stage": "v2",
+      "sample_id": 14,
+      "video_id": "v141931869951669553b1",
+      "frame_index": 18000,
+      "canonical_source": "youtube:ktLrvJWcilI",
+      "native_pixels_verified": true,
+      "derived_transform": null,
+      "known_canonical_heldout_overlap": false
+    },
+    {
+      "stage": "v2",
+      "sample_id": 15,
+      "video_id": "v9632841461449ad3fe92",
+      "frame_index": 480,
+      "canonical_source": "youtube:R-rJtDwtLdU",
+      "native_pixels_verified": true,
+      "derived_transform": null,
+      "known_canonical_heldout_overlap": false
+    },
+    {
+      "stage": "v2",
+      "sample_id": 16,
+      "video_id": "v9632841461449ad3fe92",
+      "frame_index": 540,
+      "canonical_source": "youtube:R-rJtDwtLdU",
+      "native_pixels_verified": true,
+      "derived_transform": null,
+      "known_canonical_heldout_overlap": false
+    },
+    {
+      "stage": "v2",
+      "sample_id": 17,
+      "video_id": "native647_KHbDA9kOJho",
+      "frame_index": 7200,
+      "canonical_source": "youtube:KHbDA9kOJho",
+      "native_pixels_verified": true,
+      "derived_transform": null,
+      "known_canonical_heldout_overlap": false
+    },
+    {
+      "stage": "v2",
+      "sample_id": 18,
+      "video_id": "native647_KHbDA9kOJho",
+      "frame_index": 18000,
+      "canonical_source": "youtube:KHbDA9kOJho",
+      "native_pixels_verified": true,
+      "derived_transform": null,
+      "known_canonical_heldout_overlap": false
+    },
+    {
+      "stage": "v2",
+      "sample_id": 19,
+      "video_id": "native647_u-EjRUhMuCc",
+      "frame_index": 18000,
+      "canonical_source": "youtube:u-EjRUhMuCc",
+      "native_pixels_verified": true,
+      "derived_transform": null,
+      "known_canonical_heldout_overlap": false
+    },
+    {
+      "stage": "purple_sequence",
+      "sample_id": 1,
+      "video_id": "v141931869951669553b1",
+      "frame_index": 14400,
+      "canonical_source": "youtube:ktLrvJWcilI",
+      "native_pixels_verified": true,
+      "derived_transform": null,
+      "known_canonical_heldout_overlap": false
+    },
+    {
+      "stage": "purple_sequence",
+      "sample_id": 2,
+      "video_id": "v141931869951669553b1",
+      "frame_index": 14700,
+      "canonical_source": "youtube:ktLrvJWcilI",
+      "native_pixels_verified": true,
+      "derived_transform": null,
+      "known_canonical_heldout_overlap": false
+    },
+    {
+      "stage": "purple_sequence",
+      "sample_id": 3,
+      "video_id": "v141931869951669553b1",
+      "frame_index": 14850,
+      "canonical_source": "youtube:ktLrvJWcilI",
+      "native_pixels_verified": true,
+      "derived_transform": null,
+      "known_canonical_heldout_overlap": false
+    },
+    {
+      "stage": "purple_sequence",
+      "sample_id": 4,
+      "video_id": "v141931869951669553b1",
+      "frame_index": 15150,
+      "canonical_source": "youtube:ktLrvJWcilI",
+      "native_pixels_verified": true,
+      "derived_transform": null,
+      "known_canonical_heldout_overlap": false
+    },
+    {
+      "stage": "purple_sequence",
+      "sample_id": 5,
+      "video_id": "v141931869951669553b1",
+      "frame_index": 18000,
+      "canonical_source": "youtube:ktLrvJWcilI",
+      "native_pixels_verified": true,
+      "derived_transform": null,
+      "known_canonical_heldout_overlap": false
+    },
+    {
+      "stage": "purple_sequence",
+      "sample_id": 6,
+      "video_id": "v141931869951669553b1",
+      "frame_index": 18750,
+      "canonical_source": "youtube:ktLrvJWcilI",
+      "native_pixels_verified": true,
+      "derived_transform": null,
+      "known_canonical_heldout_overlap": false
+    },
+    {
+      "stage": "purple_sequence",
+      "sample_id": 7,
+      "video_id": "v141931869951669553b1",
+      "frame_index": 20550,
+      "canonical_source": "youtube:ktLrvJWcilI",
+      "native_pixels_verified": true,
+      "derived_transform": null,
+      "known_canonical_heldout_overlap": false
+    }
+  ]
+}

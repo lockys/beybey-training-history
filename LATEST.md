@@ -124,4 +124,6 @@
 
 本批十次完整訓練：[保留與API選擇決策](batches/completed-180-190.md) · [逐輪實測更新與資格](batches/completed-180-190.json)。10次完整、14785updates、0合格／0API；188中止另外記錄且不把未知更新數當零。
 
-第190輪後：[舊原生TRAIN素材盤點](evaluations/round-190-legacy-native-source-scout.md) · [原圖審閱範圍與限制](evaluations/round-190-legacy-native-source-scout.json)。6來源ID／12原圖、0label／NN／optimizer，近上方3組僅列後續候選；完整外殼、來源與近重複仍待核對，0TRAIN准入，未上傳媒體。
+第190輪後：[舊素材盤點更正](evaluations/round-190-legacy-native-source-scout.md) · [來源像素與衍生圖稽核](evaluations/round-190-legacy-native-source-scout.json)。原12原圖／原生說法更正為11原生、1linear-motion-blur衍生（第4張）；0label／NN／optimizer／TRAIN准入，未造成訓練曝光。完整外殼、來源與近重複仍待核對，未上傳媒體。
+
+第190輪後補充：[原生來源追溯v2與視角複核](evaluations/round-190-native-source-provenance-v2.md) · [來源別名、衍生排除與計數](evaluations/round-190-native-source-provenance-v2.json)。第二批19原生影格、10內部來源ID對應8標籤（7公開影片身份、1未解析），不等同獨立攝影來源；累計36張不同影像為35原生、1衍生，已知heldout canonical重疊0。0TRAIN准入，完整盤面標準待釐清，191未啟動，190模型拒絕與API不變。

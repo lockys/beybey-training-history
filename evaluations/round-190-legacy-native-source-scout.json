@@ -1,17 +1,20 @@
 {
   "source_scout_only": true,
-  "raw_frames_reviewed": 12,
-  "source_identifiers": 6,
+  "source_images_viewed": 12,
+  "native_source_images_verified": 11,
+  "derived_images": 1,
+  "derived_sample_id": 4,
+  "derived_kind": "linear_motion_blur",
   "new_admissions": 0,
   "new_TRAIN_images": 0,
   "labels_read": 0,
   "model_forward_calls": 0,
   "optimizer_updates": 0,
-  "known_heldout_source_and_exact_hash_excluded": true,
+  "known_canonical_heldout_overlap": 0,
+  "correction": "Previous12raw/native wording was inaccurate; source metadata identifies sample4as a synthetic derivative. No training or label admission occurred.",
   "visual_review": {
     "completed": true,
     "reviewer": "same_assistant_not_independent_human",
-    "raw_samples_seen": 12,
     "labels_read": 0,
     "model_calls": 0,
     "new_admissions": 0,
@@ -100,10 +103,5 @@
       "No existing labels, training inputs, thresholds or acceptance cases were changed"
     ]
   },
-  "limitations": [
-    "Only12raw frames, no claim about entire source camera consistency",
-    "Known identifier/exact hash exclusion cannot prove historical lineage or all near duplicates",
-    "No old labels reviewed or accepted",
-    "Scouting is not dataset admission"
-  ]
+  "framing_and_source_eligibility_still_pending": true
 }
