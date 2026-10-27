@@ -1,94 +1,483 @@
 {
   "run_id": 191,
-  "status": "training_in_progress_not_accepted",
-  "snapshot_utc": "2026-10-27T09:27:11.320466+00:00",
-  "completed_epochs": 10,
-  "train_batches": 1740,
-  "TRAIN_visits": 6950,
-  "optimizer_updates": 130,
-  "maximum_epochs": 30,
-  "maximum_batches": 5220,
-  "expected_TRAIN_visits": 20850,
-  "initial_version": "protected Ares33",
-  "initial_sha256": "5b593f85ad1e69a72029322bcbac09e4778a48bc38511205ab54d2044e8709d2",
-  "selected_parameter_tensors": 66,
-  "selected_parameter_elements": 819779,
-  "fixed_state_entries": 433,
-  "all_BN_running_statistics_fixed": true,
-  "policy_comparator": 189,
-  "intervention": "reviewed_native_supervision_supplement",
+  "status": "rejected_early_detector_gate",
+  "updated_utc": "2026-10-27T09:51:44.532642+00:00",
+  "model_type": "standard_YOLO_joint_head_reviewed_native_supplement",
+  "trainable_tensors": 66,
+  "trainable_parameters": 819779,
+  "frozen_states_verified": 433,
+  "completed_epochs": 30,
   "TRAIN_images": 153,
   "TRAIN_body_boxes": 273,
   "TRAIN_empty_frames": 8,
-  "VAL_images": 54,
-  "TEST_images": 47,
-  "new_current_optimizer_images": 7,
-  "new_visual_body_labels": 14,
+  "TRAIN_batches": 5220,
+  "TRAIN_visits": 20850,
+  "actual_optimizer_updates": 347,
+  "policy_comparator": 189,
+  "new_reviewed_images": 7,
+  "new_visual_body_boxes": 14,
   "new_external_footage": 0,
   "new_original_source_pixels": 0,
   "old_pseudo_labels_reenabled": false,
   "independent_human_truth": false,
   "historical_pretraining_lineage_exclusion": false,
-  "draws_per_epoch": 695,
-  "seed": 47,
-  "batch": 4,
-  "imgsz": 640,
-  "AdamW_lr0": 5e-05,
-  "nbs": 64,
+  "selected_sha256": "fb4fadfeb99b3e8e7f66bd9310497699a869e9182dfb6d5e7a2c58640b5b3462",
   "selection": "vendor_VAL_fitness_only",
-  "precision": null,
-  "recall": null,
-  "early_gate": null,
-  "full_gate": null,
-  "API_promotions": 0,
+  "selected_epoch": null,
+  "selected_epoch_note": "Stripped checkpoint epoch=-1; do not infer epoch from full train_results",
+  "detector_VAL": {
+    "frames": 54,
+    "GT_boxes": 85,
+    "confidence": 0.35,
+    "NMS_IoU": 0.5,
+    "GT_matching_IoU": 0.5,
+    "independent_human_truth": false,
+    "models": {
+      "ares-v1.3.33": {
+        "VAL": {
+          "TP": 82,
+          "FP": 1,
+          "FN": 3,
+          "empty_frames": 4,
+          "empty_FP": 0,
+          "precision": 0.9879518072289156,
+          "recall": 0.9647058823529412
+        },
+        "development": {
+          "targets": 46,
+          "TP": 45,
+          "FN": 1,
+          "certain_observed": 45,
+          "mean_matched_error_px": 2.134750813657198,
+          "mean_capped_error_px": 2.6100823177081285,
+          "FP_proxy": 0,
+          "detached_or_held_matches": 0,
+          "unmatched_on_unobservable_frames": 0,
+          "predicted_only_rows": 0,
+          "identity_transfers": 0,
+          "identity_transfer_points": 0,
+          "longest_incomplete_frame_gap": 1,
+          "unobservable_objects": 0,
+          "ambiguous_state_objects": 0,
+          "identity_ineligible_targets": 0,
+          "unknown_occlusion_frames": 0,
+          "unlocalized_distractor_descriptions": 0,
+          "visibility": {
+            "visible": {
+              "targets": 46,
+              "TP": 45,
+              "FN": 1,
+              "certain_observed": 45,
+              "mean_matched_error_px": 2.134750813657198,
+              "mean_capped_error_px": 2.6100823177081285
+            }
+          },
+          "identities": {
+            "blue": {
+              "targets": 23,
+              "TP": 22,
+              "FN": 1,
+              "certain_observed": 22,
+              "longest_measured_gap": 1,
+              "longest_certain_gap": 1,
+              "longest_estimated_gap": 23,
+              "measured_fragmentations": 1,
+              "certain_fragmentations": 1,
+              "track_id_changes": 0,
+              "certain_native_segments": [],
+              "mean_matched_error_px": 1.5534160226516136,
+              "mean_capped_error_px": 2.529354456449369,
+              "certain_native_fragmentations": 0
+            },
+            "white": {
+              "targets": 23,
+              "TP": 23,
+              "FN": 0,
+              "certain_observed": 23,
+              "longest_measured_gap": 0,
+              "longest_certain_gap": 0,
+              "longest_estimated_gap": 23,
+              "measured_fragmentations": 0,
+              "certain_fragmentations": 0,
+              "track_id_changes": 0,
+              "certain_native_segments": [],
+              "mean_matched_error_px": 2.690810178966888,
+              "mean_capped_error_px": 2.690810178966888,
+              "certain_native_fragmentations": 0
+            }
+          }
+        },
+        "accelerated_hits": {
+          "blue": 5,
+          "white": 5
+        }
+      },
+      "research-run191": {
+        "VAL": {
+          "TP": 82,
+          "FP": 1,
+          "FN": 3,
+          "empty_frames": 4,
+          "empty_FP": 0,
+          "precision": 0.9879518072289156,
+          "recall": 0.9647058823529412
+        },
+        "development": {
+          "targets": 46,
+          "TP": 45,
+          "FN": 1,
+          "certain_observed": 45,
+          "mean_matched_error_px": 2.3525782316674277,
+          "mean_capped_error_px": 2.8231743570659624,
+          "FP_proxy": 0,
+          "detached_or_held_matches": 0,
+          "unmatched_on_unobservable_frames": 0,
+          "predicted_only_rows": 0,
+          "identity_transfers": 0,
+          "identity_transfer_points": 0,
+          "longest_incomplete_frame_gap": 1,
+          "unobservable_objects": 0,
+          "ambiguous_state_objects": 0,
+          "identity_ineligible_targets": 0,
+          "unknown_occlusion_frames": 0,
+          "unlocalized_distractor_descriptions": 0,
+          "visibility": {
+            "visible": {
+              "targets": 46,
+              "TP": 45,
+              "FN": 1,
+              "certain_observed": 45,
+              "mean_matched_error_px": 2.3525782316674277,
+              "mean_capped_error_px": 2.8231743570659624
+            }
+          },
+          "identities": {
+            "blue": {
+              "targets": 23,
+              "TP": 23,
+              "FN": 0,
+              "certain_observed": 23,
+              "longest_measured_gap": 0,
+              "longest_certain_gap": 0,
+              "longest_estimated_gap": 23,
+              "measured_fragmentations": 0,
+              "certain_fragmentations": 0,
+              "track_id_changes": 0,
+              "certain_native_segments": [],
+              "mean_matched_error_px": 1.8852234873153229,
+              "mean_capped_error_px": 1.8852234873153229,
+              "certain_native_fragmentations": 0
+            },
+            "white": {
+              "targets": 23,
+              "TP": 22,
+              "FN": 1,
+              "certain_observed": 22,
+              "longest_measured_gap": 1,
+              "longest_certain_gap": 1,
+              "longest_estimated_gap": 23,
+              "measured_fragmentations": 1,
+              "certain_fragmentations": 1,
+              "track_id_changes": 0,
+              "certain_native_segments": [],
+              "mean_matched_error_px": 2.8411763734900837,
+              "mean_capped_error_px": 3.761125226816601,
+              "certain_native_fragmentations": 0
+            }
+          }
+        },
+        "accelerated_hits": {
+          "blue": 5,
+          "white": 5
+        }
+      }
+    }
+  },
+  "early_fresh_predict_calls": 154,
+  "early_gate_passed": false,
+  "early_failures": [
+    {
+      "gate": "development",
+      "metric": "mean_matched_error_px",
+      "baseline": 2.134750813657198,
+      "candidate": 2.3525782316674277
+    },
+    {
+      "gate": "development",
+      "metric": "mean_capped_error_px",
+      "baseline": 2.6100823177081285,
+      "candidate": 2.8231743570659624
+    },
+    {
+      "gate": "development",
+      "metric": "visibility.visible.mean_matched_error_px",
+      "baseline": 2.134750813657198,
+      "candidate": 2.3525782316674277
+    },
+    {
+      "gate": "development",
+      "metric": "visibility.visible.mean_capped_error_px",
+      "baseline": 2.6100823177081285,
+      "candidate": 2.8231743570659624
+    },
+    {
+      "gate": "development",
+      "metric": "identities.blue.mean_matched_error_px",
+      "baseline": 1.5534160226516136,
+      "candidate": 1.8852234873153229
+    },
+    {
+      "gate": "development",
+      "metric": "identities.white.TP",
+      "baseline": 23,
+      "candidate": 22
+    },
+    {
+      "gate": "development",
+      "metric": "identities.white.FN",
+      "baseline": 0,
+      "candidate": 1
+    },
+    {
+      "gate": "development",
+      "metric": "identities.white.certain_observed",
+      "baseline": 23,
+      "candidate": 22
+    },
+    {
+      "gate": "development",
+      "metric": "identities.white.longest_measured_gap",
+      "baseline": 0,
+      "candidate": 1
+    },
+    {
+      "gate": "development",
+      "metric": "identities.white.longest_certain_gap",
+      "baseline": 0,
+      "candidate": 1
+    },
+    {
+      "gate": "development",
+      "metric": "identities.white.measured_fragmentations",
+      "baseline": 0,
+      "candidate": 1
+    },
+    {
+      "gate": "development",
+      "metric": "identities.white.certain_fragmentations",
+      "baseline": 0,
+      "candidate": 1
+    },
+    {
+      "gate": "development",
+      "metric": "identities.white.mean_matched_error_px",
+      "baseline": 2.690810178966888,
+      "candidate": 2.8411763734900837
+    },
+    {
+      "gate": "development",
+      "metric": "identities.white.mean_capped_error_px",
+      "baseline": 2.690810178966888,
+      "candidate": 3.761125226816601
+    }
+  ],
+  "full_acceptance": {
+    "performed": false,
+    "passed": false,
+    "reason": "early prerequisite failed"
+  },
+  "TRAIN_signal_comparison": {
+    "role": "TRAIN_diagnostic_not_validation",
+    "teacher153": {
+      "GT": 273,
+      "TP": 269,
+      "FN": 4,
+      "FP_relative_to_curated_labels": 15,
+      "empty_frames": 8,
+      "empty_FP": 0
+    },
+    "selected153": {
+      "GT": 273,
+      "TP": 272,
+      "FN": 1,
+      "FP_relative_to_curated_labels": 14,
+      "empty_frames": 8,
+      "empty_FP": 0,
+      "low_confidence_at_current_aligned_boxes": 1,
+      "miss_low_grid_center_confidence": 1
+    },
+    "final_epoch153": {
+      "GT": 273,
+      "TP": 273,
+      "FN": 0,
+      "FP_relative_to_curated_labels": 0,
+      "empty_frames": 8,
+      "empty_FP": 0
+    },
+    "new7images14boxes": {
+      "new_teacher": {
+        "GT": 14,
+        "TP": 14,
+        "FN": 0,
+        "FP_relative_to_curated_labels": 0,
+        "empty_frames": 0,
+        "empty_FP": 0
+      },
+      "selected": {
+        "GT": 14,
+        "TP": 14,
+        "FN": 0,
+        "FP_relative_to_curated_labels": 0,
+        "empty_frames": 0,
+        "empty_FP": 0
+      },
+      "final_epoch": {
+        "GT": 14,
+        "TP": 14,
+        "FN": 0,
+        "FP_relative_to_curated_labels": 0,
+        "empty_frames": 0,
+        "empty_FP": 0
+      }
+    },
+    "old146teacher_cached": true,
+    "fresh_teacher_forward_calls": 7,
+    "fresh_selected_forward_calls": 153,
+    "fresh_final_forward_calls": 153,
+    "fresh_diagnostic_forward_calls": 313,
+    "optimizer_updates": 0,
+    "checkpoint_reselected": false,
+    "learning_on_new_supplement_note": "Teacher already matched all14new labels; not additional recall challenge"
+  },
+  "cohort_exposure_audit": {
+    "completed": true,
+    "run_id": 191,
+    "new_optimizer_updates": 0,
+    "new_inference_calls": 0,
+    "actual_training_epochs_verified": 30,
+    "actual_TRAIN_visits": 20850,
+    "actual_distinct_TRAIN_images_visited": 153,
+    "reviewed_supplement_distinct_images_visited": 7,
+    "reviewed_supplement_actual_visits": 487,
+    "old_excluded_parent_label_rows": 549,
+    "old_excluded_original_image_path_visits": 0,
+    "old_pseudo_label_paths_reenabled": false,
+    "legacy_pixel_rows_reintroduced_with_new_manual_labels": 7,
+    "remaining_old_excluded_pixel_rows": 542,
+    "does_not_erase_inherited_pretraining": true,
+    "actual_stratum_visits": {
+      "hard": 5157,
+      "empty": 4172,
+      "white": 4192,
+      "gray": 1021,
+      "easy": 6308
+    },
+    "actual_sampler_plans_replayed_exact": true,
+    "worker_epoch_hook_verified_actual_paths_equal_plan": true
+  },
+  "paired_development_audit": {
+    "completed": true,
+    "run_id": 191,
+    "optimizer_updates": 0,
+    "new_inference_calls": 0,
+    "baseline_hits": 45,
+    "candidate_hits": 45,
+    "common_hits": 44,
+    "baseline_hits_lost": 1,
+    "new_hits_added": 1,
+    "same_reference_hit_set": false,
+    "common_point_baseline_mean_error_px": 2.142498330161919,
+    "common_point_candidate_mean_error_px": 2.3268447502154523,
+    "common_point_mean_delta_px": 0.18434642005353383,
+    "common_points_lower_error": 17,
+    "common_points_higher_error": 27,
+    "common_points_unchanged": 0,
+    "per_identity": {
+      "blue": {
+        "common_hits": 22,
+        "baseline_mean_error_px": 1.5534160226516136,
+        "candidate_mean_error_px": 1.8125131269408212,
+        "mean_delta_px": 0.2590971042892076
+      },
+      "white": {
+        "common_hits": 22,
+        "baseline_mean_error_px": 2.7315806376722236,
+        "candidate_mean_error_px": 2.841176373490084,
+        "mean_delta_px": 0.10959573581786053
+      }
+    },
+    "early_gate_still_passed": false,
+    "full_evaluation_performed": false,
+    "limitations": [
+      "23frame provisional detector-center development cohort only",
+      "Not independent human truth or full trajectory improvement",
+      "No reference, threshold, selection or prediction changes"
+    ]
+  },
+  "standard_checkpoint_audit": {
+    "completed": true,
+    "run_id": 191,
+    "completed_epochs": 30,
+    "TRAIN_batches": 5220,
+    "TRAIN_visits": 20850,
+    "optimizer_updates": 347,
+    "frozen_states_verified": 433,
+    "selected_parameter_tensors": 66,
+    "selected_parameter_elements": 819779,
+    "changed_bbox_feature_conv_tensors": 4,
+    "standard_YOLO_checkpoint": true,
+    "selected_checkpoint_class_scores_changed": true,
+    "changed_classification_feature_and_output_tensors": 36,
+    "selected_checkpoint_boxes_changed": true,
+    "synthetic_forward_calls": 2,
+    "optimizer_updates_in_audit": 0,
+    "accepted": false,
+    "API_eligible": false,
+    "selected_sha256": "fb4fadfeb99b3e8e7f66bd9310497699a869e9182dfb6d5e7a2c58640b5b3462"
+  },
+  "scoring_repair": {
+    "initial_label_joins_failed": true,
+    "reason": "TP+FN sum check retained old259after scopes changed to273or14",
+    "archived_source_and_failed_logs_preserved": true,
+    "new_NN_calls_in_repair": 0,
+    "raw_seals_verified_unchanged": true,
+    "original_checkpoint_and_formal_rejection_unchanged": true
+  },
   "accepted": false,
+  "API_promoted": false,
   "stable_trajectory_improvement_proven": false,
-  "completed_training_number_in_current_batch": 0,
-  "planned_training_number_in_current_batch": 1,
-  "previous_completed_ten_batch": {
-    "ids": [
-      180,
-      181,
-      182,
-      183,
-      184,
-      185,
-      186,
-      187,
-      189,
-      190
+  "retention": {
+    "run_id": 191,
+    "created_utc": "2026-10-27T09:51:44.532642+00:00",
+    "accepted": false,
+    "rejected": true,
+    "API_eligible": false,
+    "candidate_checkpoint_deleted": true,
+    "selected_checkpoint_retained": false,
+    "selected_sha256": "fb4fadfeb99b3e8e7f66bd9310497699a869e9182dfb6d5e7a2c58640b5b3462",
+    "retained_API_versions": 9,
+    "API_changed": false,
+    "logical_bytes_freed": 38350516,
+    "failures": 0,
+    "source_and_reference_deleted": false,
+    "may_resume_from_run191_checkpoint": false
+  },
+  "window_progress": {
+    "batch_completed_training_ids": [
+      191
     ],
-    "optimizer_updates": 14785,
-    "qualified": 0
-  },
-  "data_preflight": {
-    "verified_file_references": 508,
-    "all_new_label_coordinates_loaded_exact": true,
-    "negative_controls": 5,
-    "stale_label_route_rejected_before_inference": true,
-    "sampler_simulated_epochs": 80,
-    "sampler_draws": 55600,
-    "native_TRAIN_forward_calls": 1,
-    "native_TRAIN_backward_gradient_tensors": 66,
-    "native_TRAIN_nonzero_gradient_tensors": 58,
-    "native_TRAIN_nonzero_classification_tensors": 42,
-    "optimizer_updates": 0
-  },
-  "product_checks": {
-    "backend_passed": 398,
-    "backend_skipped": 8,
-    "annotator_passed": 163,
-    "coverage_percent": 94.29,
-    "UI_passed": 42,
-    "e2e_passed": 39,
-    "Android": "BUILD SUCCESSFUL; unit cached,catalogue executed",
-    "all_freshly_rerun": true
+    "actual_completed_training_runs": 1,
+    "completed_training_optimizer_updates": 347,
+    "qualified_versions": 0,
+    "API_promotions": 0,
+    "goal_achieved": false
   },
   "limitations": [
-    "7old native pixel frames reintroduced with new visual labels, not novel external footage or erased pretraining",
-    "Same assistant two-pass review, not independent human truth",
-    "Ambiguous frame7and shared-background LED group remain excluded",
-    "Original frozen VAL/TEST and154early/full204comparison protocols unchanged",
-    "TRAIN learning does not imply stable trajectory or API qualification"
+    "New7TRAIN already14teacher hits; no new recall difficulty demonstrated",
+    "Same assistant labels, not independent human truth or novel footage",
+    "Matched-count equality hides one original hit lost and one new hit added",
+    "Overlapping scalar gates not independent physical failures",
+    "Final epoch only TRAIN tested; no claim about unmeasured final-epoch VAL/development or middle epochs",
+    "Original trajectory/source-group/inference gates unchanged"
   ]
 }

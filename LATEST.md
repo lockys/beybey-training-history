@@ -1,6 +1,6 @@
 # 訓練與評估索引
 
-第191輪訓練中，快照10/30epochs／130實測updates／1740/5220batches，尚無精準度或驗收結果。本輪沿用189joint head66tensors／819779參數，只補充經兩次視覺複核的7張舊原生影格14新bodylabels，研究TRAIN153圖／273框／8empty；54VAL／47TEST不變。第7張模糊護罩輪廓不可靠整張保留，LED共用背景組也不准入。原154early與完整204比較／來源群門檻不變，API九個權重不變。上一個十次完整批次14785updates／零合格，191是下一批第一次嘗試，完成30epochs才計完成。
+第191輪完成30epochs／347實測updates，仍未取得合格晉升版本。固定54VAL82TP／1FP／3FN（P98.80%、R96.47%），development淨45TP但44共同／1流失／1新增，定位14scalar退步，完整204比較未執行。新7張14bodylabel實際被抽到487次，但Ares33本來就14全命中，未增加漏檢挑戰。TRAIN153為teacher269TP4FN／selected272TP1FN／末期273TP0FN，這不是泛化證據，未事後改選。權重清理完畢、API九個權重不變；新批次1次完整／347updates／0合格。舊549label路徑未重啟，但其中7張像素以新label副本准入，剩542列像素排除，pretraining仍未抹除。
 
 [第 142 輪](runs/run-142.md)（原程序失敗後另行稽核及比較）。
 
@@ -132,4 +132,4 @@
 
 第190輪後：[七張新視覺標註准入研究TRAIN](evaluations/round-190-native-supervision-refresh-admission.md) · [原生載入、資料路由與零optimizer前置控制](evaluations/round-190-native-supervision-refresh-admission.json)。153圖／273框、VAL／TEST原清單不變；新label全部原生讀取精確，回舊label、held／heldout與錯sampler皆紅燈。這是舊來源像素的新標註，非新外部影片、非獨立人工真值，不抹除pretraining。
 
-第191輪：[複核原生監督補充訓練進行中](runs/run-191.md) · [實際進度與前置檢查](runs/run-191-metrics.json)。全套產品測試重新通過；尚無準確率、穩定軌跡或API晉升結論。
+第191輪：[複核原生監督補充最終報告](runs/run-191.md) · [固定精準度、14退步、逐資料群診斷與實際訪次](runs/run-191-metrics.json) · [30epoch曲線](runs/run-191-learning-curve.json)。正式early gate拒絕，未跑完整204比較；7新TRAIN全部原已命中，273TRAIN漂亮數字未泛化。初次計分舊259sum檢查已修正、只重算封存raw，0新NN／optimizer；best／last清理完畢，API不變。
