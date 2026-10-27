@@ -1,0 +1,101 @@
+{
+  "training": {
+    "completed": true,
+    "run_id": 182,
+    "optimizer_updates": 2610,
+    "actual_visit_counts": {
+      "pair_visits": 165450,
+      "original_pair_visits": 110310,
+      "learner_pair_visits": 55140,
+      "synthetic_visits": 49903,
+      "native_fallback_visits": 5182,
+      "unchanged_original_visits": 55225
+    },
+    "selected_epoch": 10,
+    "selected_after_actual_learner_fitting": false,
+    "selected_state_tensor_sha256": "0bf9f741f60e281125acaad82568205d2c4f0fe7f499548dbe85cd5c387d958c",
+    "learner_captures": [
+      {
+        "epoch": 10,
+        "model_state_sha256": "0bf9f741f60e281125acaad82568205d2c4f0fe7f499548dbe85cd5c387d958c",
+        "capture_updates": 1548,
+        "capture_forward_calls": 2795,
+        "changed_frames": 245,
+        "known_pairs": 2701,
+        "novel_pairs": 276,
+        "duplicates_with_original": 2425,
+        "exclusions": {
+          "mixed_or_unknown_identity": 94
+        },
+        "actual_current_trained_snapshot": true,
+        "control_data_admitted": false,
+        "validation_and_acceptance_admitted": false,
+        "TRAIN_only": true,
+        "capture_completion_sha256": "de6ca2e733227395643b506d768e44b813797caef655aa8ee77aaab53d79fe44",
+        "joined_packet_sha256": "56e0584f73ced6c1a9c60a07b1cbe6721d078171ea2cfe1688e17a13a3c6611e",
+        "pool_data_sha256": "a77281e679d855a09836a142e34410c62be33d12350af2b8d0e3e8c473f33721",
+        "optimizer_unchanged_during_capture": true,
+        "shuffle_generator_unchanged": true,
+        "train_model_and_snapshot_digest_equal": true
+      },
+      {
+        "epoch": 20,
+        "model_state_sha256": "ac689bb5ab091b58a50510abcd54f6c73b350cef5ec1189258c1355921f6eb15",
+        "capture_updates": 1548,
+        "capture_forward_calls": 2799,
+        "changed_frames": 253,
+        "known_pairs": 2705,
+        "novel_pairs": 284,
+        "duplicates_with_original": 2421,
+        "exclusions": {
+          "mixed_or_unknown_identity": 94
+        },
+        "actual_current_trained_snapshot": true,
+        "control_data_admitted": false,
+        "validation_and_acceptance_admitted": false,
+        "TRAIN_only": true,
+        "capture_completion_sha256": "19f3725fb2c48b039af04abe1c47171d49c0bdc22d16b5efec16b57252217292",
+        "joined_packet_sha256": "717ce144a04940bb61df3559d80ae11f95d7f3b591e95b98b151f583abcbe1a9",
+        "pool_data_sha256": "68c16dfde0839926fa5cb75765d9d039cf5f15ea2fa5aaaa197b02de0d632646",
+        "optimizer_unchanged_during_capture": true,
+        "shuffle_generator_unchanged": true,
+        "train_model_and_snapshot_digest_equal": true
+      }
+    ],
+    "training_control_data_admitted": false,
+    "validation_unchanged": true,
+    "API_mutations": 0
+  },
+  "TRAIN_only_withheld_diagnosis": {
+    "completed": true,
+    "TRAIN_only": true,
+    "validation_or_acceptance_scored": false,
+    "optimizer_updates": 0,
+    "new_CPU_neural_pair_calls": 5515,
+    "API_mutations": 0,
+    "stateful_counterfactual": false,
+    "categories": [
+      {
+        "scope": "eligible_native_TRAIN",
+        "pairs": 2761,
+        "known_positive": 1247,
+        "known_negative": 1514,
+        "positive_score_at_least95": 1237,
+        "negative_score_at_most05": 1508,
+        "positive_score_at_most05": 0,
+        "negative_score_at_least95": 0
+      },
+      {
+        "scope": "withheld_native_TRAIN",
+        "pairs": 2754,
+        "known_positive": 637,
+        "known_negative": 2117,
+        "positive_score_at_least95": 597,
+        "negative_score_at_most05": 2068,
+        "positive_score_at_most05": 1,
+        "negative_score_at_least95": 0
+      }
+    ],
+    "caution": "Withheld set includes unbound rows and guard-inadmissible pairs; this does not prove all low scores are actionable vetoes. A new positive-action/negative-evidence policy still requires preflight and real full evaluation."
+  }
+}
